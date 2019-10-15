@@ -2,6 +2,7 @@
   "posts": [
     {
       "title": "printStackTrace",
+      "path": "2004/08/12/handy-way-to-create-stack-trace.html",
       "month": 8,
       "year": 2004,
       "day": 12,
@@ -9,6 +10,7 @@
     },
     {
       "title": "Make problem solved",
+      "path": "2005/01/05/make-problem-solved.html",
       "month": 1,
       "year": 2005,
       "day": 5,
@@ -16,6 +18,7 @@
     },
     {
       "title": "Installed HURD console",
+      "path": "2005/01/09/installed-HURD-console.html",
       "month": 1,
       "year": 2005,
       "day": 9,
@@ -23,6 +26,7 @@
     },
     {
       "title": "Stumbled on HURD",
+      "path": "2005/01/20/stumbled-on-hurd.html",
       "month": 1,
       "year": 2005,
       "day": 20,
@@ -30,6 +34,7 @@
     },
     {
       "title": "GRUBing",
+      "path": "2005/02/04/GRUBing.html",
       "month": 2,
       "year": 2005,
       "day": 4,
@@ -37,6 +42,7 @@
     },
     {
       "title": "L4Linux update",
+      "path": "2005/02/26/last-two-weeks.html",
       "month": 2,
       "year": 2005,
       "day": 26,
@@ -44,6 +50,7 @@
     },
     {
       "title": "Not much on L4 front",
+      "path": "2005/03/06/not-much-on-l4-front.html",
       "month": 3,
       "year": 2005,
       "day": 6,
@@ -51,6 +58,7 @@
     },
     {
       "title": "Warning: const is a keyword in ANSI C",
+      "path": "2005/03/22/warning-const-is-a-keyword.html",
       "month": 3,
       "year": 2005,
       "day": 22,
@@ -58,6 +66,7 @@
     },
     {
       "title": "DirectX Installation Problem",
+      "path": "2005/03/31/DirectX-installation-problem.html",
       "month": 3,
       "year": 2005,
       "day": 31,
@@ -65,6 +74,7 @@
     },
     {
       "title": "Halo fixed on ATI Mobility Radeon 9000",
+      "path": "2005/04/16/halo-fixed-on-ati.html",
       "month": 4,
       "year": 2005,
       "day": 16,
@@ -72,6 +82,7 @@
     },
     {
       "title": "repeat (ps | grep) = filtered top  ",
+      "path": "2005/05/06/repeat-filtered-top.html",
       "month": 5,
       "year": 2005,
       "day": 6,
@@ -79,6 +90,7 @@
     },
     {
       "title": "GCC 2.95 rpms",
+      "path": "2005/05/09/gcc-2.html",
       "month": 5,
       "year": 2005,
       "day": 9,
@@ -86,6 +98,7 @@
     },
     {
       "title": "Quotes",
+      "path": "2005/05/10/quotes.html",
       "month": 5,
       "year": 2005,
       "day": 10,
@@ -93,6 +106,7 @@
     },
     {
       "title": "Back to the L4",
+      "path": "2005/05/12/back-to-the-l4.html",
       "month": 5,
       "year": 2005,
       "day": 12,
@@ -100,6 +114,7 @@
     },
     {
       "title": "Safari Bookshelf",
+      "path": "2006/01/15/safari-bookshelf.html",
       "month": 1,
       "year": 2006,
       "day": 15,
@@ -107,6 +122,7 @@
     },
     {
       "title": "New blog",
+      "path": "2006/01/16/new-blog.html",
       "month": 1,
       "year": 2006,
       "day": 16,
@@ -114,6 +130,7 @@
     },
     {
       "title": "VI - A capable IDE",
+      "path": "2006/01/19/vi-a-capable-ide.html",
       "month": 1,
       "year": 2006,
       "day": 19,
@@ -121,6 +138,7 @@
     },
     {
       "title": "Henry Ford",
+      "path": "2006/03/10/henry-ford.html",
       "month": 3,
       "year": 2006,
       "day": 10,
@@ -128,6 +146,7 @@
     },
     {
       "title": "Gentoo, XGL, HGG",
+      "path": "2006/04/05/gentoo-xgl-hgg.html",
       "month": 4,
       "year": 2006,
       "day": 5,
@@ -135,6 +154,7 @@
     },
     {
       "title": "If Harry Potter were a computer hacker ...",
+      "path": "2006/04/23/if-harry-potter-were-a-computer-hacker.html",
       "month": 4,
       "year": 2006,
       "day": 23,
@@ -142,6 +162,7 @@
     },
     {
       "title": "Troy",
+      "path": "2006/05/15/troy.html",
       "month": 5,
       "year": 2006,
       "day": 15,
@@ -149,6 +170,7 @@
     },
     {
       "title": "Why do we like fiction?",
+      "path": "2006/08/07/why-do-we-like-fiction.html",
       "month": 8,
       "year": 2006,
       "day": 7,
@@ -156,6 +178,7 @@
     },
     {
       "title": "Programming & Painting",
+      "path": "2006/08/13/programming-painting.html",
       "month": 8,
       "year": 2006,
       "day": 13,
@@ -163,6 +186,7 @@
     },
     {
       "title": "Hilarious nerd comment",
+      "path": "2006/08/19/hilarious-nerd-comment.html",
       "month": 8,
       "year": 2006,
       "day": 19,
@@ -170,6 +194,7 @@
     },
     {
       "title": "Another nice quote",
+      "path": "2006/09/28/another-nice-quote.html",
       "month": 9,
       "year": 2006,
       "day": 28,
@@ -177,6 +202,7 @@
     },
     {
       "title": "Gas prices... seems like big scam",
+      "path": "2006/11/08/gas-prices-seems-like-big-scam.html",
       "month": 11,
       "year": 2006,
       "day": 8,
@@ -184,6 +210,7 @@
     },
     {
       "title": "Stranger than fiction",
+      "path": "2006/11/11/stranger-than-fiction.html",
       "month": 11,
       "year": 2006,
       "day": 11,
@@ -191,6 +218,7 @@
     },
     {
       "title": "How do I backup to Amazon S3 storage service",
+      "path": "2006/11/21/how-do-i-backup-to-amazon-s3-storage-service.html",
       "month": 11,
       "year": 2006,
       "day": 21,
@@ -198,6 +226,7 @@
     },
     {
       "title": "What I read...",
+      "path": "2006/12/02/what-i-read.html",
       "month": 12,
       "year": 2006,
       "day": 2,
@@ -205,6 +234,7 @@
     },
     {
       "title": "across two hours",
+      "path": "2006/12/24/across-two-hours.html",
       "month": 12,
       "year": 2006,
       "day": 24,
@@ -212,6 +242,7 @@
     },
     {
       "title": "Trip videos",
+      "path": "2007/03/13/trip-videos.html",
       "month": 3,
       "year": 2007,
       "day": 13,
@@ -219,6 +250,7 @@
     },
     {
       "title": "Sea surfing under the Golden Gate",
+      "path": "2007/03/23/sea-surfing-under-the-golden-gate.html",
       "month": 3,
       "year": 2007,
       "day": 23,
@@ -226,6 +258,7 @@
     },
     {
       "title": "\"from time import sleep\"",
+      "path": "2007/04/08/from-time-import-sleep.html",
       "month": 4,
       "year": 2007,
       "day": 8,
@@ -233,6 +266,7 @@
     },
     {
       "title": "quotes from George Carlin",
+      "path": "2007/05/13/quotes-from-george-carlin.html",
       "month": 5,
       "year": 2007,
       "day": 13,
@@ -240,6 +274,7 @@
     },
     {
       "title": "Story of a random number",
+      "path": "2007/06/03/story-of-a-random-number.html",
       "month": 6,
       "year": 2007,
       "day": 3,
@@ -247,6 +282,7 @@
     },
     {
       "title": "Once again... a quote from 'Troy'",
+      "path": "2007/06/05/once-again-a-quote-from-troy.html",
       "month": 6,
       "year": 2007,
       "day": 5,
@@ -254,6 +290,7 @@
     },
     {
       "title": "Nice review article on virtualization technologies",
+      "path": "2007/06/29/nice-review-article-on-virtualization-technologies.html",
       "month": 6,
       "year": 2007,
       "day": 29,
@@ -261,6 +298,7 @@
     },
     {
       "title": "The \"Screen\"",
+      "path": "2007/07/17/the-screen.html",
       "month": 7,
       "year": 2007,
       "day": 17,
@@ -268,6 +306,7 @@
     },
     {
       "title": "next desktop jump",
+      "path": "2007/08/30/next-desktop-jump.html",
       "month": 8,
       "year": 2007,
       "day": 30,
@@ -275,6 +314,7 @@
     },
     {
       "title": "formula of a horror movie",
+      "path": "2007/10/06/formula-of-a-horror-movie.html",
       "month": 10,
       "year": 2007,
       "day": 6,
@@ -282,6 +322,7 @@
     },
     {
       "title": "coding Monalisa",
+      "path": "2007/10/10/coding-monalisa.html",
       "month": 10,
       "year": 2007,
       "day": 10,
@@ -289,6 +330,7 @@
     },
     {
       "title": "best effort technologies",
+      "path": "2007/10/26/best-effort-technologies.html",
       "month": 10,
       "year": 2007,
       "day": 26,
@@ -296,6 +338,7 @@
     },
     {
       "title": "XML RPC server inside apache mod_python",
+      "path": "2007/11/20/xml-rpc-server-inside-apache-mod.html",
       "month": 11,
       "year": 2007,
       "day": 20,
@@ -303,6 +346,7 @@
     },
     {
       "title": "Firefox 3 is brilliant!!!",
+      "path": "2007/11/21/firefox-3-is-brilliant.html",
       "month": 11,
       "year": 2007,
       "day": 21,
@@ -310,6 +354,7 @@
     },
     {
       "title": "Colbie Caillat",
+      "path": "2007/11/30/colbie-caillat.html",
       "month": 11,
       "year": 2007,
       "day": 30,
@@ -317,6 +362,7 @@
     },
     {
       "title": "Picasso",
+      "path": "2007/12/16/picasso.html",
       "month": 12,
       "year": 2007,
       "day": 16,
@@ -324,6 +370,7 @@
     },
     {
       "title": "cool n770 hack",
+      "path": "2007/12/26/cool-n770-hack.html",
       "month": 12,
       "year": 2007,
       "day": 26,
@@ -331,6 +378,7 @@
     },
     {
       "title": "Blog from nokia tablets",
+      "path": "2008/01/07/blog-from-nokia-tablets.html",
       "month": 1,
       "year": 2008,
       "day": 7,
@@ -338,6 +386,7 @@
     },
     {
       "title": "two great videos",
+      "path": "2008/01/09/two-great-videos.html",
       "month": 1,
       "year": 2008,
       "day": 9,
@@ -345,6 +394,7 @@
     },
     {
       "title": "OpenMoko, Android and a great hacking post",
+      "path": "2008/01/20/openmoko-android-and-a-great-hacking-post.html",
       "month": 1,
       "year": 2008,
       "day": 20,
@@ -352,6 +402,7 @@
     },
     {
       "title": "OSiM USA 2008, see you there",
+      "path": "2008/02/08/osim-usa-2008-see-you-there.html",
       "month": 2,
       "year": 2008,
       "day": 8,
@@ -359,6 +410,7 @@
     },
     {
       "title": "Gr8 commercial",
+      "path": "2008/02/14/gr8-commercial.html",
       "month": 2,
       "year": 2008,
       "day": 14,
@@ -366,6 +418,7 @@
     },
     {
       "title": "Google code",
+      "path": "2008/02/18/google-code.html",
       "month": 2,
       "year": 2008,
       "day": 18,
@@ -373,6 +426,7 @@
     },
     {
       "title": "OSiM USA 2008 - Day 1",
+      "path": "2008/03/11/osim-usa-2008-day-1.html",
       "month": 3,
       "year": 2008,
       "day": 11,
@@ -380,6 +434,7 @@
     },
     {
       "title": "OSiM USA 2008 - Day 2",
+      "path": "2008/03/14/osim-usa-2008-day-2.html",
       "month": 3,
       "year": 2008,
       "day": 14,
@@ -387,6 +442,7 @@
     },
     {
       "title": "Clutter Webkit",
+      "path": "2008/03/15/clutter-webkit.html",
       "month": 3,
       "year": 2008,
       "day": 15,
@@ -394,6 +450,7 @@
     },
     {
       "title": "Accelerometer brainstorming",
+      "path": "2008/03/30/accelerometer-brainstorming.html",
       "month": 3,
       "year": 2008,
       "day": 30,
@@ -401,6 +458,7 @@
     },
     {
       "title": "Cringely and Paul Graham",
+      "path": "2008/04/05/cringely-and-paul-graham.html",
       "month": 4,
       "year": 2008,
       "day": 5,
@@ -408,6 +466,7 @@
     },
     {
       "title": "Flickr uploads from n810",
+      "path": "2008/04/22/flickr-uploads-from-n810.html",
       "month": 4,
       "year": 2008,
       "day": 22,
@@ -415,6 +474,7 @@
     },
     {
       "title": "Ubuntu reviewed",
+      "path": "2008/04/29/ubuntu-reviewed.html",
       "month": 4,
       "year": 2008,
       "day": 29,
@@ -422,6 +482,7 @@
     },
     {
       "title": "Lions for Lambs",
+      "path": "2008/05/04/lions-for-lambs.html",
       "month": 5,
       "year": 2008,
       "day": 4,
@@ -429,6 +490,7 @@
     },
     {
       "title": "Cost of Open Source",
+      "path": "2008/05/10/cost-of-open-source.html",
       "month": 5,
       "year": 2008,
       "day": 10,
@@ -436,6 +498,7 @@
     },
     {
       "title": "Today's slashdot and open source",
+      "path": "2008/05/25/todays-slashdot-and-open-source.html",
       "month": 5,
       "year": 2008,
       "day": 25,
@@ -443,6 +506,7 @@
     },
     {
       "title": "\"Wine\" tasting",
+      "path": "2008/05/27/wine-tasting.html",
       "month": 5,
       "year": 2008,
       "day": 27,
@@ -450,6 +514,7 @@
     },
     {
       "title": "Of games",
+      "path": "2008/06/05/of-games.html",
       "month": 6,
       "year": 2008,
       "day": 5,
@@ -457,6 +522,7 @@
     },
     {
       "title": "OSiM'08 Berlin, Germany",
+      "path": "2008/06/08/osim08-berlin-germany.html",
       "month": 6,
       "year": 2008,
       "day": 8,
@@ -464,6 +530,7 @@
     },
     {
       "title": "Python fun",
+      "path": "2008/06/13/python-fun.html",
       "month": 6,
       "year": 2008,
       "day": 13,
@@ -471,6 +538,7 @@
     },
     {
       "title": "80-20 rule",
+      "path": "2008/06/15/8020-rule.html",
       "month": 6,
       "year": 2008,
       "day": 15,
@@ -478,6 +546,7 @@
     },
     {
       "title": "temperature",
+      "path": "2008/06/22/temperature.html",
       "month": 6,
       "year": 2008,
       "day": 22,
@@ -485,6 +554,7 @@
     },
     {
       "title": "George Carlin - favorite clip",
+      "path": "2008/06/25/george-carlin-favorite-clip.html",
       "month": 6,
       "year": 2008,
       "day": 25,
@@ -492,6 +562,7 @@
     },
     {
       "title": "New connection with the past",
+      "path": "2008/07/27/new-connection-with-the-past.html",
       "month": 7,
       "year": 2008,
       "day": 27,
@@ -499,6 +570,7 @@
     },
     {
       "title": "OpenMoko photo tour",
+      "path": "2008/08/11/openmoko-photo-tour.html",
       "month": 8,
       "year": 2008,
       "day": 11,
@@ -506,6 +578,7 @@
     },
     {
       "title": "Visualizing source code",
+      "path": "2008/08/12/visualizing-source-code.html",
       "month": 8,
       "year": 2008,
       "day": 12,
@@ -513,6 +586,7 @@
     },
     {
       "title": "Script fun",
+      "path": "2008/08/24/script-fun.html",
       "month": 8,
       "year": 2008,
       "day": 24,
@@ -520,6 +594,7 @@
     },
     {
       "title": "Inkface - SVG based GUI design",
+      "path": "2008/09/08/inkface-svg-based-gui-design.html",
       "month": 9,
       "year": 2008,
       "day": 8,
@@ -527,6 +602,7 @@
     },
     {
       "title": "aus Berlin",
+      "path": "2008/09/15/aus-berlin.html",
       "month": 9,
       "year": 2008,
       "day": 15,
@@ -534,6 +610,7 @@
     },
     {
       "title": "Die Berlin-Affäre",
+      "path": "2008/09/22/die-berlinaffre.html",
       "month": 9,
       "year": 2008,
       "day": 22,
@@ -541,6 +618,7 @@
     },
     {
       "title": "Musical discovery of the week",
+      "path": "2008/09/27/musical-discovery-of-the-week.html",
       "month": 9,
       "year": 2008,
       "day": 27,
@@ -548,6 +626,7 @@
     },
     {
       "title": "Inkface v0.1",
+      "path": "2008/10/14/inkface-v01.html",
       "month": 10,
       "year": 2008,
       "day": 14,
@@ -555,6 +634,7 @@
     },
     {
       "title": "Has it started?",
+      "path": "2008/10/18/has-it-started.html",
       "month": 10,
       "year": 2008,
       "day": 18,
@@ -562,6 +642,7 @@
     },
     {
       "title": "Android opened - first looks inside",
+      "path": "2008/10/22/android-opened-first-looks-inside.html",
       "month": 10,
       "year": 2008,
       "day": 22,
@@ -569,6 +650,7 @@
     },
     {
       "title": "Migrating to Google App Engine",
+      "path": "2008/10/28/migrating-to-google-app-engine.html",
       "month": 10,
       "year": 2008,
       "day": 28,
@@ -576,6 +658,7 @@
     },
     {
       "title": "(k)ubuntu 8.10 - not ready for my home yet",
+      "path": "2008/10/30/kubuntu-810-not-ready-for-my-home-yet.html",
       "month": 10,
       "year": 2008,
       "day": 30,
@@ -583,6 +666,7 @@
     },
     {
       "title": "more fun with notify-send",
+      "path": "2008/11/12/more-fun-with-notifysend.html",
       "month": 11,
       "year": 2008,
       "day": 12,
@@ -590,6 +674,7 @@
     },
     {
       "title": "Digital SLR buyer's guide",
+      "path": "2008/11/18/digital-slr-buyers-guide.html",
       "month": 11,
       "year": 2008,
       "day": 18,
@@ -597,6 +682,7 @@
     },
     {
       "title": "Thanksgiving at Crater Lake",
+      "path": "2008/11/30/thanksgiving-at-crater-lake.html",
       "month": 11,
       "year": 2008,
       "day": 30,
@@ -604,6 +690,7 @@
     },
     {
       "title": "A great essay",
+      "path": "2008/12/03/a-great-essay.html",
       "month": 12,
       "year": 2008,
       "day": 3,
@@ -611,6 +698,7 @@
     },
     {
       "title": "Fedora 10 on MacBook 2,1",
+      "path": "2008/12/03/fedora-10-on-macbook-21.html",
       "month": 12,
       "year": 2008,
       "day": 3,
@@ -618,6 +706,7 @@
     },
     {
       "title": "Paul Graham nails it again!",
+      "path": "2008/12/06/paul-graham-nails-it-again.html",
       "month": 12,
       "year": 2008,
       "day": 6,
@@ -625,6 +714,7 @@
     },
     {
       "title": "Debugging python reference counts",
+      "path": "2008/12/20/debugging-python-reference-counts.html",
       "month": 12,
       "year": 2008,
       "day": 20,
@@ -632,6 +722,7 @@
     },
     {
       "title": "Inkface update",
+      "path": "2008/12/24/inkface-update.html",
       "month": 12,
       "year": 2008,
       "day": 24,
@@ -639,6 +730,7 @@
     },
     {
       "title": "Inkface v0.1.2, Twitter-inkface client",
+      "path": "2009/01/10/inkface-v012-twitterinkface-client.html",
       "month": 1,
       "year": 2009,
       "day": 10,
@@ -646,6 +738,7 @@
     },
     {
       "title": "Inkface + Clutter",
+      "path": "2009/01/12/inkface-clutter.html",
       "month": 1,
       "year": 2009,
       "day": 12,
@@ -653,6 +746,7 @@
     },
     {
       "title": "Debian repository on Google App Engine",
+      "path": "2009/01/13/debian-repository-on-google-app-engine.html",
       "month": 1,
       "year": 2009,
       "day": 13,
@@ -660,6 +754,7 @@
     },
     {
       "title": "Planning Inkface v0.2",
+      "path": "2009/02/01/planning-inkface-v02.html",
       "month": 2,
       "year": 2009,
       "day": 1,
@@ -667,6 +762,7 @@
     },
     {
       "title": "Turning a page",
+      "path": "2009/02/03/turning-a-page.html",
       "month": 2,
       "year": 2009,
       "day": 3,
@@ -674,6 +770,7 @@
     },
     {
       "title": "Clutter animation paths with Inkscape+Inkface (v0.1.3)",
+      "path": "2009/02/07/clutter-animation-paths-with-inkscapeinkface-v013.html",
       "month": 2,
       "year": 2009,
       "day": 7,
@@ -681,6 +778,7 @@
     },
     {
       "title": "Testing Android (Koolu Beta 3) on Openmoko Freerunner",
+      "path": "2009/02/13/testing-android-koolu-beta-3-on-openmoko-freerunner.html",
       "month": 2,
       "year": 2009,
       "day": 13,
@@ -688,6 +786,7 @@
     },
     {
       "title": "Inkface v0.2 update and automated GUI testing",
+      "path": "2009/02/14/inkface-v02-update-and-automated-gui-testing.html",
       "month": 2,
       "year": 2009,
       "day": 14,
@@ -695,6 +794,7 @@
     },
     {
       "title": "Smooth scrolling with Inkface+pygame",
+      "path": "2009/02/22/smooth-scrolling-with-inkfacepygame.html",
       "month": 2,
       "year": 2009,
       "day": 22,
@@ -702,6 +802,7 @@
     },
     {
       "title": "Inkface+pygame v0.2.0",
+      "path": "2009/02/25/inkfacepygame-v020.html",
       "month": 2,
       "year": 2009,
       "day": 25,
@@ -709,6 +810,7 @@
     },
     {
       "title": "Static IP configuration on Fedora 10",
+      "path": "2009/03/01/static-ip-configuration-on-fedora-10.html",
       "month": 3,
       "year": 2009,
       "day": 1,
@@ -716,6 +818,7 @@
     },
     {
       "title": "Frets on Fire on Maemo 5 (Fremantle)",
+      "path": "2009/03/04/frets-on-fire-on-maemo-5-fremantle.html",
       "month": 3,
       "year": 2009,
       "day": 4,
@@ -723,6 +826,7 @@
     },
     {
       "title": "Twitter client with inkface-pygame v0.2.2",
+      "path": "2009/03/12/twitter-client-with-inkfacepygame-v022.html",
       "month": 3,
       "year": 2009,
       "day": 12,
@@ -730,6 +834,7 @@
     },
     {
       "title": "FoF update",
+      "path": "2009/03/19/fof-update.html",
       "month": 3,
       "year": 2009,
       "day": 19,
@@ -737,6 +842,7 @@
     },
     {
       "title": "FoF - PyOpenGL = miniFoF (possibly for n810)",
+      "path": "2009/03/24/fof-pyopengl-minifof-possibly-for-n810.html",
       "month": 3,
       "year": 2009,
       "day": 24,
@@ -744,6 +850,7 @@
     },
     {
       "title": "easy source",
+      "path": "2009/04/08/easy-source.html",
       "month": 4,
       "year": 2009,
       "day": 8,
@@ -751,6 +858,7 @@
     },
     {
       "title": "Evas + Inkface in v0.2.5",
+      "path": "2009/04/13/evas-inkface-in-v025.html",
       "month": 4,
       "year": 2009,
       "day": 13,
@@ -758,6 +866,7 @@
     },
     {
       "title": "Preprocessing the GUI",
+      "path": "2009/04/17/preprocessing-the-gui.html",
       "month": 4,
       "year": 2009,
       "day": 17,
@@ -765,6 +874,7 @@
     },
     {
       "title": "Einstein's Dreams",
+      "path": "2009/05/04/einsteins-dreams.html",
       "month": 5,
       "year": 2009,
       "day": 4,
@@ -772,6 +882,7 @@
     },
     {
       "title": "Cutewit (preview)",
+      "path": "2009/05/19/cutewit-preview.html",
       "month": 5,
       "year": 2009,
       "day": 19,
@@ -779,6 +890,7 @@
     },
     {
       "title": "Android development with Vim + Eclim",
+      "path": "2009/05/29/android-development-with-vim-eclim.html",
       "month": 5,
       "year": 2009,
       "day": 29,
@@ -786,6 +898,7 @@
     },
     {
       "title": "using android AsyncTask",
+      "path": "2009/07/13/using-android-asynctask.html",
       "month": 7,
       "year": 2009,
       "day": 13,
@@ -793,6 +906,7 @@
     },
     {
       "title": "HTC Magic (Indian version) - expectations and facts",
+      "path": "2009/07/25/htc-magic-indian-version-expectations-and-facts.html",
       "month": 7,
       "year": 2009,
       "day": 25,
@@ -800,6 +914,7 @@
     },
     {
       "title": "Makeshift XML beautifier in python",
+      "path": "2009/08/07/makeshift-xml-beautifier-in-python.html",
       "month": 8,
       "year": 2009,
       "day": 7,
@@ -807,6 +922,7 @@
     },
     {
       "title": "Intercepting Up/Down keys from bash script",
+      "path": "2009/08/13/intercepting-updown-keys-from-bash-script.html",
       "month": 8,
       "year": 2009,
       "day": 13,
@@ -814,6 +930,7 @@
     },
     {
       "title": "ReaderScope beta1 is out",
+      "path": "2009/08/18/readerscope-beta1-is-out.html",
       "month": 8,
       "year": 2009,
       "day": 18,
@@ -821,6 +938,7 @@
     },
     {
       "title": "ReaderScope Beta2",
+      "path": "2009/08/20/readerscope-beta2.html",
       "month": 8,
       "year": 2009,
       "day": 20,
@@ -828,6 +946,7 @@
     },
     {
       "title": "ReaderScope beta3 - Tweet the news",
+      "path": "2009/08/23/readerscope-beta3-tweet-the-news.html",
       "month": 8,
       "year": 2009,
       "day": 23,
@@ -835,6 +954,7 @@
     },
     {
       "title": "ReaderScope beta4 - offline fun",
+      "path": "2009/08/26/readerscope-beta4-offline-fun.html",
       "month": 8,
       "year": 2009,
       "day": 26,
@@ -842,6 +962,7 @@
     },
     {
       "title": "Detecting HTC magic on Fedora",
+      "path": "2009/08/31/detecting-htc-magic-on-fedora.html",
       "month": 8,
       "year": 2009,
       "day": 31,
@@ -849,6 +970,7 @@
     },
     {
       "title": "ReaderScope 1.0",
+      "path": "2009/09/01/readerscope-10.html",
       "month": 9,
       "year": 2009,
       "day": 1,
@@ -856,6 +978,7 @@
     },
     {
       "title": "ReaderScope 1.0.1",
+      "path": "2009/09/03/readerscope-101.html",
       "month": 9,
       "year": 2009,
       "day": 3,
@@ -863,6 +986,7 @@
     },
     {
       "title": "ReaderScope 1.0.2 - making deep cache simple",
+      "path": "2009/09/07/readerscope-102-making-deep-cache-simple.html",
       "month": 9,
       "year": 2009,
       "day": 7,
@@ -870,6 +994,7 @@
     },
     {
       "title": "ReaderScope 1.1 - Social Beacons",
+      "path": "2009/09/12/readerscope-11-social-beacons.html",
       "month": 9,
       "year": 2009,
       "day": 12,
@@ -877,6 +1002,7 @@
     },
     {
       "title": "ReaderScope 1.1.1 quick-n-easy features",
+      "path": "2009/09/13/readerscope-111-quickneasy-features.html",
       "month": 9,
       "year": 2009,
       "day": 13,
@@ -884,6 +1010,7 @@
     },
     {
       "title": "ReaderScope 1.1.2",
+      "path": "2009/09/16/readerscope-112.html",
       "month": 9,
       "year": 2009,
       "day": 16,
@@ -891,6 +1018,7 @@
     },
     {
       "title": "Wifi and Battery",
+      "path": "2009/09/17/wifi-and-battery.html",
       "month": 9,
       "year": 2009,
       "day": 17,
@@ -898,6 +1026,7 @@
     },
     {
       "title": "Crash report for Android App",
+      "path": "2009/09/19/crash-report-for-android-app.html",
       "month": 9,
       "year": 2009,
       "day": 19,
@@ -905,6 +1034,7 @@
     },
     {
       "title": "ReaderScope 1.1.3 - SDCard storage",
+      "path": "2009/09/19/readerscope-113-sdcard-storage.html",
       "month": 9,
       "year": 2009,
       "day": 19,
@@ -912,6 +1042,7 @@
     },
     {
       "title": "ReaderScope v1.2",
+      "path": "2009/10/03/readerscope-v12.html",
       "month": 10,
       "year": 2009,
       "day": 3,
@@ -919,6 +1050,7 @@
     },
     {
       "title": "ReaderScope 1.2.1 - Auto Login",
+      "path": "2009/10/05/readerscope-121-auto-login.html",
       "month": 10,
       "year": 2009,
       "day": 5,
@@ -926,6 +1058,7 @@
     },
     {
       "title": "ReaderScope 1.2.3 - Search",
+      "path": "2009/10/10/readerscope-123-search.html",
       "month": 10,
       "year": 2009,
       "day": 10,
@@ -933,6 +1066,7 @@
     },
     {
       "title": "Sprint HTC Hero problems with ReaderScope",
+      "path": "2009/10/20/sprint-htc-hero-problems-with-readerscope.html",
       "month": 10,
       "year": 2009,
       "day": 20,
@@ -940,6 +1074,7 @@
     },
     {
       "title": "ReaderScope 1.2.7 - Podcasts, Expanded View",
+      "path": "2009/10/24/readerscope-127-podcasts-expanded-view.html",
       "month": 10,
       "year": 2009,
       "day": 24,
@@ -947,6 +1082,7 @@
     },
     {
       "title": "Frets on Fire for Maemo - Update",
+      "path": "2009/10/28/frets-on-fire-for-maemo-update.html",
       "month": 10,
       "year": 2009,
       "day": 28,
@@ -954,6 +1090,7 @@
     },
     {
       "title": "ReaderScope v1.3 - Beyond Google Reader",
+      "path": "2009/10/31/readerscope-v13-beyond-google-reader.html",
       "month": 10,
       "year": 2009,
       "day": 31,
@@ -961,6 +1098,7 @@
     },
     {
       "title": "ReaderScope v1.3.2 - Social Channels",
+      "path": "2009/11/07/readerscope-v132-social-channels.html",
       "month": 11,
       "year": 2009,
       "day": 7,
@@ -968,6 +1106,7 @@
     },
     {
       "title": "ReaderScope v1.3.3 - offline podcasts",
+      "path": "2009/11/12/readerscope-v133-offline-podcasts.html",
       "month": 11,
       "year": 2009,
       "day": 12,
@@ -975,6 +1114,7 @@
     },
     {
       "title": "The AND-OR problem of laptop and mobile phone",
+      "path": "2009/11/15/the-andor-problem-of-laptop-and-mobile-phone.html",
       "month": 11,
       "year": 2009,
       "day": 15,
@@ -982,6 +1122,7 @@
     },
     {
       "title": "Android AsyncTask template",
+      "path": "2009/11/19/android-asynctask-template.html",
       "month": 11,
       "year": 2009,
       "day": 19,
@@ -989,6 +1130,7 @@
     },
     {
       "title": "Black on White",
+      "path": "2009/11/20/black-on-white.html",
       "month": 11,
       "year": 2009,
       "day": 20,
@@ -996,6 +1138,7 @@
     },
     {
       "title": "On Chrome OS",
+      "path": "2009/11/20/on-chrome-os.html",
       "month": 11,
       "year": 2009,
       "day": 20,
@@ -1003,6 +1146,7 @@
     },
     {
       "title": "ReaderScope 1.4 (with a Theme Pack)",
+      "path": "2009/12/11/readerscope-14-with-a-theme-pack.html",
       "month": 12,
       "year": 2009,
       "day": 11,
@@ -1010,6 +1154,7 @@
     },
     {
       "title": "on Music: Battle Studies",
+      "path": "2009/12/14/on-music-battle-studies.html",
       "month": 12,
       "year": 2009,
       "day": 14,
@@ -1017,6 +1162,7 @@
     },
     {
       "title": "Is definition of \"Evil\" changing?",
+      "path": "2009/12/15/is-definition-of-evil-changing.html",
       "month": 12,
       "year": 2009,
       "day": 15,
@@ -1024,6 +1170,7 @@
     },
     {
       "title": "Preview android.R.drawable.* images",
+      "path": "2009/12/15/preview-androidrdrawable-images.html",
       "month": 12,
       "year": 2009,
       "day": 15,
@@ -1031,6 +1178,7 @@
     },
     {
       "title": "ReaderScope 1.5 - quicker, better, prettier",
+      "path": "2009/12/26/readerscope-15-quicker-better-prettier.html",
       "month": 12,
       "year": 2009,
       "day": 26,
@@ -1038,6 +1186,7 @@
     },
     {
       "title": "Talking Twitter client",
+      "path": "2009/12/29/talking-twitter-client.html",
       "month": 12,
       "year": 2009,
       "day": 29,
@@ -1045,6 +1194,7 @@
     },
     {
       "title": "Reality of colors",
+      "path": "2009/12/30/reality-of-colors.html",
       "month": 12,
       "year": 2009,
       "day": 30,
@@ -1052,6 +1202,7 @@
     },
     {
       "title": "Make Android speak your Twits with \"TwitSpeak\"",
+      "path": "2010/01/02/make-android-speak-your-twits-with-twitspeak.html",
       "month": 1,
       "year": 2010,
       "day": 2,
@@ -1059,6 +1210,7 @@
     },
     {
       "title": "Bono's top ten list",
+      "path": "2010/01/03/bonos-top-ten-list.html",
       "month": 1,
       "year": 2010,
       "day": 3,
@@ -1066,6 +1218,7 @@
     },
     {
       "title": "Anti Asserts",
+      "path": "2010/01/06/anti-asserts.html",
       "month": 1,
       "year": 2010,
       "day": 6,
@@ -1073,6 +1226,7 @@
     },
     {
       "title": "How to do an online IDE for Android app development",
+      "path": "2010/01/13/how-to-do-an-online-ide-for-android-app-development.html",
       "month": 1,
       "year": 2010,
       "day": 13,
@@ -1080,6 +1234,7 @@
     },
     {
       "title": "on Git: tips for SVN users and Git in Dropbox cloud",
+      "path": "2010/01/27/on-git-tips-for-svn-users-and-git-in-dropbox-cloud.html",
       "month": 1,
       "year": 2010,
       "day": 27,
@@ -1087,6 +1242,7 @@
     },
     {
       "title": "ReaderScope v1.7 - Widget, new Icons and .... Ads",
+      "path": "2010/01/28/readerscope-v17-widget-new-icons-and-ads.html",
       "month": 1,
       "year": 2010,
       "day": 28,
@@ -1094,6 +1250,7 @@
     },
     {
       "title": "iLikeIt",
+      "path": "2010/01/29/ilikeit.html",
       "month": 1,
       "year": 2010,
       "day": 29,
@@ -1101,6 +1258,7 @@
     },
     {
       "title": "on Dropbox",
+      "path": "2010/02/14/on-dropbox.html",
       "month": 2,
       "year": 2010,
       "day": 14,
@@ -1108,6 +1266,7 @@
     },
     {
       "title": "Android fragmentation : How big a deal is it?",
+      "path": "2010/02/26/android-fragmentation-how-big-a-deal-is-it.html",
       "month": 2,
       "year": 2010,
       "day": 26,
@@ -1115,6 +1274,7 @@
     },
     {
       "title": "ReaderScope 1.8 - Random",
+      "path": "2010/02/27/readerscope-18-random.html",
       "month": 2,
       "year": 2010,
       "day": 27,
@@ -1122,6 +1282,7 @@
     },
     {
       "title": "ReaderScope 1.8.1 - rethinking features",
+      "path": "2010/03/06/readerscope-181-rethinking-features.html",
       "month": 3,
       "year": 2010,
       "day": 6,
@@ -1129,6 +1290,7 @@
     },
     {
       "title": "Portable apps for iPhone, Android, Pre, n900 - Can Processing.js help?",
+      "path": "2010/03/09/portable-apps-for-iphone-android-pre-n900-can-processingjs-help.html",
       "month": 3,
       "year": 2010,
       "day": 9,
@@ -1136,6 +1298,7 @@
     },
     {
       "title": "ReaderScope 1.8.{2,3} - new authentication and global share",
+      "path": "2010/03/13/readerscope-1823-new-authentication-and-global-share.html",
       "month": 3,
       "year": 2010,
       "day": 13,
@@ -1143,6 +1306,7 @@
     },
     {
       "title": "@font-face-lift",
+      "path": "2010/03/15/fontfacelift.html",
       "month": 3,
       "year": 2010,
       "day": 15,
@@ -1150,6 +1314,7 @@
     },
     {
       "title": "New app \"Find Comments\"",
+      "path": "2010/03/17/new-app-find-comments.html",
       "month": 3,
       "year": 2010,
       "day": 17,
@@ -1157,6 +1322,7 @@
     },
     {
       "title": "ReaderScope 1.9 - OAuth",
+      "path": "2010/04/17/readerscope-19-oauth.html",
       "month": 4,
       "year": 2010,
       "day": 17,
@@ -1164,6 +1330,7 @@
     },
     {
       "title": "Are you the Matt Damon of your game?",
+      "path": "2010/04/18/are-you-the-matt-damon-of-your-game.html",
       "month": 4,
       "year": 2010,
       "day": 18,
@@ -1171,6 +1338,7 @@
     },
     {
       "title": "Mutt, Gmail, gdata, notify-send: A Perfect Email solution",
+      "path": "2010/04/27/mutt-gmail-gdata-notifysend-a-perfect-email-solution.html",
       "month": 4,
       "year": 2010,
       "day": 27,
@@ -1178,6 +1346,7 @@
     },
     {
       "title": "Why \"Open\" is not the first concern of user?",
+      "path": "2010/05/11/why-open-is-not-the-first-concern-of-user.html",
       "month": 5,
       "year": 2010,
       "day": 11,
@@ -1185,6 +1354,7 @@
     },
     {
       "title": "Tuxmac",
+      "path": "2010/05/29/tuxmac.html",
       "month": 5,
       "year": 2010,
       "day": 29,
@@ -1192,6 +1362,7 @@
     },
     {
       "title": "ReaderScope upcoming changes",
+      "path": "2010/06/02/readerscope-upcoming-changes.html",
       "month": 6,
       "year": 2010,
       "day": 2,
@@ -1199,6 +1370,7 @@
     },
     {
       "title": "predictably irrational",
+      "path": "2010/06/06/predictably-irrational.html",
       "month": 6,
       "year": 2010,
       "day": 6,
@@ -1206,6 +1378,7 @@
     },
     {
       "title": "ReaderScope 2.0",
+      "path": "2010/06/07/readerscope-20.html",
       "month": 6,
       "year": 2010,
       "day": 7,
@@ -1213,6 +1386,7 @@
     },
     {
       "title": "ReaderScope 2.0.6 - Find Comments",
+      "path": "2010/07/03/readerscope-206-find-comments.html",
       "month": 7,
       "year": 2010,
       "day": 3,
@@ -1220,6 +1394,7 @@
     },
     {
       "title": "Music sharing",
+      "path": "2010/07/06/music-sharing.html",
       "month": 7,
       "year": 2010,
       "day": 6,
@@ -1227,6 +1402,7 @@
     },
     {
       "title": "Indirect experiments",
+      "path": "2010/07/07/indirect-experiments.html",
       "month": 7,
       "year": 2010,
       "day": 7,
@@ -1234,6 +1410,7 @@
     },
     {
       "title": "Reality distortion field around",
+      "path": "2010/08/13/reality-distortion-field-around.html",
       "month": 8,
       "year": 2010,
       "day": 13,
@@ -1241,6 +1418,7 @@
     },
     {
       "title": "Silicon Valley and Hi-tech",
+      "path": "2010/10/05/silicon-valley-and-hitech.html",
       "month": 10,
       "year": 2010,
       "day": 5,
@@ -1248,6 +1426,7 @@
     },
     {
       "title": "Why don't they publish eBooks for free but with embedded ads?",
+      "path": "2010/10/07/why-dont-they-publish-ebooks-for-free-but-with-embedded-ads.html",
       "month": 10,
       "year": 2010,
       "day": 7,
@@ -1255,6 +1434,7 @@
     },
     {
       "title": "How to save HTML5 canvas image to Google App Engine",
+      "path": "2010/10/28/how-to-save-html5-canvas-image-to-google-app-engine.html",
       "month": 10,
       "year": 2010,
       "day": 28,
@@ -1262,6 +1442,7 @@
     },
     {
       "title": "Mac book red light audio jack problem on Linux",
+      "path": "2010/10/29/mac-book-red-light-audio-jack-problem-on-linux.html",
       "month": 10,
       "year": 2010,
       "day": 29,
@@ -1269,6 +1450,7 @@
     },
     {
       "title": "Why secure airports when it's planes that fly?",
+      "path": "2010/11/15/why-secure-airports-when-its-planes-that-fly.html",
       "month": 11,
       "year": 2010,
       "day": 15,
@@ -1276,6 +1458,7 @@
     },
     {
       "title": "Youtube ETA - Chrome extension",
+      "path": "2010/11/30/youtube-eta-chrome-extension.html",
       "month": 11,
       "year": 2010,
       "day": 30,
@@ -1283,6 +1466,7 @@
     },
     {
       "title": "Functional programming in Javascipt using Underscore.js",
+      "path": "2010/12/01/functional-programming-in-javascipt-using-underscorejs.html",
       "month": 12,
       "year": 2010,
       "day": 1,
@@ -1290,6 +1474,7 @@
     },
     {
       "title": "Discovering LastPass",
+      "path": "2010/12/19/discovering-lastpass.html",
       "month": 12,
       "year": 2010,
       "day": 19,
@@ -1297,6 +1482,7 @@
     },
     {
       "title": "How Wikipedia and Flattr can together change the World",
+      "path": "2011/01/06/how-wikipedia-and-flattr-can-together-change-the-world.html",
       "month": 1,
       "year": 2011,
       "day": 6,
@@ -1304,6 +1490,7 @@
     },
     {
       "title": "HTML5 offline cache - use swapCache carefully",
+      "path": "2011/01/08/html5-offline-cache-use-swapcache-carefully.html",
       "month": 1,
       "year": 2011,
       "day": 8,
@@ -1311,6 +1498,7 @@
     },
     {
       "title": "Lesser women in tech... So what?",
+      "path": "2011/01/19/lesser-women-in-tech-so-what.html",
       "month": 1,
       "year": 2011,
       "day": 19,
@@ -1318,6 +1506,7 @@
     },
     {
       "title": "Ever growing todo list is a good sign for creative projects",
+      "path": "2011/01/30/ever-growing-todo-list-is-a-good-sign-for-creative-projects.html",
       "month": 1,
       "year": 2011,
       "day": 30,
@@ -1325,6 +1514,7 @@
     },
     {
       "title": "JavaScript is the next C",
+      "path": "2011/02/04/javascript-is-the-next-c.html",
       "month": 2,
       "year": 2011,
       "day": 4,
@@ -1332,6 +1522,7 @@
     },
     {
       "title": "Truce with exercise",
+      "path": "2011/02/14/truce-with-exercise.html",
       "month": 2,
       "year": 2011,
       "day": 14,
@@ -1339,6 +1530,7 @@
     },
     {
       "title": "Why the hi-tech minds are writing Social apps?",
+      "path": "2011/02/21/why-the-hitech-minds-are-writing-social-apps.html",
       "month": 2,
       "year": 2011,
       "day": 21,
@@ -1346,6 +1538,7 @@
     },
     {
       "title": "Don't label yourself",
+      "path": "2011/02/24/dont-label-yourself.html",
       "month": 2,
       "year": 2011,
       "day": 24,
@@ -1353,6 +1546,7 @@
     },
     {
       "title": "Elon Musk quote",
+      "path": "2011/04/29/elon-musk-quote.html",
       "month": 4,
       "year": 2011,
       "day": 29,
@@ -1360,6 +1554,7 @@
     },
     {
       "title": "Why can't I criticize Government if I don't vote? I sure can.",
+      "path": "2011/06/12/why-cant-i-criticize-government-if-i-dont-vote-i-sure-can.html",
       "month": 6,
       "year": 2011,
       "day": 12,
@@ -1367,6 +1562,7 @@
     },
     {
       "title": "How to debug WebWorker threads?",
+      "path": "2011/08/16/how-to-debug-webworker-threads.html",
       "month": 8,
       "year": 2011,
       "day": 16,
@@ -1374,6 +1570,7 @@
     },
     {
       "title": "It's not fair to compare Android with Internet Explorer",
+      "path": "2011/08/18/its-not-fair-to-compare-android-with-internet-explorer.html",
       "month": 8,
       "year": 2011,
       "day": 18,
@@ -1381,6 +1578,7 @@
     },
     {
       "title": "How to print stack trace anywhere in Javascript",
+      "path": "2011/08/20/how-to-print-stack-trace-anywhere-in-javascript.html",
       "month": 8,
       "year": 2011,
       "day": 20,
@@ -1388,6 +1586,7 @@
     },
     {
       "title": "Why OpenGL ES is so hard?",
+      "path": "2011/08/26/why-opengl-es-is-so-hard.html",
       "month": 8,
       "year": 2011,
       "day": 26,
@@ -1395,6 +1594,7 @@
     },
     {
       "title": "The Gods Themselves by Isaac Asimov",
+      "path": "2011/08/28/the-gods-themselves-by-isaac-asimov.html",
       "month": 8,
       "year": 2011,
       "day": 28,
@@ -1402,6 +1602,7 @@
     },
     {
       "title": "How to write interactive CLI utility in node.js",
+      "path": "2011/09/22/how-to-write-interactive-cli-utility-in-nodejs.html",
       "month": 9,
       "year": 2011,
       "day": 22,
@@ -1409,6 +1610,7 @@
     },
     {
       "title": "Master pieces from screen",
+      "path": "2011/11/27/master-pieces-from-screen.html",
       "month": 11,
       "year": 2011,
       "day": 27,
@@ -1416,6 +1618,7 @@
     },
     {
       "title": "Why we need to explore Seasteading?",
+      "path": "2012/01/02/why-we-need-to-explore-seasteading.html",
       "month": 1,
       "year": 2012,
       "day": 2,
@@ -1423,6 +1626,7 @@
     },
     {
       "title": "Good essay on user centric software design",
+      "path": "2012/03/18/good-essay-on-user-centric-software-design.html",
       "month": 3,
       "year": 2012,
       "day": 18,
@@ -1430,6 +1634,7 @@
     },
     {
       "title": "iTunes Download stopped (err =9006)",
+      "path": "2012/03/31/itunes-download-stopped-err-9006.html",
       "month": 3,
       "year": 2012,
       "day": 31,
@@ -1437,6 +1642,7 @@
     },
     {
       "title": "Google Lunar X Prize",
+      "path": "2012/04/20/google-lunar-x-prize.html",
       "month": 4,
       "year": 2012,
       "day": 20,
@@ -1444,6 +1650,7 @@
     },
     {
       "title": "Rolling back latest git commit",
+      "path": "2012/05/17/rolling-back-latest-git-commit.html",
       "month": 5,
       "year": 2012,
       "day": 17,
@@ -1451,6 +1658,7 @@
     },
     {
       "title": "Prometheus",
+      "path": "2012/06/10/prometheus.html",
       "month": 6,
       "year": 2012,
       "day": 10,
@@ -1458,6 +1666,7 @@
     },
     {
       "title": "Why sea steading is important to pursue?",
+      "path": "2012/06/10/why-sea-steading-is-important-to-pursue.html",
       "month": 6,
       "year": 2012,
       "day": 10,
@@ -1465,6 +1674,7 @@
     },
     {
       "title": "Why Patriotism doesn't make sense",
+      "path": "2012/06/18/why-patriotism-doesnt-make-sense.html",
       "month": 6,
       "year": 2012,
       "day": 18,
@@ -1472,6 +1682,7 @@
     },
     {
       "title": "Kelsey Grammer is spectacular",
+      "path": "2012/07/30/kelsey-grammer-is-spectacular.html",
       "month": 7,
       "year": 2012,
       "day": 30,
@@ -1479,6 +1690,7 @@
     },
     {
       "title": "Online courses - New technology, Old rules",
+      "path": "2012/08/18/online-courses-new-technology-old-rules.html",
       "month": 8,
       "year": 2012,
       "day": 18,
@@ -1486,6 +1698,7 @@
     },
     {
       "title": "Something like Olivia - John Mayer",
+      "path": "2012/10/04/something-like-olivia-john-mayer.html",
       "month": 10,
       "year": 2012,
       "day": 4,
@@ -1493,6 +1706,7 @@
     },
     {
       "title": "When your git branch diverges from your remote",
+      "path": "2012/10/11/when-your-git-branch-diverges-from-your-remote.html",
       "month": 10,
       "year": 2012,
       "day": 11,
@@ -1500,6 +1714,7 @@
     },
     {
       "title": "Time travel fiction",
+      "path": "2012/11/18/time-travel-fiction.html",
       "month": 11,
       "year": 2012,
       "day": 18,
@@ -1507,6 +1722,7 @@
     },
     {
       "title": "The single most reason that keeps me using Vim",
+      "path": "2012/11/23/the-single-most-reason-that-keeps-me-using-vim.html",
       "month": 11,
       "year": 2012,
       "day": 23,
@@ -1514,6 +1730,7 @@
     },
     {
       "title": "Water from air",
+      "path": "2012/11/23/water-from-air.html",
       "month": 11,
       "year": 2012,
       "day": 23,
@@ -1521,6 +1738,7 @@
     },
     {
       "title": "Coffeescript: To switch or not to switch",
+      "path": "2012/11/24/coffeescript-to-switch-or-not-to-switch.html",
       "month": 11,
       "year": 2012,
       "day": 24,
@@ -1528,6 +1746,7 @@
     },
     {
       "title": "Something's missing",
+      "path": "2013/04/11/somethings-missing.html",
       "month": 4,
       "year": 2013,
       "day": 11,
@@ -1535,6 +1754,7 @@
     },
     {
       "title": "Software Engineering Code of Ethics and Professional Practice",
+      "path": "2013/12/01/software-engg-code-of-ethics-and-prof-practice.html",
       "month": 12,
       "year": 2013,
       "day": 1,
@@ -1542,6 +1762,7 @@
     },
     {
       "title": "New rules for Formula 1",
+      "path": "2013/12/03/new-rules-for-formula-1.html",
       "month": 12,
       "year": 2013,
       "day": 3,
@@ -1549,6 +1770,7 @@
     },
     {
       "title": "Uruguay's President",
+      "path": "2013/12/14/uruguay-president.html",
       "month": 12,
       "year": 2013,
       "day": 14,
@@ -1556,6 +1778,7 @@
     },
     {
       "title": "Conned?!",
+      "path": "2014/04/06/conned.html",
       "month": 4,
       "year": 2014,
       "day": 6,
@@ -1563,6 +1786,7 @@
     },
     {
       "title": "Quotable Quotes",
+      "path": "2014/11/11/quotable-quotes.html",
       "month": 11,
       "year": 2014,
       "day": 11,
@@ -1570,6 +1794,7 @@
     },
     {
       "title": "Podcasts Français",
+      "path": "2015/02/21/podcasts-francaise.html",
       "month": 2,
       "year": 2015,
       "day": 21,
@@ -1577,6 +1802,7 @@
     },
     {
       "title": "No Exams, Yes Video games",
+      "path": "2015/06/17/no-exams-yes-video-games.html",
       "month": 6,
       "year": 2015,
       "day": 17,
@@ -1584,6 +1810,7 @@
     },
     {
       "title": "Before fixing performance issues",
+      "path": "2015/08/25/before-fixing-performance-issues.html",
       "month": 8,
       "year": 2015,
       "day": 25,
@@ -1591,6 +1818,7 @@
     },
     {
       "title": "The \"Having done\" attitude",
+      "path": "2016/04/23/having-done-attitude.html",
       "month": 4,
       "year": 2016,
       "day": 23,
@@ -1598,6 +1826,7 @@
     },
     {
       "title": "Road Trip of Atlantic Canada",
+      "path": "2016/06/30/road-trip-atlantic-canada.html",
       "month": 6,
       "year": 2016,
       "day": 30,
@@ -1605,6 +1834,7 @@
     },
     {
       "title": "The flying cars analogy",
+      "path": "2016/10/08/the-flying-cars-analogy.html",
       "month": 10,
       "year": 2016,
       "day": 8,
@@ -1612,6 +1842,7 @@
     },
     {
       "title": "The Entanglement Pattern",
+      "path": "2016/10/09/the-entanglement-pattern.html",
       "month": 10,
       "year": 2016,
       "day": 9,
@@ -1619,6 +1850,7 @@
     },
     {
       "title": "Don't Panic",
+      "path": "2016/11/11/dont-panic.html",
       "month": 11,
       "year": 2016,
       "day": 11,
@@ -1626,6 +1858,7 @@
     },
     {
       "title": "Project Dialog",
+      "path": "2017/01/20/project-dialog.html",
       "month": 1,
       "year": 2017,
       "day": 20,
@@ -1633,6 +1866,7 @@
     },
     {
       "title": "Why Electron is the best development platform?",
+      "path": "2017/01/31/why-electron-is-best-platform-for-dev.html",
       "month": 1,
       "year": 2017,
       "day": 31,
@@ -1640,6 +1874,7 @@
     },
     {
       "title": "Review : Ghost In The Shell - The blinds scene",
+      "path": "2017/11/28/review-ghost-in-the-shell.html",
       "month": 11,
       "year": 2017,
       "day": 28,
@@ -1647,6 +1882,7 @@
     },
     {
       "title": "Game Design tip for Programmers - Less Automation",
+      "path": "2017/12/15/game-design-tip-1.html",
       "month": 12,
       "year": 2017,
       "day": 15,
@@ -1654,6 +1890,7 @@
     },
     {
       "title": "How to consume media",
+      "path": "2017/12/18/collecting-vs-hoarding-netflix.html",
       "month": 12,
       "year": 2017,
       "day": 18,
@@ -1661,6 +1898,7 @@
     },
     {
       "title": "Why gamers like pixelated games",
+      "path": "2018/01/03/why-gamers-like-pixelated-games.html",
       "month": 1,
       "year": 2018,
       "day": 3,
@@ -1668,6 +1906,7 @@
     },
     {
       "title": "Vipassana Meditation",
+      "path": "2018/05/08/vipassana-meditation.html",
       "month": 5,
       "year": 2018,
       "day": 8,
@@ -1675,6 +1914,7 @@
     },
     {
       "title": "Violet end of spectrum",
+      "path": "2018/05/22/violet-end-of-spectrum.html",
       "month": 5,
       "year": 2018,
       "day": 22,
@@ -1682,6 +1922,7 @@
     },
     {
       "title": "Playing games, Doing Mathematics",
+      "path": "2018/11/22/games-and-math.html",
       "month": 11,
       "year": 2018,
       "day": 22,
@@ -1689,6 +1930,7 @@
     },
     {
       "title": "Insanity and Software",
+      "path": "2018/12/05/insanity-and-software.html",
       "month": 12,
       "year": 2018,
       "day": 5,
@@ -1696,6 +1938,7 @@
     },
     {
       "title": "Bicycle Pedals",
+      "path": "2018/12/07/vehicle-interface.html",
       "month": 12,
       "year": 2018,
       "day": 7,
@@ -1703,6 +1946,7 @@
     },
     {
       "title": "Lessons for Game designers from \"Structure of Scientific Revolutions\"",
+      "path": "2018/12/08/lessons-game-designers-sosr.html",
       "month": 12,
       "year": 2018,
       "day": 8,
@@ -1710,6 +1954,7 @@
     },
     {
       "title": "Dimensions of Idea communication",
+      "path": "2019/01/04/dimensions-of-idea-communication.html",
       "month": 1,
       "year": 2019,
       "day": 4,
@@ -1717,6 +1962,7 @@
     },
     {
       "title": "Types of Art",
+      "path": "2019/01/05/types-of-art.html",
       "month": 1,
       "year": 2019,
       "day": 5,

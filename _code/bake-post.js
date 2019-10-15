@@ -57,6 +57,7 @@ function bakePost(mdFilepath, blogIndex) {
   let dayStr = match[3];
   let dashedPostName = match[4];
 
+
   let dateString = months[month-1]+" "+parseInt(dayStr)+", "+yearStr;
 
   // Extract title of the post
@@ -74,16 +75,6 @@ function bakePost(mdFilepath, blogIndex) {
         bodyStart = true;
       }
     }
-  }
-
-  if(blogIndex != null) {
-    blogIndex.posts.push({
-      title : postTitle,
-      month : month,
-      year : parseInt(yearStr),
-      day : parseInt(dayStr),
-      tags : []
-    });
   }
 
   // Load templates
@@ -115,6 +106,16 @@ function bakePost(mdFilepath, blogIndex) {
   }
   outpath += path.sep+dashedPostName+".html";
 
+  if(blogIndex != null) {
+    blogIndex.posts.push({
+      title : postTitle,
+      path : outpath,
+      month : month,
+      year : parseInt(yearStr),
+      day : parseInt(dayStr),
+      tags : []
+    });
+  }
   fs.writeFileSync(outpath, postHead+"\n"+postBody);
 
   console.log("Output html: "+outpath);
