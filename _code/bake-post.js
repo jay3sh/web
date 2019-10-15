@@ -6,6 +6,7 @@ const months = [
   'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
 ];
 
+
 if(process.argv.length < 3) {
   console.error("Missing input filepath");
   process.exit(0);
@@ -18,22 +19,22 @@ if(!fs.existsSync(filepath)) {
 }
 
 if(fs.lstatSync(filepath).isDirectory()) {
+
+  let blogIndex = {
+    posts : []
+  };
   let filepaths = fs.readdirSync(filepath);
   for(let fname of filepaths) {
-    bakePost(filepath+path.sep+fname);
+    bakePost(filepath+path.sep+fname, blogIndex);
   }
+
+  fs.writeFileSync("blogindex.json", JSON.stringify(blogIndex,null,2));
+
 } else {
   bakePost(filepath);
 }
 
-function bakePost(mdFilepath) {
-
-
-  // Open template files
-  let postHeadTemplate = fs.readFileSync("post-head-template.html").toString();
-  let postBodyTemplate = fs.readFileSync("post-body-template.html").toString();
-
-  let mdInput = fs.readFileSync(mdFilepath).toString();
+function bakePost(mdFilepath, blogIndex) {
 
   // Parse post mdFilepath and deduce it's date
   let lastSlashIndex = mdFilepath.lastIndexOf("/");
@@ -41,9 +42,13 @@ function bakePost(mdFilepath) {
   let regex = /^(\d+)-(\d+)-(\d+)-([a-zA-Z0-9\-]+)/;
 
   if(!regex.test(filename)) {
-    console.error("Filename has wrong format");
-    process.exit(0);
+    console.log("Ignoring: "+filename);
+    return;
   }
+
+  // Open template files
+
+  let mdInput = fs.readFileSync(mdFilepath).toString();
 
   let match = regex.exec(filename);
   let yearStr = match[1];
@@ -70,6 +75,20 @@ function bakePost(mdFilepath) {
       }
     }
   }
+
+  if(blogIndex != null) {
+    blogIndex.posts.push({
+      title : postTitle,
+      month : month,
+      year : parseInt(yearStr),
+      day : parseInt(dayStr),
+      tags : []
+    });
+  }
+
+  // Load templates
+  let postHeadTemplate = fs.readFileSync("post-head-template.html").toString();
+  let postBodyTemplate = fs.readFileSync("post-body-template.html").toString();
 
   // Generate html from markdown
   let converter = new showdown.Converter();
