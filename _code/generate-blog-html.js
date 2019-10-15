@@ -1,11 +1,12 @@
+const fs = require("fs");
 
-window.onload = function() {
-  var postlistElem = $('#postlist');
-  console.log(postlist);
-  jQuery.getJSON("blogindex.json",function(blogIndex){
-    for(var post of blogIndex.posts) {
-      var html = '<div><a href="'+post.path+'">'+post.title+'</a></div>';
-      postlistElem.append(html);
-    }
-  });
+let blogIndex = JSON.parse(fs.readFileSync("blogindex.json").toString());
+let postListHtml = "";
+for(var post of blogIndex.posts) {
+  postListHtml += '<div><a href="'+post.path+'">'+post.title+'</a></div>';
 }
+
+let blogTemplate = fs.readFileSync("blog-template.html").toString();
+let htmlOutput = blogTemplate.replace("$POST_LIST",postListHtml);
+
+fs.writeFileSync("blog.html",htmlOutput);
