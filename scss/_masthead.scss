@@ -22,7 +22,7 @@ header.masthead {
     padding: 100px 0 60px;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 40px 0;
+      padding: 100px 0 40px;
     }
   }
   .page-heading,
@@ -72,7 +72,7 @@ header.masthead {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 55px;
+        font-size: 35px;
       }
       .subheading {
         font-size: 30px;
