@@ -1,0 +1,1726 @@
+{
+  "posts": [
+    {
+      "title": "printStackTrace",
+      "month": 8,
+      "year": 2004,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "Make problem solved",
+      "month": 1,
+      "year": 2005,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "Installed HURD console",
+      "month": 1,
+      "year": 2005,
+      "day": 9,
+      "tags": []
+    },
+    {
+      "title": "Stumbled on HURD",
+      "month": 1,
+      "year": 2005,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "GRUBing",
+      "month": 2,
+      "year": 2005,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "L4Linux update",
+      "month": 2,
+      "year": 2005,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "Not much on L4 front",
+      "month": 3,
+      "year": 2005,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "Warning: const is a keyword in ANSI C",
+      "month": 3,
+      "year": 2005,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "DirectX Installation Problem",
+      "month": 3,
+      "year": 2005,
+      "day": 31,
+      "tags": []
+    },
+    {
+      "title": "Halo fixed on ATI Mobility Radeon 9000",
+      "month": 4,
+      "year": 2005,
+      "day": 16,
+      "tags": []
+    },
+    {
+      "title": "repeat (ps | grep) = filtered top  ",
+      "month": 5,
+      "year": 2005,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "GCC 2.95 rpms",
+      "month": 5,
+      "year": 2005,
+      "day": 9,
+      "tags": []
+    },
+    {
+      "title": "Quotes",
+      "month": 5,
+      "year": 2005,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Back to the L4",
+      "month": 5,
+      "year": 2005,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "Safari Bookshelf",
+      "month": 1,
+      "year": 2006,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "New blog",
+      "month": 1,
+      "year": 2006,
+      "day": 16,
+      "tags": []
+    },
+    {
+      "title": "VI - A capable IDE",
+      "month": 1,
+      "year": 2006,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "Henry Ford",
+      "month": 3,
+      "year": 2006,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Gentoo, XGL, HGG",
+      "month": 4,
+      "year": 2006,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "If Harry Potter were a computer hacker ...",
+      "month": 4,
+      "year": 2006,
+      "day": 23,
+      "tags": []
+    },
+    {
+      "title": "Troy",
+      "month": 5,
+      "year": 2006,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "Why do we like fiction?",
+      "month": 8,
+      "year": 2006,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "Programming & Painting",
+      "month": 8,
+      "year": 2006,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Hilarious nerd comment",
+      "month": 8,
+      "year": 2006,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "Another nice quote",
+      "month": 9,
+      "year": 2006,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "Gas prices... seems like big scam",
+      "month": 11,
+      "year": 2006,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Stranger than fiction",
+      "month": 11,
+      "year": 2006,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "How do I backup to Amazon S3 storage service",
+      "month": 11,
+      "year": 2006,
+      "day": 21,
+      "tags": []
+    },
+    {
+      "title": "What I read...",
+      "month": 12,
+      "year": 2006,
+      "day": 2,
+      "tags": []
+    },
+    {
+      "title": "across two hours",
+      "month": 12,
+      "year": 2006,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "Trip videos",
+      "month": 3,
+      "year": 2007,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Sea surfing under the Golden Gate",
+      "month": 3,
+      "year": 2007,
+      "day": 23,
+      "tags": []
+    },
+    {
+      "title": "\"from time import sleep\"",
+      "month": 4,
+      "year": 2007,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "quotes from George Carlin",
+      "month": 5,
+      "year": 2007,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Story of a random number",
+      "month": 6,
+      "year": 2007,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Once again... a quote from 'Troy'",
+      "month": 6,
+      "year": 2007,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "Nice review article on virtualization technologies",
+      "month": 6,
+      "year": 2007,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "The \"Screen\"",
+      "month": 7,
+      "year": 2007,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "next desktop jump",
+      "month": 8,
+      "year": 2007,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "formula of a horror movie",
+      "month": 10,
+      "year": 2007,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "coding Monalisa",
+      "month": 10,
+      "year": 2007,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "best effort technologies",
+      "month": 10,
+      "year": 2007,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "XML RPC server inside apache mod_python",
+      "month": 11,
+      "year": 2007,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "Firefox 3 is brilliant!!!",
+      "month": 11,
+      "year": 2007,
+      "day": 21,
+      "tags": []
+    },
+    {
+      "title": "Colbie Caillat",
+      "month": 11,
+      "year": 2007,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "Picasso",
+      "month": 12,
+      "year": 2007,
+      "day": 16,
+      "tags": []
+    },
+    {
+      "title": "cool n770 hack",
+      "month": 12,
+      "year": 2007,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "Blog from nokia tablets",
+      "month": 1,
+      "year": 2008,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "two great videos",
+      "month": 1,
+      "year": 2008,
+      "day": 9,
+      "tags": []
+    },
+    {
+      "title": "OpenMoko, Android and a great hacking post",
+      "month": 1,
+      "year": 2008,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "OSiM USA 2008, see you there",
+      "month": 2,
+      "year": 2008,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Gr8 commercial",
+      "month": 2,
+      "year": 2008,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Google code",
+      "month": 2,
+      "year": 2008,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "OSiM USA 2008 - Day 1",
+      "month": 3,
+      "year": 2008,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "OSiM USA 2008 - Day 2",
+      "month": 3,
+      "year": 2008,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Clutter Webkit",
+      "month": 3,
+      "year": 2008,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "Accelerometer brainstorming",
+      "month": 3,
+      "year": 2008,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "Cringely and Paul Graham",
+      "month": 4,
+      "year": 2008,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "Flickr uploads from n810",
+      "month": 4,
+      "year": 2008,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Ubuntu reviewed",
+      "month": 4,
+      "year": 2008,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "Lions for Lambs",
+      "month": 5,
+      "year": 2008,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "Cost of Open Source",
+      "month": 5,
+      "year": 2008,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Today's slashdot and open source",
+      "month": 5,
+      "year": 2008,
+      "day": 25,
+      "tags": []
+    },
+    {
+      "title": "\"Wine\" tasting",
+      "month": 5,
+      "year": 2008,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "Of games",
+      "month": 6,
+      "year": 2008,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "OSiM'08 Berlin, Germany",
+      "month": 6,
+      "year": 2008,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Python fun",
+      "month": 6,
+      "year": 2008,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "80-20 rule",
+      "month": 6,
+      "year": 2008,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "temperature",
+      "month": 6,
+      "year": 2008,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "George Carlin - favorite clip",
+      "month": 6,
+      "year": 2008,
+      "day": 25,
+      "tags": []
+    },
+    {
+      "title": "New connection with the past",
+      "month": 7,
+      "year": 2008,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "OpenMoko photo tour",
+      "month": 8,
+      "year": 2008,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "Visualizing source code",
+      "month": 8,
+      "year": 2008,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "Script fun",
+      "month": 8,
+      "year": 2008,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "Inkface - SVG based GUI design",
+      "month": 9,
+      "year": 2008,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "aus Berlin",
+      "month": 9,
+      "year": 2008,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "Die Berlin-Affäre",
+      "month": 9,
+      "year": 2008,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Musical discovery of the week",
+      "month": 9,
+      "year": 2008,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "Inkface v0.1",
+      "month": 10,
+      "year": 2008,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Has it started?",
+      "month": 10,
+      "year": 2008,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "Android opened - first looks inside",
+      "month": 10,
+      "year": 2008,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Migrating to Google App Engine",
+      "month": 10,
+      "year": 2008,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "(k)ubuntu 8.10 - not ready for my home yet",
+      "month": 10,
+      "year": 2008,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "more fun with notify-send",
+      "month": 11,
+      "year": 2008,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "Digital SLR buyer's guide",
+      "month": 11,
+      "year": 2008,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "Thanksgiving at Crater Lake",
+      "month": 11,
+      "year": 2008,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "A great essay",
+      "month": 12,
+      "year": 2008,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Fedora 10 on MacBook 2,1",
+      "month": 12,
+      "year": 2008,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Paul Graham nails it again!",
+      "month": 12,
+      "year": 2008,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "Debugging python reference counts",
+      "month": 12,
+      "year": 2008,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "Inkface update",
+      "month": 12,
+      "year": 2008,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "Inkface v0.1.2, Twitter-inkface client",
+      "month": 1,
+      "year": 2009,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Inkface + Clutter",
+      "month": 1,
+      "year": 2009,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "Debian repository on Google App Engine",
+      "month": 1,
+      "year": 2009,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Planning Inkface v0.2",
+      "month": 2,
+      "year": 2009,
+      "day": 1,
+      "tags": []
+    },
+    {
+      "title": "Turning a page",
+      "month": 2,
+      "year": 2009,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Clutter animation paths with Inkscape+Inkface (v0.1.3)",
+      "month": 2,
+      "year": 2009,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "Testing Android (Koolu Beta 3) on Openmoko Freerunner",
+      "month": 2,
+      "year": 2009,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Inkface v0.2 update and automated GUI testing",
+      "month": 2,
+      "year": 2009,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Smooth scrolling with Inkface+pygame",
+      "month": 2,
+      "year": 2009,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Inkface+pygame v0.2.0",
+      "month": 2,
+      "year": 2009,
+      "day": 25,
+      "tags": []
+    },
+    {
+      "title": "Static IP configuration on Fedora 10",
+      "month": 3,
+      "year": 2009,
+      "day": 1,
+      "tags": []
+    },
+    {
+      "title": "Frets on Fire on Maemo 5 (Fremantle)",
+      "month": 3,
+      "year": 2009,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "Twitter client with inkface-pygame v0.2.2",
+      "month": 3,
+      "year": 2009,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "FoF update",
+      "month": 3,
+      "year": 2009,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "FoF - PyOpenGL = miniFoF (possibly for n810)",
+      "month": 3,
+      "year": 2009,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "easy source",
+      "month": 4,
+      "year": 2009,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Evas + Inkface in v0.2.5",
+      "month": 4,
+      "year": 2009,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Preprocessing the GUI",
+      "month": 4,
+      "year": 2009,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "Einstein's Dreams",
+      "month": 5,
+      "year": 2009,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "Cutewit (preview)",
+      "month": 5,
+      "year": 2009,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "Android development with Vim + Eclim",
+      "month": 5,
+      "year": 2009,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "using android AsyncTask",
+      "month": 7,
+      "year": 2009,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "HTC Magic (Indian version) - expectations and facts",
+      "month": 7,
+      "year": 2009,
+      "day": 25,
+      "tags": []
+    },
+    {
+      "title": "Makeshift XML beautifier in python",
+      "month": 8,
+      "year": 2009,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "Intercepting Up/Down keys from bash script",
+      "month": 8,
+      "year": 2009,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope beta1 is out",
+      "month": 8,
+      "year": 2009,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope Beta2",
+      "month": 8,
+      "year": 2009,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope beta3 - Tweet the news",
+      "month": 8,
+      "year": 2009,
+      "day": 23,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope beta4 - offline fun",
+      "month": 8,
+      "year": 2009,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "Detecting HTC magic on Fedora",
+      "month": 8,
+      "year": 2009,
+      "day": 31,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.0",
+      "month": 9,
+      "year": 2009,
+      "day": 1,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.0.1",
+      "month": 9,
+      "year": 2009,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.0.2 - making deep cache simple",
+      "month": 9,
+      "year": 2009,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.1 - Social Beacons",
+      "month": 9,
+      "year": 2009,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.1.1 quick-n-easy features",
+      "month": 9,
+      "year": 2009,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.1.2",
+      "month": 9,
+      "year": 2009,
+      "day": 16,
+      "tags": []
+    },
+    {
+      "title": "Wifi and Battery",
+      "month": 9,
+      "year": 2009,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "Crash report for Android App",
+      "month": 9,
+      "year": 2009,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.1.3 - SDCard storage",
+      "month": 9,
+      "year": 2009,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope v1.2",
+      "month": 10,
+      "year": 2009,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.2.1 - Auto Login",
+      "month": 10,
+      "year": 2009,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.2.3 - Search",
+      "month": 10,
+      "year": 2009,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Sprint HTC Hero problems with ReaderScope",
+      "month": 10,
+      "year": 2009,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.2.7 - Podcasts, Expanded View",
+      "month": 10,
+      "year": 2009,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "Frets on Fire for Maemo - Update",
+      "month": 10,
+      "year": 2009,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope v1.3 - Beyond Google Reader",
+      "month": 10,
+      "year": 2009,
+      "day": 31,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope v1.3.2 - Social Channels",
+      "month": 11,
+      "year": 2009,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope v1.3.3 - offline podcasts",
+      "month": 11,
+      "year": 2009,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "The AND-OR problem of laptop and mobile phone",
+      "month": 11,
+      "year": 2009,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "Android AsyncTask template",
+      "month": 11,
+      "year": 2009,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "Black on White",
+      "month": 11,
+      "year": 2009,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "On Chrome OS",
+      "month": 11,
+      "year": 2009,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.4 (with a Theme Pack)",
+      "month": 12,
+      "year": 2009,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "on Music: Battle Studies",
+      "month": 12,
+      "year": 2009,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Is definition of \"Evil\" changing?",
+      "month": 12,
+      "year": 2009,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "Preview android.R.drawable.* images",
+      "month": 12,
+      "year": 2009,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.5 - quicker, better, prettier",
+      "month": 12,
+      "year": 2009,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "Talking Twitter client",
+      "month": 12,
+      "year": 2009,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "Reality of colors",
+      "month": 12,
+      "year": 2009,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "Make Android speak your Twits with \"TwitSpeak\"",
+      "month": 1,
+      "year": 2010,
+      "day": 2,
+      "tags": []
+    },
+    {
+      "title": "Bono's top ten list",
+      "month": 1,
+      "year": 2010,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Anti Asserts",
+      "month": 1,
+      "year": 2010,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "How to do an online IDE for Android app development",
+      "month": 1,
+      "year": 2010,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "on Git: tips for SVN users and Git in Dropbox cloud",
+      "month": 1,
+      "year": 2010,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope v1.7 - Widget, new Icons and .... Ads",
+      "month": 1,
+      "year": 2010,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "iLikeIt",
+      "month": 1,
+      "year": 2010,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "on Dropbox",
+      "month": 2,
+      "year": 2010,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Android fragmentation : How big a deal is it?",
+      "month": 2,
+      "year": 2010,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.8 - Random",
+      "month": 2,
+      "year": 2010,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.8.1 - rethinking features",
+      "month": 3,
+      "year": 2010,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "Portable apps for iPhone, Android, Pre, n900 - Can Processing.js help?",
+      "month": 3,
+      "year": 2010,
+      "day": 9,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.8.{2,3} - new authentication and global share",
+      "month": 3,
+      "year": 2010,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "@font-face-lift",
+      "month": 3,
+      "year": 2010,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "New app \"Find Comments\"",
+      "month": 3,
+      "year": 2010,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 1.9 - OAuth",
+      "month": 4,
+      "year": 2010,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "Are you the Matt Damon of your game?",
+      "month": 4,
+      "year": 2010,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "Mutt, Gmail, gdata, notify-send: A Perfect Email solution",
+      "month": 4,
+      "year": 2010,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "Why \"Open\" is not the first concern of user?",
+      "month": 5,
+      "year": 2010,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "Tuxmac",
+      "month": 5,
+      "year": 2010,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope upcoming changes",
+      "month": 6,
+      "year": 2010,
+      "day": 2,
+      "tags": []
+    },
+    {
+      "title": "predictably irrational",
+      "month": 6,
+      "year": 2010,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 2.0",
+      "month": 6,
+      "year": 2010,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "ReaderScope 2.0.6 - Find Comments",
+      "month": 7,
+      "year": 2010,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Music sharing",
+      "month": 7,
+      "year": 2010,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "Indirect experiments",
+      "month": 7,
+      "year": 2010,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "Reality distortion field around",
+      "month": 8,
+      "year": 2010,
+      "day": 13,
+      "tags": []
+    },
+    {
+      "title": "Silicon Valley and Hi-tech",
+      "month": 10,
+      "year": 2010,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "Why don't they publish eBooks for free but with embedded ads?",
+      "month": 10,
+      "year": 2010,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "How to save HTML5 canvas image to Google App Engine",
+      "month": 10,
+      "year": 2010,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "Mac book red light audio jack problem on Linux",
+      "month": 10,
+      "year": 2010,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "Why secure airports when it's planes that fly?",
+      "month": 11,
+      "year": 2010,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "Youtube ETA - Chrome extension",
+      "month": 11,
+      "year": 2010,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "Functional programming in Javascipt using Underscore.js",
+      "month": 12,
+      "year": 2010,
+      "day": 1,
+      "tags": []
+    },
+    {
+      "title": "Discovering LastPass",
+      "month": 12,
+      "year": 2010,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "How Wikipedia and Flattr can together change the World",
+      "month": 1,
+      "year": 2011,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "HTML5 offline cache - use swapCache carefully",
+      "month": 1,
+      "year": 2011,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Lesser women in tech... So what?",
+      "month": 1,
+      "year": 2011,
+      "day": 19,
+      "tags": []
+    },
+    {
+      "title": "Ever growing todo list is a good sign for creative projects",
+      "month": 1,
+      "year": 2011,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "JavaScript is the next C",
+      "month": 2,
+      "year": 2011,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "Truce with exercise",
+      "month": 2,
+      "year": 2011,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Why the hi-tech minds are writing Social apps?",
+      "month": 2,
+      "year": 2011,
+      "day": 21,
+      "tags": []
+    },
+    {
+      "title": "Don't label yourself",
+      "month": 2,
+      "year": 2011,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "Elon Musk quote",
+      "month": 4,
+      "year": 2011,
+      "day": 29,
+      "tags": []
+    },
+    {
+      "title": "Why can't I criticize Government if I don't vote? I sure can.",
+      "month": 6,
+      "year": 2011,
+      "day": 12,
+      "tags": []
+    },
+    {
+      "title": "How to debug WebWorker threads?",
+      "month": 8,
+      "year": 2011,
+      "day": 16,
+      "tags": []
+    },
+    {
+      "title": "It's not fair to compare Android with Internet Explorer",
+      "month": 8,
+      "year": 2011,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "How to print stack trace anywhere in Javascript",
+      "month": 8,
+      "year": 2011,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "Why OpenGL ES is so hard?",
+      "month": 8,
+      "year": 2011,
+      "day": 26,
+      "tags": []
+    },
+    {
+      "title": "The Gods Themselves by Isaac Asimov",
+      "month": 8,
+      "year": 2011,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "How to write interactive CLI utility in node.js",
+      "month": 9,
+      "year": 2011,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Master pieces from screen",
+      "month": 11,
+      "year": 2011,
+      "day": 27,
+      "tags": []
+    },
+    {
+      "title": "Why we need to explore Seasteading?",
+      "month": 1,
+      "year": 2012,
+      "day": 2,
+      "tags": []
+    },
+    {
+      "title": "Good essay on user centric software design",
+      "month": 3,
+      "year": 2012,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "iTunes Download stopped (err =9006)",
+      "month": 3,
+      "year": 2012,
+      "day": 31,
+      "tags": []
+    },
+    {
+      "title": "Google Lunar X Prize",
+      "month": 4,
+      "year": 2012,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "Rolling back latest git commit",
+      "month": 5,
+      "year": 2012,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "Prometheus",
+      "month": 6,
+      "year": 2012,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Why sea steading is important to pursue?",
+      "month": 6,
+      "year": 2012,
+      "day": 10,
+      "tags": []
+    },
+    {
+      "title": "Why Patriotism doesn't make sense",
+      "month": 6,
+      "year": 2012,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "Kelsey Grammer is spectacular",
+      "month": 7,
+      "year": 2012,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "Online courses - New technology, Old rules",
+      "month": 8,
+      "year": 2012,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "Something like Olivia - John Mayer",
+      "month": 10,
+      "year": 2012,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "When your git branch diverges from your remote",
+      "month": 10,
+      "year": 2012,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "Time travel fiction",
+      "month": 11,
+      "year": 2012,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "The single most reason that keeps me using Vim",
+      "month": 11,
+      "year": 2012,
+      "day": 23,
+      "tags": []
+    },
+    {
+      "title": "Water from air",
+      "month": 11,
+      "year": 2012,
+      "day": 23,
+      "tags": []
+    },
+    {
+      "title": "Coffeescript: To switch or not to switch",
+      "month": 11,
+      "year": 2012,
+      "day": 24,
+      "tags": []
+    },
+    {
+      "title": "Something's missing",
+      "month": 4,
+      "year": 2013,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "Software Engineering Code of Ethics and Professional Practice",
+      "month": 12,
+      "year": 2013,
+      "day": 1,
+      "tags": []
+    },
+    {
+      "title": "New rules for Formula 1",
+      "month": 12,
+      "year": 2013,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Uruguay's President",
+      "month": 12,
+      "year": 2013,
+      "day": 14,
+      "tags": []
+    },
+    {
+      "title": "Conned?!",
+      "month": 4,
+      "year": 2014,
+      "day": 6,
+      "tags": []
+    },
+    {
+      "title": "Quotable Quotes",
+      "month": 11,
+      "year": 2014,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "Podcasts Français",
+      "month": 2,
+      "year": 2015,
+      "day": 21,
+      "tags": []
+    },
+    {
+      "title": "No Exams, Yes Video games",
+      "month": 6,
+      "year": 2015,
+      "day": 17,
+      "tags": []
+    },
+    {
+      "title": "Before fixing performance issues",
+      "month": 8,
+      "year": 2015,
+      "day": 25,
+      "tags": []
+    },
+    {
+      "title": "The \"Having done\" attitude",
+      "month": 4,
+      "year": 2016,
+      "day": 23,
+      "tags": []
+    },
+    {
+      "title": "Road Trip of Atlantic Canada",
+      "month": 6,
+      "year": 2016,
+      "day": 30,
+      "tags": []
+    },
+    {
+      "title": "The flying cars analogy",
+      "month": 10,
+      "year": 2016,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "The Entanglement Pattern",
+      "month": 10,
+      "year": 2016,
+      "day": 9,
+      "tags": []
+    },
+    {
+      "title": "Don't Panic",
+      "month": 11,
+      "year": 2016,
+      "day": 11,
+      "tags": []
+    },
+    {
+      "title": "Project Dialog",
+      "month": 1,
+      "year": 2017,
+      "day": 20,
+      "tags": []
+    },
+    {
+      "title": "Why Electron is the best development platform?",
+      "month": 1,
+      "year": 2017,
+      "day": 31,
+      "tags": []
+    },
+    {
+      "title": "Review : Ghost In The Shell - The blinds scene",
+      "month": 11,
+      "year": 2017,
+      "day": 28,
+      "tags": []
+    },
+    {
+      "title": "Game Design tip for Programmers - Less Automation",
+      "month": 12,
+      "year": 2017,
+      "day": 15,
+      "tags": []
+    },
+    {
+      "title": "How to consume media",
+      "month": 12,
+      "year": 2017,
+      "day": 18,
+      "tags": []
+    },
+    {
+      "title": "Why gamers like pixelated games",
+      "month": 1,
+      "year": 2018,
+      "day": 3,
+      "tags": []
+    },
+    {
+      "title": "Vipassana Meditation",
+      "month": 5,
+      "year": 2018,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Violet end of spectrum",
+      "month": 5,
+      "year": 2018,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Playing games, Doing Mathematics",
+      "month": 11,
+      "year": 2018,
+      "day": 22,
+      "tags": []
+    },
+    {
+      "title": "Insanity and Software",
+      "month": 12,
+      "year": 2018,
+      "day": 5,
+      "tags": []
+    },
+    {
+      "title": "Bicycle Pedals",
+      "month": 12,
+      "year": 2018,
+      "day": 7,
+      "tags": []
+    },
+    {
+      "title": "Lessons for Game designers from \"Structure of Scientific Revolutions\"",
+      "month": 12,
+      "year": 2018,
+      "day": 8,
+      "tags": []
+    },
+    {
+      "title": "Dimensions of Idea communication",
+      "month": 1,
+      "year": 2019,
+      "day": 4,
+      "tags": []
+    },
+    {
+      "title": "Types of Art",
+      "month": 1,
+      "year": 2019,
+      "day": 5,
+      "tags": []
+    }
+  ]
+}

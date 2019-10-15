@@ -1,4 +1,5 @@
-
+printStackTrace
+===
 It is many times desirable while debugging to know how the program flow came to this point of execution? I found this handy way of doing that. Insert: 
 
 {% highlight ruby %}
