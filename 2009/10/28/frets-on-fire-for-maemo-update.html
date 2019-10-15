@@ -1,0 +1,122 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Frets on Fire for Maemo - Update">
+  <meta name="author" content="">
+
+  <title>Frets on Fire for Maemo - Update</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Frets on Fire for Maemo - Update</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p><a href="http://jyro.blogspot.com/2009/03/frets-on-fire-on-maemo-5-fremantle.html">Back in March</a>, when Fremantle SDK was released, I had ported Frets on Fire to it. Subsequent discussion made it clear that modifications were required to actually make it run on the device. I created a stripped down <a href="http://jyro.blogspot.com/2009/03/fof-pyopengl-minifof-possibly-for-n810.html">version</a> which could run without the OpenGL code. This made it suitable for n900 (and even n810). But due to lack of actual device, I couldn't test it.  </p>
+<p>Fast forward 7 months. Now I have access to actual n900, so recently I went back to the FoF code. After couple weeks of getting re-acquainted with the code, I have it satisfactorily running on the n900.  </p>
+<p>Frets-On-Fire code primarily has three parts -  </p>
+<ul>
+<li>playing the song (loading song, computing notes, etc. uses pygame for audio),  </li>
+<li>showing the visuals (PyOpenGL+pygame code) and  </li>
+<li>handling input.<br />
+All these components are pretty involved and hard to rewrite - especially so with the audio part (I hardly have any experience in musical notes and midi files). So my priority was to get almost all of the audio code as it is. It was easy to tweak the input code - to make it suite the n900 keyboard. I bypassed the visual part completely - replaced OpenGL with simple pygame sprites. (You may get disappointed by the stark <a href="http://3.bp.blogspot.com/_W6UcJjyXr24/Sckqgw9YOHI/AAAAAAAACxs/Mvr5Sf-M7Os/s1600-h/minifof-usage.png">looks</a>).  </li>
+</ul>
+<p>I have created a project on googlecode to host the code - maemofof. It shows all the <a href="http://code.google.com/p/maemofof/source/list">changes</a> I had to make, starting from the base Frets-on-Fire code from v1.3.110.  </p>
+<p>The next step is to package it nicely and push to extras-devel. There are few problems with packaging though.  </p>
+<p>I couldn't get ogg files to play through pygame. I installed the ogg-support package, but for pygame/sdl to work with it, something more is required - which wouldn't install due to broken dependencies (libsdl-mixeroggwav1.2-dev). So for now I converted all ogg files to wav. But the wav files are huge (~80MB if a single song is included as sample). That makes them inconvenient to package and they also take a long time to load (~90 seconds).  </p>
+<p>But good news is, the ball got rolling again. I hope to make some progress in coming days. If you have any suggestions, feel free to chime in comments.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Oct 28, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

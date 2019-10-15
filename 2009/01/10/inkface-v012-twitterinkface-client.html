@@ -1,0 +1,121 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Inkface v0.1.2, Twitter-inkface client">
+  <meta name="author" content="">
+
+  <title>Inkface v0.1.2, Twitter-inkface client</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Inkface v0.1.2, Twitter-inkface client</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Finally it is ready. Actually it has been ready for more than couple of weeks now, but I wanted to make sure the bugs in my demo app were not due to problems in core library.  </p>
+<p>The demo app is a client I wrote for the Twitter service. The intention was to demonstrate how an intuitive GUI can be designed using an Image editor. With the GUI designed using Inkscape and an off-the-shelf python library to talk to Twitter service (Thanks to DeWitt for <a href="http://code.google.com/p/python-twitter/">python-twitter</a>), I only had to write simple glue code to get the whole app working. Check out the video.  </p>
+<p>Good news is I have setup a debian repo to host packages for this app.  </p>
+<p>In the Maemo Application Manager, add following Catalog:  </p>
+<p>Name: Altcanvas<br />
+Web Address: http://repo.altcanvas.com<br />
+Distribution: testing<br />
+Components: main  </p>
+<p>Refresh the application list. You should see 'twitter-inkface' app in the list. All the dependencies will be automatically pulled from the repo.  </p>
+<p>Since the repository implementation is currently experimental (No it's not a standard web server! I will save it for a separate post), you may face a problem while installing or I may have to take it offline for modifications. In that case, you can download following four packages and install them with dpkg ("dpkg -i *.deb")  </p>
+<p><a href="http://altcanvas.googlecode.com/files/libaltsvg_0.1.2_armel.deb">libaltsvg</a>,<a href="http://altcanvas.googlecode.com/files/inkface-python_0.1.2_armel.deb">inkface-python</a>, <a href="http://altcanvas.googlecode.com/files/inklib_0.1.0.deb">inklib</a>, <a href="http://altcanvas.googlecode.com/files/twitter-inkface_0.1.0.deb">twitter-inkface</a>.  </p>
+<p>For more info on Inkface project, visit the <a href="http://code.google.com/p/altcanvas/wiki/InkFace">project page</a>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 10, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

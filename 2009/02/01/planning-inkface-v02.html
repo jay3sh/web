@@ -1,0 +1,132 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Planning Inkface v0.2">
+  <meta name="author" content="">
+
+  <title>Planning Inkface v0.2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Planning Inkface v0.2</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>With v0.1.X of Inkface libraries feasibility of SVG based GUI framework is proven. With different experiments, the following structure seems to be evolving.<br />
+<a href="http://2.bp.blogspot.com/_W6UcJjyXr24/SYVw7HhqzII/AAAAAAAACts/7_dUbD9lyB4/s1600-h/inkface-arch.png"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/SYVw7HhqzII/AAAAAAAACts/7_dUbD9lyB4/s400/inkface-arch.png" alt="" /></a><br />
+The inkface library provides canvas objects to draw on. These canvas objects can be implemented using different backends. Currently only X is used as backend. Clutter seems possible, it will be there in v0.2.X. Inkface library loads the SVG elements with the help of altsvg library. altsvg library is responsible for parsing the SVG document and rendering its component elements.  </p>
+<p>I spent past few weeks investigating the SVG rendering solutions that are out there. There are two major efforts in open source to the best of my knowledge: librsvg (Gnome library, which is the base of current libaltsvg) and Qt's couple of libraries (QtSVG and other being a KHTML component).  </p>
+<p>They are good libraries with their own advantages and pitfalls. But they are made with a simple purpose in mind - Parse the SVG document and render it as an image. They do not handle the individual elements of the SVG DOM tree in a dynamic way. This is the reason, none of them fully supports animation extension of SVG specs.  </p>
+<p>In the inkface framework, following two things are expected from the altsvg library:<br />
+1. Separate rendering of different elements of an SVG document.<br />
+2. Programmatic access to the SVG attributes of these individual elements.  </p>
+<p>I have spent very long time trying to understand librsvg. It was very painful to get it working the way it works right now. I am not satisfied with the patches I applied on top of librsvg to accomplish the 1st requirement above. (2nd requirement is not available in v0.1.X). I have faced great difficulty to understand the highly recursive logic of librsvg. It will take much larger effort to tweak it elegantly so that both the above requirements are fulfilled.  </p>
+<p>I also looked into Qt SVG libraries. Qt's code is elegant and easy to understand. But I am afraid, it is tightly embedded inside Qt framework (at least it will take long to tear it and take away what's needed, not sure if that's worth it).  </p>
+<p>After exploring above two options, I have also considered implementing altsvg from scratch. And that sounds like a better option after all. I have started experimenting with that option. Here are some details.  </p>
+<p>As the altsvg block shows, there are two distinct components in these libraries:<br />
+a) SVG parsing - nothing but a standard XML parsing<br />
+b) SVG rendering - librsvg uses cairo and QtSVG uses their PaintEngine for this logic.  </p>
+<p>I plan to reimplement the SVG parsing part. The rendering will be done by cairo or Qt's PaintEngine. Cairo and Qt's rendering library are mature libraries and their role is orthogonal to the above two requirements of the inkface framework.  </p>
+<p>Furthermore I figure that the SVG parsing part is not as performance critical as rendering part. But it will have to go through lot of iterations of design and implementation. So I will be implementing it in python. Python's excellent support for XML parsing will speed up the prototyping.  </p>
+<p>So far I see following advantages of implementing altsvg from scratch and that too in python:  </p>
+<p>1. It will save energy and time in trying to understand existing librsvg/QtSVG libraries and try to redesign them for the purpose that they might not have been designed for in the first place.<br />
+2. Some initial work on this front has proved that, I can totally eliminate the need for a designer to change in XML nodes in Inkscape. They will also not need to explicitly mention the order as an attribute of the element. The order in which the elements are shown in the Inkscape will be recognized by the inkface framework. Also the name of the element can be defined using Inkscape's "Object Properties" option in the context menu.<br />
+3. Most of the developers who have inquired about this project, have asked about the portability. The choice of python will help address that issue.<br />
+4. It certainly would be a daunting task to aim for a full SVG compliance with my own implementation. But in retrospect, I think that's not the goal. It's not necessary initially to implement all of SVG spec. Some basic features like paths (lines, bezier curves, rectangles, ellipses) and gradients should be available soon enough. They are the most widely used elements. Further features like filters can be implemented incrementally. I suspect, that will be a translation of librsvg's cairo calls to PyCairo calls.<br />
+5. I am not sure how can I do this, but a progressive rendering of SVG elements seems possible. It will need more interaction between inkface and altsvg. It will improve load time of the GUI.  </p>
+<p>There are other two topics as well. But I may address them in some later post. Implementation of inkface (its role in the big picture, the clutter backend) and benefits of using OpenGL for rasterization (Qt has a proven advantage over cairo in this regard. I know glitz can solve this problem for cairo, but I didn't find any numbers to support that)</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Feb 1, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

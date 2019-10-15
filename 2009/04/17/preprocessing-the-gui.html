@@ -1,0 +1,118 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Preprocessing the GUI">
+  <meta name="author" content="">
+
+  <title>Preprocessing the GUI</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Preprocessing the GUI</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Couple of days ago while on a bus, an old idea resurfaced in my mind. I had briefly thought about it in the past and then shelved it in some corner. But now the idea seemed very relevant.  </p>
+<p>The way inkface works is, when the application starts it invokes inkface to load an SVG document. Inkface library will parse the XML and render individual elements and return them to the application. The GUI loaded like this has rich look, but the loading time is high (especially on handheld devices). This is because loading of elements involves parsing of XML and then rendering it. This is resource consuming as well as time consuming stage. What if this is done during the GUI design time and not at the runtime. (Similar to compiling the source code as opposed to interpreting it at runtime).  </p>
+<p>In past couple days, I implemented this idea in the form of an Inkscape plugin. With this plugin, the designer of the GUI has to save the SVG GUI in a file of different extension (.ink). Inkscape automatically triggers the plugin code upon this. The plugin then parses the SVG and renders its elements into raster images and saves them as PNG images. These PNG images are put into a ZIP archive along with some metadata and that ZIP archive is stored as the .ink file.  </p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/SehpOd9N_cI/AAAAAAAACzE/ZCz8F3xbijE/s1600-h/inkplug.jpg"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/SehpOd9N_cI/AAAAAAAACzE/ZCz8F3xbijE/s400/inkplug.jpg" alt="" /></a>  </p>
+<p>Now at the runtime, instead of the SVG file, the application will pass the inkface library a .ink file. The inkface library opens the Zip archive and loads the pixbuffers from PNG images to return them as Element objects to the application. This way it doesn't spend time and resources in parsing and rendering of the SVG shapes.  </p>
+<p>When I ran the modified code using this strategy with pygame backend, I got positive results as expected. I found that loading a .ink file takes at least half as long as the .svg file. That's 100% improvement. I ran the test on Openmoko Freerunner.  </p>
+<p>This approach not only improves the performance, but also eases porting on new backends. For instance, Qt can't directly work with cairo. But if rendering is not done at runtime, the rendering stage is completely bypassed. It is trivial to load PNG images onto Qt widgets.  </p>
+<p>Of course there is little downside to this approach. The elements loaded from PNG images, cannot be manipulated as vector graphics at runtime. In other words, one cannot resize them or change their SVG properties and re-render them to their new look. It is not yet clear, how much this feature is useful in real life anyway, so I don't think this is a big trouble. Furthermore, a hybrid approach can be implemented if it turns out to be so desirable feature.  </p>
+<p>The plugin contains just two files (<a href="http://altcanvas.googlecode.com/svn-history/r1318/trunk/inkplug/inkplug.inx">inkplug.inx</a> and <a href="http://altcanvas.googlecode.com/svn-history/r1319/trunk/inkplug/inkplug.py">inkplug.py</a>) which you can drop in /usr/share/inkscape/extensions/ and restart Inkscape. inkplug.py will need inkface library however, so make sure it is installed on your system. (inkface v0.2.5+). In future I will look into making this plugin installation easier.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Apr 17, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,120 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ReaderScope 1.8.{2,3} - new authentication and global share">
+  <meta name="author" content="">
+
+  <title>ReaderScope 1.8.{2,3} - new authentication and global share</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>ReaderScope 1.8.{2,3} - new authentication and global share</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I released 1.8.2 couple of days ago. The only change it had was the new login mechanism. Google reader team <a href="http://groups.google.com/group/fougrapi/browse_thread/thread/e331f37f7f126c00">announced</a> on fougrapi group (that stands for "Friends of the Unofficial Google Reader API") that Google Reader soon will be discontinuing the old SID-based login mechanism. Thanks to them for announcing this well before the actual change is supposed to happen (sometime in April). ReaderScope accordingly has been updated to follow the new rules.  </p>
+<p>This change is almost painless for username/password based logins. However the  AutoLogin is a little hairy issue. The <a href="http://github.com/android/platform_frameworks_opt_com.google.android/blob/master/framework.jar">library</a> used to get AutoLogin working is unsupported and undocumented. There is an official way to do AutoLogin kind of thing on Android 2.0 devices, but it requires access to actual device to test and still I hear it's not well documented. Besides the devices at versions &lt;2.0 are going to be there for  a long time. Therefore I got the undocumented and unsupported library to get working somehow with the new auth mechanism. However the changes I had to make were only little short of hocus-pocus. So I was very skeptical about how it was working. I released a <a href="http://groups.google.com/group/readerscope/browse_thread/thread/75267859c5edd897">preview</a> on ReaderScope mailing list. So far the feedback of the preview release and actual 1.8.2 has been positive. I haven't seen anyone reporting issues due to failed logins. I have strategic log statements to detect if things go wrong with authentication. So just mail me the logs if you see suspicious behavior. Settings > Logs. Menu > Email.  </p>
+<p>Today in 1.8.3, I also fixed a bug which would have caused auth problems if anyone was upgrading from pre-1.2.5 installation.  </p>
+<p>With the new authentication done, I have a very exciting feature implemented in 1.8.3.  </p>
+<p>When you share the news item now, you will have option to trigger the global sharing apps. They could be your favorite Twitter, Facebook, Email clients. The most useful one I found was "Read It Later" which lets you save the news item to your <a href="http://www.instapaper.com/">InstaPaper</a> account for reading later. These are the same apps that you see when you "Share Page" from browser.  </p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/S5sdQs35fpI/AAAAAAAADl0/aNW-5Wyt_nc/s1600-h/share-global-image.png"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/S5sdQs35fpI/AAAAAAAADl0/aNW-5Wyt_nc/s640/share-global-image.png" alt="" /></a><br />
+I remember someone had requested this feature once long time ago. I am sorry it took so long to implement. But now that it is here, I am sure you will enjoy it.  </p>
+<p><em>Ads:</em><br />
+<em>* <a href="http://www.amazon.com/Hello-Android-Introducing-Development-Programmers/dp/1934356492?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Hello, Android: Introducing Google's Mobile Development Platform (Pragmatic Programmers)</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=1934356492" alt="" /></em><br />
+<em>* <a href="http://www.amazon.com/Professional-Android-Application-Development-Programmer/dp/0470344717?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Professional Android Application Development (Wrox Programmer to Programmer)</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0470344717" alt="" /></em><br />
+<em>* <a href="http://www.amazon.com/Android-Wireless-Application-Development-Conder/dp/0321627091?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Android Wireless Application Development</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0321627091" alt="" /></em></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Mar 13, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,125 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="FoF - PyOpenGL = miniFoF (possibly for n810)">
+  <meta name="author" content="">
+
+  <title>FoF - PyOpenGL = miniFoF (possibly for n810)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>FoF - PyOpenGL = miniFoF (possibly for n810)</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>After spending some time on the Frets-on-Fire code I have managed to liberate it from PyOpenGL dependency.  </p>
+<p>In first step, I bypassed all the GUI code, without making any changes to the audio and input processing components. So I ended up with a completely blank window with a default song playing and me pressing the keyboard frets blindly.  </p>
+<p>In second step, I wrote only few lines of code to draw the notes on the screen using basic pygame.draw functions.  </p>
+<p>Here is a screen shot of the minimal UI.  </p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/SckqM5fuzGI/AAAAAAAACxk/7EM-PVbgJtc/s1600-h/minifof.jpg"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/SckqM5fuzGI/AAAAAAAACxk/7EM-PVbgJtc/s400/minifof.jpg" alt="" /></a>  </p>
+<p>Then I realized that, in theory this minimal version can also run on n810. I tested it in Diablo SDK and it runs. I couldn't hear the sound, but that's an issue with my scratchbox settings. I am sure that this will run on n810, however I am not sure if it will have real time response times. Unfortunately, I don't have a n810 to try this on (mine must be changing hands in black market as I write this :( ). Nevertheless I made necessary changes so that someone can try it on real n810 if they wish to.  </p>
+<p>If you have played FoF on keyboard, you would know F1-F5 keys are used to control frets and RETURN key is used to pluck the string. One possible way to achieve this with n810 is to use the keys on the keypad.  </p>
+<p>Following mockup should give you an idea.  </p>
+<p><a href="http://3.bp.blogspot.com/_W6UcJjyXr24/Sckqgw9YOHI/AAAAAAAACxs/Mvr5Sf-M7Os/s1600-h/minifof-usage.png"><img src="http://3.bp.blogspot.com/_W6UcJjyXr24/Sckqgw9YOHI/AAAAAAAACxs/Mvr5Sf-M7Os/s400/minifof-usage.png" alt="" /></a>  </p>
+<p>F1 = Quote, F2 = K, F3 = H, F4 = F, F5 = S  </p>
+<p>In place of RETURN we can use the square key as shown above, but I couldn't find what its keycode is. So for now I have assigned that functionality to Q. If someone can provide with that keycode in pygame, I will fix it.  </p>
+<p>The gameplay is for single song only. I have bypassed all the menus for now. As the song starts the goal is to hit the note when it reaches the white line. You can play different songs by specifying their name as --play command line option.  </p>
+<p>This is not (yet) a single click install app, however.  </p>
+<p>I have put together the <a href="http://code.google.com/p/altcanvas/wiki/MiniFoF">steps</a> that you will need to follow, to get it working on actual n810. Those should work to the best of my knowledge, but you may run into errors. If you do, please report them in comments and I can help with them.  </p>
+<p>If you are interested in the changes I had to make, then here is the list of changes starting from the baseline FoF code (<a href="http://code.google.com/p/altcanvas/source/list?start=1176">r1165 - r1176</a>)  </p>
+<p>Give it a try. If it runs slow, let me know how slow. There still must be bunch of code paths that we can eliminate to improve the response times.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Mar 24, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

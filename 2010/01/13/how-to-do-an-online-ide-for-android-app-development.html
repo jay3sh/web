@@ -1,0 +1,133 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="How to do an online IDE for Android app development">
+  <meta name="author" content="">
+
+  <title>How to do an online IDE for Android app development</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>How to do an online IDE for Android app development</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>No, this is not a product that I am planning to work on. I am sufficiently occupied with my current projects and plan to continue working on them. But one can't help flirting with new ideas, so I am going to put it out there. If you like it, go implement it.  </p>
+<p>The idea is not at all new. Mobile is the next platform in computing and more and more people will want to create new apps for it. A bulk of them will be newbies and would appreciate if there was an easy way to create such apps. It appears that a majority of such users are music labels, celebrities, product brands - who already have content and want to develop mobiles apps to create more channels to their content. This is where startups like <a href="http://www.mobileroadie.com/">Mobile Roadie</a> is growing. They are soon entering into Android space. <a href="http://www.kyte.com/">Kyte</a> is another contender in this space.  </p>
+<p>On the other hand, there are mockup based products which are adding mobile apps to their generic software mockup development environments, e.g. Balsamiq. Last month we saw Palm launching <a href="http://ares.palm.com/Ares/about.html">Ares</a>. It is a web based IDE where one can drag-n-drop widgets to design their Palm Pre app. It goes beyond the basic mockup functionality and lets you edit the code and also does final packaging producing the package that can be tested in Palm Pre's emulator or actual device.  </p>
+<p>There must be many more which I don't know. But this is a pretty young field and there is a lot to do.  </p>
+<p>Here I want to lay out plans about such a product for Android. I will enlist the features that I would like to see in it, that may or may not be covered by already existing products I listed above. More importantly I will list how I would have designed  such system, if I were doing it today - choice of tools and technologies, revenue model, etc.  </p>
+<p>The basic scheme has four components:<br />
+1. Save the source (and resource) files.<br />
+2. Run the compilation and packaging inside the cloud.<br />
+3. Give a simplified web interface.<br />
+4. Provide templates for common tasks.  </p>
+<p>The first two components dominate the choice of your Cloud provider. Android build environment is not a generic setup to be run in cloud (unlike email hosting or version control), so you will need raw virtual machines hosted in the cloud. I would have chosen Amazon S3 and EC2 for the job. A typical recipe would be, a Linux VM (fedora/centos or debian/ubuntu server), Sun JDK 1.5, Ant, Android SDK. As the project will grow, there will be need to build higher level management of build processes - Ant and its task architecture might help in building that. My favorite cloud service is Google App Engine, but it's not the right hosting service in this case. However you can design a hybrid cloud, where your account management, web page hosting is served from GAE, which the build and packaging takes place inside Amazon EC2 cloud.  </p>
+<p>The third component is the web based user interface to the system. Like many web based IDEs, it will have to be AJAX-ified. I would go with jQuery (GWT is also a choice). As first steps of designing this component, one should first build user flows. A simple user flow would be:  </p>
+<p>1. Ask user for project details - Name, Package name, etc. (whatever that needs to go in AndroidManifest.xml)<br />
+2. Run "android create project …" in cloud and provide user link to the debug apk.  </p>
+<p>Here on give user an interative interface, in which he/she can modify source code, hit a "Build" button, fix build errors and get the debug apk upon successful build.  </p>
+<p>For editing the source code, use some off-the-shelf javascript based code editor. (My choice: <a href="http://www.cdolivet.com/index.php?page=editArea&amp;sess=ecd8cb8986b661a27cfa0d47c9099018">EditArea</a>). When user clicks on the source code files in the tree view (.java or .xml), just show the code editor populated with the file's contents.  </p>
+<p>When user clicks on the layout .xml files, give an option to the visual editor. This should be a drag-n-drop interface for placing and manupulating standard Android widgets. I don't know any off-the-shelf solution, but take a look at <a href="http://iphonemockup.lkmc.ch/">this example</a> for iphone mockups. It is easier said than done, but it will be a great success if done rightly.  </p>
+<p>The fourth component is what makes this service usable to the masses. You can't expect hard core developers to use this service, for them native Android SDK is the best environment (except for the visual layout editor, something that is lacking altogether in Android dev world). It's the non-coders who will find your service useful. And making their life more easier will increase the value of your service. To do that, you have to identify generic apps that masses would want to write - A music library browser, RSS reader, gallery of photos or some fancy list of items. Mobile Rodie would be an extreme example to look at for this. Their service is mainly targetted towards Music album brands and other kind of content creators. It is up to you to choose one of these target audience and create template projects that will help them build their apps in a snap. Over time you can add to your library of templates and address wider audience. Which demographic to address and when, will depend on your understanding of your (potential) users and the resources you have to create the new templates. Again, easier said than done - but that's why I won't get a dime for writing this and you will win the lottery if you do it right.  </p>
+<p>Accounts:  </p>
+<p>You will need to create user accounts system. I would investigate OpenID based login mechanisms (e.g. <a href="http://stackoverflow.com/">StackOverflow</a>), rather than implementing my own. If you choose to implement a hybrid cloud and use Google App Engine for user interface, then you can use Google's <a href="http://code.google.com/appengine/docs/python/users/userclass.html">User API</a> with almost no extra implementation.  </p>
+<p>Pricing:  </p>
+<p>There are two ways you can earn from this service:<br />
+1. Ads - You have the advantage of having a very specific audience of your web service. Use it for targeted ads, that will be very relevant to your users - for e.g. Beginner Android book ads from Amazon. You can even make sponsors from your users. They would want to advertise their newly created apps to the world after-all.<br />
+2. Paid accounts - Provide debug APKs for free, but provide signed APKs only to the ones with premium accounts. Allow XML editing of layout files for free, but provide drag-n-drop interface to only paid users.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 13, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

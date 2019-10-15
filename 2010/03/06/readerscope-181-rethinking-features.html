@@ -1,0 +1,119 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ReaderScope 1.8.1 - rethinking features">
+  <meta name="author" content="">
+
+  <title>ReaderScope 1.8.1 - rethinking features</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>ReaderScope 1.8.1 - rethinking features</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>In the release-early-release-often model, as the software product evolves over time, new features get added consistently. The same happened with ReaderScope for over 7 months. It started with very basic functionality and went through many iterations to reach at its current state.  </p>
+<p>Adding lot of new features however has couple of risks. First one is affecting the performance. I try to keep that under control after completing a round of new features. Memory footprint analysis and some latency measurement checks have helped to keep the ReaderScope UI very responsive over time. The second downside of features is loosing the direction, unknowingly causing a feature creep. So once in a while, it is essential that the software developer steps back a little and reviews the direction his/her software is going in. That's what I am doing in this post.  </p>
+<p>There is one feature in ReaderScope that I added few months back that I am not sure helps the main direction of the app. It is the tabbed interface. When I added it, my intent was to cater news from channels besides Google Reader. I put the Google News feeds under the <strong>News</strong> tab and was planning to add more feeds from popular news channels too. The third tab was <strong>Social</strong>. It had only a single feed for Twitter account. It smartly parsed the Twitter messages and extracted the news items pointed by the embedded links. (I love the Twitter feature and it's not going away, read below… actually nothing is going away for that matter).  </p>
+<p>Over time I have realized that the tabs are not serving any useful purpose for most of the userbase. I would rather spend time improving the Google Reader specific functionality than supporting the half baked extra tabs.  </p>
+<p>Therefore <strong>starting from v1.8.1 the tabs are disabled by default</strong>. You will only see the labels and feeds from your Google Reader account just like old days. The "Social Channels" label (which was part of the <strong>Social</strong> tab) will now appear at the bottom of your Google Reader List. If you want you can configure it to appear at the top or be invisible altogether (Settings > Customize Layout).  </p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/S5ITHAzxiCI/AAAAAAAADls/ptsQ2GDq8uc/s1600-h/screenshot1_1.png"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/S5ITHAzxiCI/AAAAAAAADls/ptsQ2GDq8uc/s320/screenshot1_1.png" alt="" /></a><br />
+And for some reason if you like the tabs, you still have option. Go to <em>Settings > Miscellaneous > Enable Tab Interface</em>. You will get the old interface back.  </p>
+<p>One more feature is the favicons. Favicons are pretty if you read the feeds that do have favicons. However, not all users may have subscribed to feeds that publish favicons. Out of my 250+ feeds at least 150+ show valid favicons. But for some users most of their feeds may not be publishing any favicons. For them the favicon placeholder appears empty. If they are using dark themes then these placeholders appear as white rounded squares. Understandably, those users would like to turn off the favicon feature. Now they can. Head over to <strong><em>Settings > Value Pack > Load FavIcons</em></strong> and uncheck the box if you  want. (The favicon feature concerns only the <a href="http://market.altcanvas.com/readerscope">Value Pack</a> users. You haven't got one yet? It's only $2.49, hurry!)  </p>
+<p>I hope these changes simplify the UI for you. Let me know how you like it.  </p>
+<p>v1.8.1 also has one crash fix. There was a bug which could lead to crash if you immediately quit the app after starting it. It was specific to Value pack owners. It is fixed in this version.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Mar 6, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

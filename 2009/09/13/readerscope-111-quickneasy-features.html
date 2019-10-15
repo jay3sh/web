@@ -1,0 +1,120 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ReaderScope 1.1.1 quick-n-easy features">
+  <meta name="author" content="">
+
+  <title>ReaderScope 1.1.1 quick-n-easy features</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>ReaderScope 1.1.1 quick-n-easy features</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>In the last post I forgot to mention the new feature added - crash reporter. But thanks to the users who used this feature to report the crashes, I found a subtle problem. Also a couple of suggestions from comments in last post were pretty easy to implement on a Sunday afternoon. So I just released v1.1.1 with the fix for the Login crash, two features (zoom functionality, filtering read items) and a little internal optimization.</p>
+<p>About the crash. I believe it was seen only by G1 users who have slide-out keyboards (not necessarily though). The G1 users have to slide out the keyboard to type in the credentials. This puts the app into landscape mode. After they press the login button, the query goes over network and a rotating progress dialog is shown. Depending upon the network, this may take some time. Before the login is complete and the progress dialog is gone, if the user slides in the keyboard (which is very natural), they force the app into portrait mode. By default the android platform restarts the activity during these orientation changes. This causes the original progress dialog to not belong to the current window. So when the login response returns and the app tries to cancel the progress dialog, it crashes. The solution I have put in v1.1.1 is to override the default behavior of android and make it not to restart the app. This will not make any visible change in the user interface, except that now the app won't crash even when you slide in the keyboard very quickly.</p>
+<p>Now about the features. You will now see a filter icon on top of the list of news items (the 2nd screen). If you tap it, all your read items will get hidden. If you tap it again, they will be visible again.</p>
+<p>Without filter:</p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/Sq0R1jTkmjI/AAAAAAAADY0/bCQ-0LVM8Vo/s1600-h/filter-off.png"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/Sq0R1jTkmjI/AAAAAAAADY0/bCQ-0LVM8Vo/s400/filter-off.png" alt="" /></a>  </p>
+<p>With filter:</p>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/Sq0R19EJkjI/AAAAAAAADY8/_6Ll_WiuoU8/s1600-h/filter-on.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/Sq0R19EJkjI/AAAAAAAADY8/_6Ll_WiuoU8/s400/filter-on.png" alt="" /></a>  </p>
+<p>In addition, the news item now has zoom buttons to adjust the zoom.</p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/Sq0S4PUVsdI/AAAAAAAADZE/IP5UYnxK3mY/s1600-h/zoompanel.png"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/Sq0S4PUVsdI/AAAAAAAADZE/IP5UYnxK3mY/s400/zoompanel.png" alt="" /></a>  </p>
+<p>I am not very satisfied with the icons themselves, will try to make them pretty in future release.  </p>
+<p>So give it a shot!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Sep 13, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

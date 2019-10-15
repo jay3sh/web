@@ -1,0 +1,143 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Anti Asserts">
+  <meta name="author" content="">
+
+  <title>Anti Asserts</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Anti Asserts</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I couldn't help but make this name up after I thought about it in that sense.  </p>
+<p>Putting <strong>Asserts</strong> at various points in your code is a good practice. With Asserts you express your assumptions about the state of your program at the particular point in execution. When the program runs, it verifies if your assumptions actually hold or not. Asserts are the simplest form of a test case.  </p>
+<p>Consequently, what I call <strong>Anti Assert</strong> is bad. Where Assert gives you an opportunity to test your assumption at certain point in code, Anti Assert will rob you off such opportunities.  </p>
+<p>Anti Asserts are more dangerous, because we introduce them unknowingly. Where Assert is one definite line of code, Anti Assert is essentially invisible or hidden under the guise of routine code logic.  </p>
+<p>So what is Anti Assert?  </p>
+<p>Simply put - it is the unnecessary checks that we put in our code, and more specifically the superfluous NULL checks.  </p>
+<p>Why call them Anti Assert?  </p>
+<p>This is how we use <strong>assert</strong>s.  </p>
+<pre><code>// ...  
+
+TheObject obj = x.findObject();  
+
+**assert**(obj != null);  
+
+obj.performY();  
+
+// ...  
+</code></pre>
+<p>In the above code, if under some scenario obj turns out to be null, then we will very likely learn about it during early development/testing.  </p>
+<p>And this is what I call <strong>anti-assert</strong>.  </p>
+<pre><code>// ...  
+
+TheObject obj = x.findObject();  
+
+**if**(obj != null) obj.performY();  
+
+// ...  
+</code></pre>
+<p>In this code we not only omitted the assert, but we did a null check before calling a method on <em>obj</em>. Doing a null-check before de-referencing is considered a smart thing (especially if it is the C/C++ code), but do you realize that this only postpones the disaster?  </p>
+<p>By doing a null check we avoided a failure while calling <em>performY</em>, but somewhere down the code path <em>obj</em> might still get dereferenced, and in worst case that will happen only on customer site.  </p>
+<p>The tendency to put such cautionary null checks is justifiable in C/C++ code. In the native code a NULL pointer dereferencing will lead to segmentation fault, and unless it happens on a debug build the developer won't know what went wrong. So the coders working in C/C++ or having a prior background in those languages will tend to introduce Anti-Asserts.  </p>
+<p>In Java or other managed languages, if a pointer turns out to be null, the worst that can happen is a program crash with well-defined stack trace. With <a href="http://jyro.blogspot.com/2009/09/crash-report-for-android-app.html">proper mechanisms</a>, such crash reports can be easily retrieved even from customer sites. So there is no justification for introducing Anti-asserts when coding in managed languages.  </p>
+<p>One way to avoid introducing Anti-asserts is understanding the API contract carefully. If an API function is not supposed to return null, then we shouldn't put a check for it. That way, if it indeed returns null, it will be exposed by a crash (with some luck during early testing). Or the best practice would be to put an assert, with an arrangement to remove it from production code. This <a href="http://stackoverflow.com/questions/271526/how-to-avoid-null-statements-in-java">thread</a> on Stack overflow gives ample information on this subject.  </p>
+<p>This is not something new, but just a re-emphasis of what we already observe but fail to recognize.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 6, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

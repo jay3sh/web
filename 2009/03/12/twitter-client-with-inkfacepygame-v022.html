@@ -1,0 +1,116 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Twitter client with inkface-pygame v0.2.2">
+  <meta name="author" content="">
+
+  <title>Twitter client with inkface-pygame v0.2.2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Twitter client with inkface-pygame v0.2.2</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Here is an update on the Inkface library. But before that let me give a background of the project for the benefit of new readers that will be reading this post via Planet Maemo.  </p>
+<p>Inkface is an SVG based GUI framework. Unlike the desktops - where GUI components need to be keyboard/mouse friendly; the handheld GUIs need to be finger friendly. Therefore the handheld GUI components should be naturally manipulatable - like parts of an image. Therefore inkface provides a framework in which, GUI is composed in an image editor like Inkscape, instead of rigidly coded in the program. The various elements of SVG image are presented as python objects to the programmer who can then write his program logic using these elements as widgets.  </p>
+<p>The current version of inkface uses pycairo for vector graphics rendering and uses pygame as backend surface to draw on. A clutter backend is in the plans.  </p>
+<p>With that background, let me show a demo of an app that I designed (in Inkscape) and coded (in python) using inkface-pygame library v0.2.2. It's a twitter client. The demo shows how the GUI can be changed vastly by merely changing the SVG files and doing no change in the code at all. (the --theme option tells the app to just use a different set of SVG files) The first one is the default theme and the later has a vintage look.  </p>
+<p>The whole GUI consists of only 2 SVG images (corresponding to 2 screens - login and main twits page). So to create a new theme one only needs to create/change these two SVG files in Inkscape. Compare this to the traditional approach where a theme consists of tens of PNG images of specific sizes.  </p>
+<p>I was aiming to release it as an app for diablo, but I had to postpone the plan. For improving the performance during animation, I used pygame's features that are only available in v1.8.x and I later found that Diablo ships with pygame v1.7.x. So I need to work around this incompatibility before I release it for n8x0 devices.  </p>
+<p>For more information on the project check out the <a href="http://code.google.com/p/altcanvas/wiki/InkFace">wiki</a>. You can download v0.2.2 tarball from <a href="http://altcanvas.googlecode.com/files/inkface-pygame_0.2.2.tar.gz">here</a>. It is pure python code and can be tried on desktop. For details on the changelog of v0.2.2 check my post on the mailing list <a href="http://groups.google.com/group/inkface/browse_thread/thread/e66633a62a80f01">here</a>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Mar 12, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

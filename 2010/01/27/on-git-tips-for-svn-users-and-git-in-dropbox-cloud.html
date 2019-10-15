@@ -1,0 +1,131 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="on Git: tips for SVN users and Git in Dropbox cloud">
+  <meta name="author" content="">
+
+  <title>on Git: tips for SVN users and Git in Dropbox cloud</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>on Git: tips for SVN users and Git in Dropbox cloud</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I gave in to the hype of Distributed VCS and decided to learn Git about 6 months ago (No, it's not a hype, even for single person projects). I started managing my latest <a href="http://www.altcanvas.com/android/readerscope">projects</a> with Git. Learning Git was not a cake walk, but I put my faith in Git's promise of power and climbed the beginning slope of the learning curve. If you are switching to git after using Subversion for years, then this slope can be steeper. But now I am comfortable with my Git setup and starting to see the glimpses of power that git has to offer.  </p>
+<p>Here are few tips for subversion users shifting to Git, which could have saved me some agony when I was new.  </p>
+<p>1. How can I do svn revert in Git?  </p>
+<p>Believe it or not, but you do that with git checkout . When I first learned that, I was shocked. (And the best part is, the manpage of git-checkout talks about this functionality only in 3rd paragraph and in not so clear words). Over time you will find out that "checkout" is highly overloaded sub-command in git. Besides reverting your changes, it is used to switch to new branch, or create a new branch altogether. Its semantics are nothing like svn checkout. (The closest git analogue of svn co would be git clone, but not exactly)  </p>
+<p>2. What's all about branching being easy in Git?  </p>
+<p>Once your projects starts to grow beyond certain size, you appreciate the ease of branch management that Git provides. But it takes little effort to understand it. In Subversion, the central repository lies on a web server or a backed up disk partition. You as a user, "checkout" a local copy of it. In Git as well, there can be a center repository (but it's not necessary), however you do not checkout code from it. You as a user "clone" the entire repository. Because the entire repository is available locally, creating, deleting and switching between branches is very fast. Others don't see your branches unless you create a corresponding remote branch on central repository (check git push and --track option of git checkout to find out more about it)  </p>
+<p>3. Here are two useful git subcommands that I wish were more publicized, rather than documented like corner cases.  </p>
+<pre><code>stash
+</code></pre>
+<p>When you start using multiple branches, more often than not you are faced with a situation where you have some uncommitted code in branch B, but to fix a customer reported crash you want to immediately switch to branch A. When I first faced this situation, all I could find was do a commit and switch the branch. After some later point I accidentally  came across 'git stash' and found how handy it was.  </p>
+<pre><code>cherry-pick
+</code></pre>
+<p>You are working on some new feature in branch B and you find a critical bug while doing it. You find the  fix for it and you want to release it immediately without waiting for this feature to complete. Your releases are built from branch A (from which you create B). Commit your fix in branch B (don't include any feature code in that commit), then git the SHA id of that commit to cherry-pick.  </p>
+<p>4. git mergetool<br />
+Git has the most intuitive conflict resolution mechanism in the form of git-mergetool. Actually, I am not sure if it's git or (g)vimdiff that deserves the credit (or both). After doing merges across branches, if you end up with conflicts, then use git mergetool --tool=vimdiff (git may automatically prompt you for this). I have done some merges with Perforce in the past (they call it crossport, integrate, etc.), and suffice it to say it was bad enough for me to avoid that task altogether. But the three windowed diff view makes this task as intuitive as possible.  </p>
+<p>5. Best Git GUI I've found so far: <a href="http://cola.tuxfamily.org/">Git-cola</a>  </p>
+<p>6. Book recommendation: <a href="http://progit.org/book/">Progit</a> (It's Free. It explains different use cases with examples and that helps a lot)  </p>
+<p>Now on to the second part of the post. Something that I discovered recently. First understand that, you don't need any central repository to git-fy your project. You have a directory of source files and you want to start tracking it with git, just do git init and you are good to go. git-add, git-commit, git branching all can be done after this point.  </p>
+<p>However, in little bigger use cases you need a central repository. In my case, I work on same project from two different machines located at two different locations. I could create my git repository on USB key and carry it around with me. But it's not reliable - media corruption, physical loss, theft - you get the point. So it's advisable to have your central repo in cloud.  </p>
+<p>I rented such service from <a href="http://repositoryhosting.com/">repositoryhosting.com</a> for $6 per month. They provide many other project management tools in the package too, but I primarily used it for git. Recently I started using <a href="https://www.dropbox.com/referrals/NTQwMzk5OTE5">Dropbox</a>. Although Dropbox storage resides in cloud, they have done perfect job of exporting it as native file system. More importantly it works on all three platforms. So for all practical purposes (that I have covered in last two weeks at least), it's a native file system, but magically synced across different machines. So I just created the git clone of my git repositories in one of the folders inside Dropbox. I can now push and pull to/from this repository on different machines. See this <a href="http://stuffthathappens.com/blog/2009/02/16/dropbox-live-mesh-git/">post</a> for detailed instructions.  </p>
+<p>Dropbox comes with 2GB of free storage and by doing some referrals you can stretch it up to 2.5GB. It's plenty for versioning source code files, don't you think? Be careful not to version big files though (release binaries for instance), you won't be able to free up space by removing them once they are in the repository.  </p>
+<p>I hope you found the git tips useful. Hoping to explore more of git.  </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 27, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

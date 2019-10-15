@@ -1,0 +1,123 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ReaderScope 1.0.2 - making deep cache simple">
+  <meta name="author" content="">
+
+  <title>ReaderScope 1.0.2 - making deep cache simple</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>ReaderScope 1.0.2 - making deep cache simple</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>As was rightly complained, the deep caching feature didn't seem to work in ReaderScope. It appeared so because a) If feed is not marked for periodic download, deep caching won't have any effect b) deep caching wasn't done for news items that were already downloaded. In 1.0.2 this is fixed. </p>
+<p>If you choose a feed for deep caching by going to Settings, it will automatically be marked as favorite (i.e. marked for periodic download). If the feed has news items already downloaded (before setting deep caching), then those news items will also be deep cached at the time of next download. I hope this will make the deep caching feature more intuitive. </p>
+<p>Note that you will be able to view the deep cached page by clicking on the 'Open Link' action button from panel. For deep-cached news items the web page will open inside the ReaderScope itself (instead of an external browser) and this will work even when you are offline.</p>
+<p>Also note the performance implications of choosing feeds for deep cache. It will make your background downloads run longer and consume more memory and network. Imagine opening 20 webpages in the web browser one after the other (this is what happens in the background). So use deep caching with discretion. </p>
+<p>Apart from this, there are few more improvements. There is a slight change/improvement in notifications. There are now three distinct icons to tell different notifications from each other.</p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/SqU7n64mQhI/AAAAAAAADXs/yitcc5uBxkk/s1600-h/icondload.png"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/SqU7n64mQhI/AAAAAAAADXs/yitcc5uBxkk/s400/icondload.png" alt="" /></a>- This icon in the status bar will indicate that a download is in progress.</p>
+<ul>
+<li>This icon will not linger after download is complete. You will see a "Done!" ticker when download finishes and the notification will vanish. I thought having it after its job is done was unnecessary. However, I liked a suggestion that there should be a way to know when the periodic download took place. That information now will be available in the logs. Just go to Settings->Logs and at the top you will find results of latest 10 downloads.</li>
+</ul>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/SqU9wVmjhPI/AAAAAAAADYE/KiZEW_5txTI/s1600-h/download-log.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/SqU9wVmjhPI/AAAAAAAADYE/KiZEW_5txTI/s400/download-log.png" alt="" /></a></p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/SqU7orMAUzI/AAAAAAAADX8/Nw_gPvh-OxM/s1600-h/icondloaderr.png"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/SqU7orMAUzI/AAAAAAAADX8/Nw_gPvh-OxM/s400/icondloaderr.png" alt="" /></a>You will see this icon in the status bar when the periodic/manual download has failed for some reason - due to unsuitable/no network OR due to low battery, etc.  </p>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/SqU7oCA8_lI/AAAAAAAADX0/fAGpNUBp8XM/s1600-h/iconupload.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/SqU7oCA8_lI/AAAAAAAADX0/fAGpNUBp8XM/s400/iconupload.png" alt="" /></a>You will see this icon, for the actions (star/share/unread) that you perform offline and are pending. It signifies the actions that are pending upload.  </p>
+<p>In addition, the action buttons menu has been made even more non-intrusive. When you press "Menu" the actions menu shows up. Now it will get hidden when you touch the news item (you don't have to press "Menu" again).</p>
+<p>I hope you like 1.0.2. Let me know.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Sep 7, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

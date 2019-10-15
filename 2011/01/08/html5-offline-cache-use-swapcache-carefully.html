@@ -1,0 +1,119 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="HTML5 offline cache - use swapCache carefully">
+  <meta name="author" content="">
+
+  <title>HTML5 offline cache - use swapCache carefully</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>HTML5 offline cache - use swapCache carefully</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>HTML5 Offline caching is an incredibly useful feature that allows your users to load your website even when they are not connected to the Internet. When they visit your website first, the browser checks if your webpage mentions a cache manifest file in its html tag. If so, the browser downloads the manifest file and then downloads all the resources mentioned in that file. You are supposed to add all the resources that your webpage needs in the manifest file, so that when user is offline the browser can load the webpage from the cached version of those resources. You will find many articles that will help you implement offline caching for your website- like this <a href="http://www.html5rocks.com/tutorials/appcache/beginner/">one</a>. This post isn't about it.  </p>
+<p>If you are using offline caching, you may want to use advanced features like handling the events that are fired when the browser is updating the cache. If you frequently change your webapp, this is a good idea. I handle these events in <a href="http://www.3dtin.com/">3DTin</a> to let the user know that the browser has found a newer version of the app on server and is now downloading it in background. When the download is complete, I show the user a refresh button which they can use to reload the page so that they can start using the new version.  </p>
+<p>It was while coding this functionality that I came across the swapCache() API call. It sounded very cool and from some examples that I read I got to believe that when the cache download is finished (i.e. in the onupdateready handler), I can simply call swapCache() and user will start using the new version of my app. He/she won't have to reload the page. If you don't read the <a href="http://www.w3.org/TR/html5/offline.html#application-cache-api">documentation</a> of swapCache carefully you will get the same impression from simple examples around the net. It may not be a big issue, if your cache contains passive resources like image files. But my erroneous interpretation of swapCache led to a nasty bug in 3DTin few days ago, because I am caching javascript files too.  </p>
+<p>The documentation clearly says:  </p>
+<pre><code>[swapCache] does not cause previously-loaded resources to be reloaded; for example, images do not suddenly get reloaded and style sheets and scripts do not get reparsed or reevaluated. The only change is that subsequent requests for cached resources will obtain the newer copies.
+</code></pre>
+<p>This has huge impact if you are loading javascript or css files from cache. In my case, I use WebWorkers which load a separate javascript file after they are started. When 3DTin cache was updated by the browser and swapCache was called, the javascript file that WebWorker used to load was at a different version than all the other files that were loaded when webpage was opened. This led to failures that left me scratching my head for some time. Eventually when I realized this is what was happeneing, I stopped calling swapCache() and instead showed user a button to reload the app manually.  </p>
+<p>I hope this post will save you from doing the same mistake that I did.<br />
+<a href="http://flattr.com/thing/113848/HTML5-offline-cache-use-swapCache-carefully">  
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" /></a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 8, 2011</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

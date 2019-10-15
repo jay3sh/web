@@ -1,0 +1,134 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Static IP configuration on Fedora 10">
+  <meta name="author" content="">
+
+  <title>Static IP configuration on Fedora 10</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Static IP configuration on Fedora 10</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Until last week Hathway (my ISP in Mumbai) was asking me to do DHCP discovery for IP address. After the n/w stopped working yesterday I called their service rep. One of them couldn't resolve it yesterday, so he forwarded me to another guy who turned out to be a funny experience - he gave me all the static IP config valus - and when the network still won't work he started blaming it on computer virus and ultimately rust on my network cable (!) Fortunately for me (and also for him) the modem was little sluggish in picking up the change and the network started working.  </p>
+<p>I had booted my new computer in Vista (yeah I know! argh!) and it worked fine. Surprisingly my Fedora 10 on Macbook and also the Fedora 10 on desktop won't respond to the static IP information. It took me 4 hours to figure out that there was nothing wrong in my knowledge of the network scripts. I got the clue when I found the system doing DHCP discovery even when I had set it to static IP. I figured it was because of the NetworkManager (seen as that taskbar network icon). When I googled, it became clear that configuring Fedora 10 with static IP is a known problem and the culprit is NetworkManager and/or system-config-network utility. This thread (<a href="http://forums.fedoraforum.org/showpost.php?p=1134502&amp;postcount=14">#14</a>) is pretty much helpful, but the working solution (or workaround) is not definite.  </p>
+<p>Here is what worked for me (at least for this box).  </p>
+<p># Stop NetworkManager<br />
+sudo service NetworkManager stop  </p>
+<p># Disable NetworkManager service<br />
+sudo chkconfig NetworkManager off  </p>
+<p># Enable netwok service<br />
+sudo chkconfig network on  </p>
+<p># Run system-config-network<br />
+# Edit the ethernet device under Device tab<br />
+# Under "Manual IP Address settings" put static IP Address.<br />
+# Leave Subnet mask and Default Gateway blank<br />
+# Change to Route tab<br />
+# Add route Dest 0.0.0.0 Netmask 0.0.0.0 Gateway<br />
+# Add route Dest Netmask Gateway<br />
+# Change to DNS tab to put addresses of DNS servers<br />
+# Check "Activate device when computer starts" same as ONBOOT=yes (I guess)<br />
+# Save the settings  </p>
+<p>sudo service network restart  </p>
+<p>At this point network should be working. If it doesn't don't get surprised. The same steps don't help me setup my Macbook Fedora 10 with static IP. Maybe I have screwed it beyond repair. I will wait for the router to arrive, to get my macbook online.  </p>
+<p>Ads:<br />
+* <a href="http://www.amazon.com/Linux-Administration-Handbook-2nd-Nemeth/dp/0131480049?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Linux Administration Handbook (2nd Edition)</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0131480049" alt="" /> (Best tips on Linux administration I found in this book. Own it myself.)<br />
+* <a href="http://www.amazon.com/Fedora-Bible-2010-Featuring-Linux/dp/0470554193?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Fedora Bible 2010 Edition: Featuring Fedora Linux 12</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0470554193" alt="" /><br />
+* <a href="http://www.amazon.com/Linux-Networking-Cookbook-Carla-Schroder/dp/0596102488?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Linux Networking Cookbook</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0596102488" alt="" /></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Mar 1, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,117 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Evas + Inkface in v0.2.5">
+  <meta name="author" content="">
+
+  <title>Evas + Inkface in v0.2.5</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Evas + Inkface in v0.2.5</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Just released <a href="http://groups.google.com/group/inkface/browse_thread/thread/64d05d54dfd9104e">v0.2.5</a> of inkface. In this release the Evas backend was implemented for inkface. (the one that drives <a href="http://openbossa.indt.org/canola/developer.html">Canola</a>) I wrote the classic twitter app, using this new backend. Here are some screenshots.  </p>
+<p>This is the panther theme.  </p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/SeLg2T88rZI/AAAAAAAACyk/bI8D-hnZio0/s1600-h/etwt2.jpg"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/SeLg2T88rZI/AAAAAAAACyk/bI8D-hnZio0/s400/etwt2.jpg" alt="" /></a><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/SeLg2uTVxOI/AAAAAAAACys/gw1rp7vW-hE/s1600-h/etwt5.jpg"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/SeLg2uTVxOI/AAAAAAAACys/gw1rp7vW-hE/s400/etwt5.jpg" alt="" /></a>  </p>
+<p>This one is the default theme.  </p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/SeLhWxEhwiI/AAAAAAAACy0/RtfxdoILd9U/s1600-h/etwt3.jpg"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/SeLhWxEhwiI/AAAAAAAACy0/RtfxdoILd9U/s400/etwt3.jpg" alt="" /></a><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/SeLhWy32qbI/AAAAAAAACy8/VD1HKqj2Zrw/s1600-h/etwt4.jpg"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/SeLhWy32qbI/AAAAAAAACy8/VD1HKqj2Zrw/s400/etwt4.jpg" alt="" /></a>  </p>
+<p>Evas has an optimized backend canvas that does smooth animations even on devices like n810 and Openmoko Freerunner, which do not have h/w accelerated graphics. I have run above app on my Freerunner and the scrolling is definitely smoother than pygame. However, I have found that scrolling is the most expensive kind of animation, because in it the entire screen's contents are changed in two consecutive frames. Therefore even evas gets slower at some point. However if it is a case of small icon to be moved around, it will appear very smooth with evas.  </p>
+<p>I was again targetting this one for Maemo, but at last moment I hit a problem. For some reason on maemo there is some incompatibility of colorspace encoding (ARGB formats), between cairo and evas, so it won't render the cairo surfaces properly. Overall, the python-evas 0.3 module is not well documented and there are many quirks, so I couldn't get few things to work. I will come back to them later in future.  </p>
+<p>In summary, this opens a path to design canola like applications using inkface.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Apr 13, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,122 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Testing Android (Koolu Beta 3) on Openmoko Freerunner">
+  <meta name="author" content="">
+
+  <title>Testing Android (Koolu Beta 3) on Openmoko Freerunner</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Testing Android (Koolu Beta 3) on Openmoko Freerunner</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>[My Openmoko Freerunner hadn't got much love in a long time. So its battery discharged to absolutely no charge. Then I realised that I have got a deadlock - FR cannot turn ON without battery and the battery won't charge unless FR is ON (because the firmware can't negotiate enough current from USB port to charge the battery, the running FR kernel can do that). Anyway, after coming to India I got a cheap instrument that tests and charges generic cell-phone batteries like FR's. The device's simplicity is amazing. It has two metal probes that can be adjusted to make contact with the battery terminals and with help of two buttons you can either test battery's charge or start charging it. Point is, the external charging worked.]  </p>
+<p>Now the more important topic…  </p>
+<p>As the Freerunner came back to life, I decided to test the latest Android images on it. Openmoko <a href="http://wiki.openmoko.org/wiki/Android">wiki</a> has details of all (three so far) efforts trying to get Android running on FreeRunner. I decided to try <a href="http://freerunner.android.koolu.com/release-files">Koolu</a>'s images. They are frequently releasing new images and their latest release is billed as Beta 3. Flashing the phone was straightforward - just followed the <a href="http://wiki.openmoko.org/wiki/Android_on_Freerunner">instructions</a>.  </p>
+<p>Once the phone booted into Android (the first boot seemed very slow, but subsequent boots took 1 minute as I timed them), I could see what's all the Android noise about. This is my first experience with Android (saw it a bit in emulator, but not much). Android has rendered the best GUI on the screen of this phone so far. I was impressed with some animation effects (whatever happened to glamo's limited capabilities to do accelerated graphics - although I am not sure yet if these effects are done in h/w).  </p>
+<p>Most importantly, I got the wifi working on this phone first time. No other distro I had tried in the past has enabled wifi of this device. Android, easily scanned and detected my wireless network. A small problem came, when entering the WPA2 key. Note that the only official Android phone out there (HTC G1) has hardware keyboard, so Google has been slow in implementing a virtual keyboard. However I found a keyboard after some exploring (dunno if it's Google-added or some community effort). This keyboard is not perfect, but it works. The problem is, it is not accessible when WPA2 key entry dialog appears. So I can't tap in the password. After looking at Koolu's release notes, I figured one workaround is to type the password in Notepad app and then paste it in the password box. That worked.  </p>
+<p>After connecting to wifi, I tested the browser, visiting many sites (yeah mostly those tweets some of you read ;). Another impressive app is email. Configuring my gmail account with it was a 2-step cake walk and I was in my inbox in no time. I could also compose an email without much trouble.  </p>
+<p>Sadly however, the GSM is not working. I am using Tata Indicom's SIM card - which <a href="http://www.gsmworld.com/roaming/gsminfo/net_inkl.shtml">should be</a> in GSM 1800 band (and my Openmoko is 850/1800/1900). But still it didn't detect any network (It didn't work even with the Qt image I had earlier - so I won't blame Android for it). I read that the GSM libraries in Android are not yet completely open, so there are some difficulties there. I need to learn the GSM Modem commands to debug this issue.  </p>
+<p>The accelerometer works. There is an app named <a href="http://www.youtube.com/watch?v=HncLJaxJl4Y">Amazed</a> that lets you navigate a ball using the accelerometers inside the FR. It's really cool.  </p>
+<p>I don't expect GPS to work, (although the antenna icon keeps radiating green waves) - because GPS satellites don't like me. :)  </p>
+<p>I tested an alarm app, which confirmed that the vibrator and sound also work great.  </p>
+<p>The 'Global Time' app has that 3D revolving earth that's depicted in some <a href="http://www.youtube.com/watch?v=m4NbsLmF9j0">youtube videos</a>. But its FPS is not so great, I believe there is no h/w acceleration there.  </p>
+<p>I also browsed through the software repository. Installed a game 'MiniSpaceWar'. It installed correctly, but I guess it was too heavy for FR, it took forever to load and then crashed Android, leading to a reboot.  </p>
+<p>Unfortunately, I couldn't get a screenshot tool for android. So can't post any of them now. But if I manage to get any, I will <a href="http://twitter.com/jyro">tweet</a> them.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Feb 13, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

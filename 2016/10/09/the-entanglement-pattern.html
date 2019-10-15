@@ -1,0 +1,156 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="The Entanglement Pattern">
+  <meta name="author" content="">
+
+  <title>The Entanglement Pattern</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>The Entanglement Pattern</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>In the software architecture of content creation tools there’s a design pattern
+that I would like to call <em>Entanglement pattern</em>. The various objects in the
+application are linked to each other and their states are entangled. As the user
+manipulates one of these objects, the entangled objects change states.</p>
+<p>This is necessary for various reasons. Different objects in the <em>visible</em> UI
+represent different aspects of the single <em>invisible abstract</em> object. For
+instance in a drawing application, when a rectangle is drawn on the canvas it
+shows what the end result looks like. We can tell the position of the rectangle
+in the context of the entire canvas by looking at this. However there are times
+when we want to know the exact numbers that define the position. Maybe to be
+sure that the rectangle's left side is aligned with another rectangle drawn
+somewhere else on the canvas. One way to achieve this is to show numerical
+representation of these <em>x</em> and <em>y</em> coordinates in a property panel on the side
+of the canvas. From the programmer's point of view these two are different
+objects, separated by many layers of API from each other. However they represent
+the same abstract object, the position of the rectangle. As the rectangle is
+moved by clicking and dragging on the canvas, its position changes and the
+numerical representation in the property panel should change with it. On the
+other hand if the numerical representation is changed by the user by typing in a
+new value in the coordinate text box, then the rectangle on canvas should move
+to the new position. Thus the two objects are entangled with each other in an
+inseparable way.</p>
+<p>The example above is one of the simplest of this kind of design pattern. In
+practice, almost every object is entangled with many other objects in different
+ways, when it comes to content creation applications. This pattern is taken for
+granted. The entanglement is typically achieved by maintaining links between
+these different objects. However to manage such vast number of linkages, it's
+necessary to organize them systematically. Couple of solutions that are
+prevalent for this problem.</p>
+<ol>
+<li><p>Hierarchy or Tree - More popularly known as DAG (Directed Acyclic Graph).
+This is how the objects in the final rendering of the document are linked to
+each other. Starting from a root node, these objects are added as a child to
+existing nodes, without creating any cycles. As some of the nodes are
+changed, their parents are notified and appropriate actions are taken
+depending upon the change.</p></li>
+<li><p>Events - This is a very versatile solution to entangle objects that are
+greatly separated from each other in the great tree of software architecture.
+To take the example explained above, the rectangle object that's drawn on the
+canvas is part of the scene graph (DAG), while the text-boxes representing
+the position coordinates are part of UI widget hierarchy. One could implement
+the link between them by virtue of event firing. Both parts of the code have
+access to a central event router object. When one side changes, it triggers a
+<em>change</em> event on this router. Any part of the code interested in this event
+will be listening and will take appropriate action when it receives the
+notification.</p></li>
+</ol>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Oct 9, 2016</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

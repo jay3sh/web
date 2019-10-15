@@ -1,0 +1,286 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Android AsyncTask template">
+  <meta name="author" content="">
+
+  <title>Android AsyncTask template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Android AsyncTask template</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Any meaningful GUI application needs to employ multiple threads, otherwise it is very likely to lock while doing any I/O operations - leaving bad impression on the user. Same is true for Android apps. In fact, android framework prompts user to close the app if it doesn't respond in 10 seconds or so. So it's absolutely essential to perform any task - that has even a remote possibility of taking a bit longer - in a background thread.  </p>
+<p>Fortunately Android framework has some useful constructs built into the framework that make our job relatively easy while doing multithreaded GUI programming. <a href="http://developer.android.com/reference/android/os/AsyncTask.html">android.os.AsyncTask</a> is one of them.  </p>
+<p>The basic steps to make your app multithreaded using AsyncTask are as follows:<br />
+1. <strong>Identify the code segment that you want to execute in background</strong> thread. (for e.g. code that does network i/o, bulk file transfer on local disk, etc)  </p>
+<p>2. <strong>Model it as an AsyncTask object</strong>.<br />
+(Subclass the AsyncTask object and put your code segment in the doInBackground(…) method)  </p>
+<p>3. Figure out what <strong>parameters</strong> you have to pass to the task, the <strong>result</strong> that the task should return and how to handle the <strong>exception</strong> in case something goes wrong.  </p>
+<p>This is pretty simple, but the third step gets bit complicated as your app grows and there are multiple asynchronous tasks that you want to code in.  </p>
+<p>When I was faced with this problem during the development of <a href="http://www.altcanvas.com/android/cutewit">CuTewit</a>, I stumbled through some steps. After a while I managed to create a template for modelling with AsyncTasks. In my second app - <a href="http://www.altcanvas.com/android/readerscope">ReaderScope</a> - the same template worked very nicely. ReaderScope has over 50 different tasks that are run on background thread at one time or another. The template I use, has made it pretty easy to add new AsyncTasks.  </p>
+<p>In this post, I want to share that template with you. I have written a small example app that demonstrates the use of the template. Download <a href="http://altcanvas.googlecode.com/files/asynctemplate.tar.gz">source tarball</a> and <a href="http://altcanvas.googlecode.com/files/AsyncTemplate.apk">apk</a> to try it yourself.  </p>
+<p>Here is the source code of AppTask.java (the derivative of AsyncTask) for discussion.  </p>
+<pre><code>package com.altcanvas.asynctemplate;  
+
+import android.os.AsyncTask;  
+
+**public** **class** AppTask **extends** AsyncTask&lt;AppTask.Payload, Object, AppTask.Payload&gt;  
+
+{  
+    **public** **static** **final** String TAG = "AppTask";  
+
+    **public** **static** **final** **int** APPTASK_1 = 1001;  
+    **public** **static** **final** **int** APPTASK_2 = 1002;  
+
+    /*  
+     * Runs on GUI thread  
+     */  
+    **protected** **void** onPreExecute() {  
+    }  
+
+    /*  
+     * Runs on GUI thread  
+     */  
+    **public** **void** onPostExecute(AppTask.Payload payload)  
+    {  
+        **switch**(payload.taskType) {  
+
+        **case** APPTASK_1:  
+            AsyncTemplateActivity app =  
+                (AsyncTemplateActivity) payload.data[0];  
+
+            **if**(payload.result != null) {  
+
+                // Present the result on success  
+
+                **int** answer = ((Integer) payload.result).intValue();  
+                app.taskStatus.setText("Success: answer = "+answer);  
+
+            } **else** {  
+                // Report the exception on failure  
+
+                String msg = (payload.exception !=null) ?  
+                                payload.exception.toString() : "";  
+                app.taskStatus.setText("Failure: error ="+msg);  
+            }  
+
+            **break**;  
+
+        **case** APPTASK_2:  
+            **break**;  
+        }  
+    }  
+
+    /*  
+     * Runs on GUI thread  
+     */  
+    **public** **void** onProgressUpdate(Object... value)  
+
+    {  
+        **int** type = ((Integer) value[0]).intValue();  
+
+        **switch**(type) {  
+
+        **case** APPTASK_1:  
+            AsyncTemplateActivity app = (AsyncTemplateActivity) value[1];  
+            **int** progress = ((Integer) value[2]).intValue();  
+            app.progressBar.setProgress(progress);  
+            **break**;  
+
+        **case** APPTASK_2:  
+            **break**;  
+        }  
+
+    }  
+
+    /*  
+     * Runs on background thread  
+     */  
+    **public** AppTask.Payload doInBackground(AppTask.Payload... params)  
+
+    {  
+        AppTask.Payload payload = params[0];  
+
+        **try** {  
+            **switch**(payload.taskType) {  
+            **case** APPTASK_1:  
+
+                // extract the parameters of the task from payload  
+
+                AsyncTemplateActivity app =  
+                    (AsyncTemplateActivity) payload.data[0];  
+                **int** numSteps = ((Integer) payload.data[1]).intValue();  
+
+                **if**(numSteps &lt; 0) **throw** **new** AppException("Invalid input");  
+
+                // perform the task  
+
+                **int** progress = 0;  
+                **for**(; progress &lt; numSteps; progress++) {  
+                    **try** {  
+                        // pretend to work for 1 second  
+
+                        Thread.currentThread().sleep(1000);  
+                    } **catch**(InterruptedException ie) {  
+                        **break**;  
+                    }  
+                    publishProgress(**new** Object[] {  
+                            **new** Integer(APPTASK_1), app, progress});  
+                }  
+
+                publishProgress(**new** Object[] {  
+                        **new** Integer(APPTASK_1), app, progress});&amp;nbsp;
+
+                // Return result of the task  
+                payload.result = **new** Integer(42);  
+                **break**;  
+
+            **case** APPTASK_2:  
+                **break**;  
+            }  
+        } **catch**(AppException ape) {  
+            payload.exception = ape;  
+            payload.result = null;  
+        }  
+
+        **return** payload;  
+    }  
+
+    **public** **static** **class** Payload  
+    {  
+        **public** **int** taskType;  
+        **public** Object[] data;  
+        **public** Object result;  
+        **public** Exception exception;  
+
+        **public** Payload(**int** taskType, Object[] data) {  
+            **this**.taskType = taskType;  
+            **this**.data = data;  
+        }  
+    }  
+}  
+</code></pre>
+<p>code syntax highlighting by <a href="http://vim.sourceforge.net/">GVIM</a>,  </p>
+<p>Let's go over different aspects of this code.  </p>
+<p><strong>What is Payload?</strong><br />
+To simplify the management of passing parameters and carrying result/exception back, we create a special object called Payload. Payload carries four entities - the type of the AsyncTask (int taskType), parameters to the task (Object[] data), result of the task (Object result), exception that took place during the task (Exception exception).  </p>
+<p>Note the signatures of doInBackground and onPostExecute. The same payload object is passed around.  </p>
+<p><strong>How do you start a new task?</strong>  </p>
+<pre><code>**new** AppTask().execute(**new** AppTask.Payload(  
+    AppTask.APPTASK_1,  
+**    new** Object[] { AsyncTemplateActivity.**this**,  
+**    new** Integer(numSteps) }));&amp;nbsp;
+
+&amp;nbsp; &amp;nbsp;  
+</code></pre>
+<p>[You can find it in AsyncTemplateActivity.java in the sample app]  </p>
+<p><strong>How do you define a new async task?</strong><br />
+You don't have to create another AsyncTask derivative object. Just define a new taskType, e.g. APPTASK_2 in AppTask.java. Create a switch case for that taskType in each of 'doInBackground', 'onPostExecute', 'onProgressUpdate'. Depending upon the nature of the tasks, the contents of payload.data will vary. Since this data is passed as generic Object[], you can pass around any types of objects that suite the task's needs. On the other hand, you have to be careful to not type cast them to wrong classes.<br />
+[We loose Java's static type checking by defining params and result as generic 'Object's. But it saves us from repetitively defining similar AsyncTask derivatives]  </p>
+<p><strong>How is the progress of the task updated?</strong><br />
+When you call publishProgress(…), it results in a call to onProgressUpdate(…) which is running in the GUI thread. Here, you can manipulate any widget like progress bar to indicate the task progress.  </p>
+<p>…  </p>
+<p>This may not be the only way to code AsyncTask, but it certainly has worked for me - not just for one, but for two sizeable projects. Before this, it used to be pretty cumbersome to define a new task.  </p>
+<p>You can download the source code and use it in your app if you like.  </p>
+<p>Any comments and suggestions are welcome.  </p>
+<p><a href="http://flattr.com/thing/113850/Android-Async-task-template">  
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" /></a>  </p>
+<p>Ads:  </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Nov 19, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

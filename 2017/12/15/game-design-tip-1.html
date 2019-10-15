@@ -1,0 +1,113 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Game Design tip for Programmers - Less Automation">
+  <meta name="author" content="">
+
+  <title>Game Design tip for Programmers - Less Automation</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Game Design tip for Programmers - Less Automation</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>For past few months I've been working on 2D Tower Defense game. One of the things I've learnt is some of the (good) habits I've as long time Software developer are counter-productive when designing games.One of them is the obsession with code structure.</p>
+<p>A good software design practice dictates that "Thou shalt not hard code". In other words, define the parameters of your program as variables or constants, or read them from configuration files. This is a good idea when you are designing a library, framework or a game engine. But not while making a game. If you are an indie developer working on an game idea that's not fully fleshed out yet, then your requirements are going to change. The efforts you spent in writing the adapter for a configuration file could be replaced in future by a 3rd party tool you might end up using. For example, I wrote a complete SVG based pipeline to design my game. I could design the map in Inkscape and specify the parameters as JSON in SVG description tags. My game code then would load these SVGs at runtime, render each sprite (caching them whenever it can) and building the game level from the configuration JSON embedded in the SVG. This all worked fine and dandy (as you can see in this <a href="http://jayesh.me/pixicraft/demo1.html">playable demo</a>). But when I started looking at adding skeleton based animation, I realized it would be better to use Spine instead. Then it became clear that I should use Spine for almost everything, thus completely abondoning the SVG pipeline I had written. Lesson learned - focus on finishing the game/prototype, don't worry about sophistication of architecture.</p>
+<p>Another good practice in software design is no duplication. To avoid repeating yourself you try to extract the common code and move it into reusable modules. This practice backfires however when the number of instances of reuse are only two, i.e. you overestimate the relevance of particular code segment. All the effort you spent in thinking and implementing the refactor are wasted and you now have some architecture baggage.</p>
+<p>The reusability overestimation is not limited to just code. While designing game, you also come across it while designing assets. I came across it in color scheme for my game levels. I defined a color scheme with shades of two or three principal colors. I had the temptation to define the color codes for these shades in one place and refer to them from every artwork or piece of code. However this is not practical, because the game design pipeline is made up of several different tools, libraries and your code. Not all of them can read the color shades from a single place. In this case it's ok to repeat some copy-paste steps manually everytime you make changes. Only after you find yourself repeating something more often, then it's time to write an automation script.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Dec 15, 2017</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

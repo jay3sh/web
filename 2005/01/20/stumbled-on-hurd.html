@@ -1,0 +1,119 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Stumbled on HURD">
+  <meta name="author" content="">
+
+  <title>Stumbled on HURD</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Stumbled on HURD</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Stuck in a chicken-n-egg problem on hurd front. I needed to access network through my ethernet port from Hurd. The pfinet translator won't work easily. After googling, and searching through the archives I picked up the notion that the driver for my ethernet card is not present in gnumach. (I know in microkernel implementation drivers are not part of kernel, but I found the driver code under gnumach/linux/drivers…. directory. The Space.c file does not seem to have Broadcom driver code) My ethernet controller card is "Broadcom Corporation NetXtreme BCM5702X Gigabit Ethernet". I downloaded the linux driver source code from Broadcom's site. In Space.c a *_probe() function is called. Each hardware vendor defined his own _probe() function and using some macros that particular function is called. So I had a plan to integrate Broadcom's probe function with the gnumach source code, recompile the thing and try. </p>
+<p>But this effort has stuck in an chicken-n-egg problem as mentioned earlier. For compiling the kernel, I need gcc, make, etc. I installed make some time back, it was simple .deb file. It was hard to find .deb package for hurd-i386 for gcc. Folks on mailing lists advised me to use apt-get to install gcc. It later on occured to me that apt-get internally gets the installation packages from the internet… which in the first place I am trying to access. :( </p>
+<p>So I tried to solve this, by means of cross compiling exercises. Yesterday I tried to compile gcc 2.95 on linux for i686-pc-gnu platform, and it is giving its own set of errors. </p>
+<p>Alongside I have been reading about the L4 kernel and Hurd efforts of porting to L4. I am getting interested in installing L4Ka::Pistachio microkernel. So I might suspend efforts on Hurd front and might follow a new lead. </p>
+<p>Besides in past few days, I have found some good linux stuff, that I didn't know already. </p>
+<p><code>#cat /proc/pci</code> should give you wealth of information about the hardware devices attached to your pci bus, like the IRQ info and rest of PCI info. </p>
+<p>Learnt about this linux command strace, with which you can track the system calls and signals associated with a live running process. </p>
+<p>It was a news to me that, there is a subdirectory under <code>/proc</code> for every process, named after its process id. This subdirectory contains useful info about that process. Among other things it holds an fd subdirectory, which will list all the file descriptors opened by that process. </p>
+<p>Good stuff for debugging your system…. </p>
+<p>I am particularly impressed by the work done by Jochen Liedtke, the father of L4. Sad to know that he passed away in 2001. His paper 'On microkernel design' is a classic one. I am planning to follow whatever job he has done on microkernels. </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 20, 2005</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,128 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ReaderScope v1.2">
+  <meta name="author" content="">
+
+  <title>ReaderScope v1.2</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>ReaderScope v1.2</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>After 1 week of reimplementation of news cache, 1 day of testing and 1 last hour of crazy epiphanies and patches… v1.2 is out.</p>
+<p>Here is what is new.</p>
+<p>With the brand new caching scheme, you can store your bulky news cache on SDCard. Right now my HTC magic is pulling about 1000 images from web (which must be total 10-20MB in size), but the app manager shows ReaderScope only taking 588KB on phone. Because all the content is going to the SDCard.</p>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/SseGbAi29XI/AAAAAAAADZ8/nFl85SSuqd8/s1600-h/storage-sdcard.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/SseGbAi29XI/AAAAAAAADZ8/nFl85SSuqd8/s400/storage-sdcard.png" alt="" /></a></p>
+<p>Also if you do periodic downloads with caching the content, you will notice that the subsequent downloads will take significantly shorter times. This is because, the new caching mechanism accurately downloads only the content that's not in the cache.</p>
+<p>In addition, there are few new features that users have been asking for.</p>
+<p><strong>Mark All As Read</strong></p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/SseIc-zAzvI/AAAAAAAADaE/SCQEGJ0zYMA/s1600-h/mark-all-read.png"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/SseIc-zAzvI/AAAAAAAADaE/SCQEGJ0zYMA/s400/mark-all-read.png" alt="" /></a></p>
+<p>You can mark all the items in a feed read. Does the same function as its counterpart in Google Reader web interface.</p>
+<p><strong>Share with note</strong></p>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/SseIdFBukqI/AAAAAAAADaM/GLIqlsb6y5s/s1600-h/share-with-note.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/SseIdFBukqI/AAAAAAAADaM/GLIqlsb6y5s/s400/share-with-note.png" alt="" /></a>  </p>
+<p>You can just "Share", or you can add a note if you wish. Again same job as its counterpart in Google Reader web interface.</p>
+<p><strong>Manual override to go offline</strong></p>
+<p><a href="http://3.bp.blogspot.com/_W6UcJjyXr24/SseIdfTA8YI/AAAAAAAADaU/isaX7Zw8iK8/s1600-h/go-offline.png"><img src="http://3.bp.blogspot.com/_W6UcJjyXr24/SseIdfTA8YI/AAAAAAAADaU/isaX7Zw8iK8/s400/go-offline.png" alt="" /></a></p>
+<p>One loyal user of ReaderScope has been asking for this feature for a while. It has very practical use for certain. I finally got around to implementing it in v1.2. There are situations when you are online, but you don't want ReaderScope to use the network (because it costs $). You could already customize the periodic background downloads to not use such specific network. But, you may want to restrict GUI's access to the network too. While you are reading the news, ReaderScope marks the items read, stars/shares them if you choose - this is synced with Google Reader over network. </p>
+<p>With the "Go Offline" button, all these front-end actions will be batched instead of doing instant sync over the network (and you will see them in the Pending notification at the top, the one you see when you are actually offline). When you want to go online with the right kind of network, choose "Go Online" and tap on the notification, it will sync your actions.</p>
+<p>Moreover, some bug fixes have also gone in. </p>
+<p>Hopefully you will enjoy the new version. It's not unlikely that some silly bugs went unnoticed during this big rewrite of the caching mechanism. If you see any problems or hit any crashes, please email me the crash report (using the in built crash reporter).</p>
+<p>Enjoy!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Oct 3, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

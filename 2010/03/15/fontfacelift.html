@@ -1,0 +1,130 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="@font-face-lift">
+  <meta name="author" content="">
+
+  <title>@font-face-lift</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>@font-face-lift</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I always found that customizing the look of one's website is greatly constrained by the inability to customize the typeface. Traditionally browsers use pre-installed fonts and with the CSS font-family property, you can provide a list of typefaces that you would like your text to be rendered with (Trebuchet MS, Verdana, Sans-Serif, monospace, for instance). But this list is merely a suggestion. You don't have complete control over how your web page is going to look like in X browser on Y platform.  </p>
+<p>On last friday however I found that it is about to change now (at least in my hopes). I stumbled upon a <a href="http://nimbledesign.com/post/441423115/the-path-of-most-resistance">blog post</a> which had its text rendered in a very beautiful font. After some digging through its source, I discovered the @font-face CSS property.  </p>
+<p>It's not that this is some brand new thing in latest CSS spec, but it seems to have become of practical use only in latest browsers. You can learn more about how to use it in <a href="http://nicewebtype.com/notes/2009/10/30/how-to-use-css-font-face/">this post</a>. I am going to talk about my experience with it and how it is still not perfect.  </p>
+<p>If you are reading this post in an RSS reader, go on and open it up on my blog at this point. You will see it rendered in a beautiful font. But not all of you may be. What it should ideally look like is:  </p>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/S53Jiq32cLI/AAAAAAAADmU/ntNa1TF8OHI/s1600-h/font-face.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/S53Jiq32cLI/AAAAAAAADmU/ntNa1TF8OHI/s640/font-face.png" alt="" /></a><br />
+But is that what you see?  </p>
+<p>The snapshot above is of Safari 4.0.4 on Mac OS X. I believe it looks the same on latest Chrome versions of Linux and Mac OS X. It looks similar in Chrome on Windows XP, but on my eeepc it looks very light for some reason. It won't look anything like it at all in Firefox on any OS. That really disappointed me, but the fault here is not of Firefox, but of my blogging site blogger.com.  </p>
+<p>After a lot of debugging of why Firefox wasn't loading @font-face, I found that Firefox does not allow a webpage to load fonts that are served on a different domain. Blogger does not allow the user to host any arbitrary file, so I host my font files on www.altcanvas.com. That offends Firefox and instead of loading the custom fonts (<a href="http://www.fontsquirrel.com/fonts/junction-regular">Junction</a>, <a href="http://www.fontsquirrel.com/fonts/Santana">Santana</a>), it falls back to Trebuchet MS. You can find more details about Firefox's policy on this matter in this <a href="https://developer.mozilla.org/En/HTTP_access_control">article</a>.  </p>
+<p>I spent whole friday doing fun-font research for my blog. But it stoked me enough that I started redesigning www.altcanvas.com too, which desperately needed a facelift anyway.  </p>
+<p>So over the weekend with the help of two new fonts (<a href="http://www.fontsquirrel.com/fonts/junction-regular">Junction</a> and <a href="http://www.fontsquirrel.com/fonts/Comfortaa">Comfortaa</a>) and my recently learnt CSS tricks, I redesigned my website. Check out the new look of <a href="http://www.altcanvas.com/">http://www.altcanvas.com</a>   </p>
+<p>Again the ideal look is like this:  </p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/S53Quk0wK_I/AAAAAAAADmc/f3bsSbEkOBo/s1600-h/font-face-2.png"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/S53Quk0wK_I/AAAAAAAADmc/f3bsSbEkOBo/s640/font-face-2.png" alt="" /></a><br />
+Don't know what you will get to see. But this time, Firefox's rendering will look  just like what you see above. That's because the fonts are now hosted under the same domain that is serving the web-pages.  </p>
+<p>What I also found was, even if all modern browsers successfully show custom fonts defined with @font-face, their rendering differs. For instance, the Junction font is only available in Regular font-weight and no bold variant is available. So the bold text doesn't look any different from normal text when viewed in webkit browsers (Chrome, Safari), but Firefox (and I believe IE too) smartly creates a bold variant of the typeface. Also I guess, the final look is affected by the OS platform, screen resolution, Anti-Aliasing settings, etc. (The 'e's look poor for Junction font in IE.)  </p>
+<p>So in conclusion, we have a new powerful tool. It's not perfect, but it's pretty good.  </p>
+<p>If you want to customize typeface of your own website or blog, I highly recommend <a href="http://www.fontsquirrel.com/fontface">fontsquirrel's free @font-face kits</a>.  </p>
+<p>_<br />
+_<em>Ads:</em><br />
+* <a href="http://www.amazon.com/CSS-Missing-David-Sawyer-McFarland/dp/0596802447?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">CSS: The Missing Manual</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0596802447" alt="" /><br />
+* <a href="http://www.amazon.com/Head-First-HTML-CSS-XHTML/dp/059610197X?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Head First HTML with CSS & XHTML</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=059610197X" alt="" /><br />
+* <a href="http://www.amazon.com/Fonts-Encodings-Yannis-Haralambous/dp/0596102429?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Fonts & Encodings</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0596102429" alt="" /></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Mar 15, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

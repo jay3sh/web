@@ -1,0 +1,118 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Preview android.R.drawable.* images">
+  <meta name="author" content="">
+
+  <title>Preview android.R.drawable.* images</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Preview android.R.drawable.* images</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>This morning I was going through the Android SDK docs- specifically android.R.drawable class, to find out what stock icons android has that I can use in my project. Android has lot of icons in this class and one is encouraged to use stock icons whenever possible.  </p>
+<p>However I couldn't find any way to see how these icons look like. Their names are supposed to tell something about them, but they are vaguely descriptive at best. So I asked around on <a href="http://stackoverflow.com/questions/1905128/how-to-preview-r-drawable-images">stackoverflow</a> for help. I got a helpful link, but it is still a subset of all the drawables.  </p>
+<p>After a bit of thinking, I figured java reflection can help here and I put some code together. I ended up with a simple app which lists all the icons alongside their names. So now when you want to check out how a particular android.R.drawable.* looks like just scroll through this list.  </p>
+<p><a href="http://lh6.ggpht.com/_W6UcJjyXr24/SyeSoT9NwgI/AAAAAAAADgs/26gpn1tIocg/screenshot2.png"><img src="http://lh6.ggpht.com/_W6UcJjyXr24/SyeSoT9NwgI/AAAAAAAADgs/26gpn1tIocg/screenshot2.png" alt="" /></a><br />
+Get the <a href="http://www.altcanvas.com/downloads/drawablepreview.tar.gz">tarball</a> and the <a href="http://www.altcanvas.com/downloads/apks/drawablepreview.apk">apk</a>. For the basic code snippet, check out my reply on <a href="http://stackoverflow.com/questions/1905128/how-to-preview-r-drawable-images">stackoverflow</a>.  </p>
+<p>Ads:<br />
+* <a href="http://www.amazon.com/Professional-Android-2-Application-Development/dp/0470565527?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Professional Android 2 Application Development</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0470565527" alt="" /><br />
+* <a href="http://www.amazon.com/Coders-Guide-Advanced-Android-Development/dp/0981678017?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">The Busy Coder's Guide to Advanced Android Development</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0981678017" alt="" /><br />
+* <a href="http://www.amazon.com/Unlocking-Android-Developers-Frank-Ableson/dp/1933988673?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Unlocking Android: A Developer's Guide</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=1933988673" alt="" /></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Dec 15, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,123 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Inkface - SVG based GUI design">
+  <meta name="author" content="">
+
+  <title>Inkface - SVG based GUI design</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Inkface - SVG based GUI design</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I have always wondered why are there so many advanced technologies to learn to create the GUI for a software application. GUI is what we see, then if we want to design or customize it, then it should be as simple as editing an image in an Image editor. This becomes more important with the next-gen handheld devices, where the GUIs will be handled more intuitively - by fingers - rather than keyboards or mice. However the problem and its solution wasn't very apparent to me.  </p>
+<p>… until I read this <a href="http://lists.o-hand.com/clutter/1375.html">post</a> by Andre Schmidt on Clutter mailing list few months back. In his <a href="http://osku.de/simsui/">simsui</a> project, he has designed a slider widget from an SVG image and used clutter to render its differnt parts. This little project defined the problem and solution I was looking for. I played with the simsui source code. Unfortunately, that code is written for very specific widget and had some duplicate implementation of some rendering logic.  </p>
+<p>So I decided to give a try to a generic SVG (vector graphics) based GUI framework. I looked for open source SVG rendering libraries. I chose librsvg (which is now part of the Gnome desktop) for this purpose. It took me a month to understand its internals and to extend them to fulfill my needs. I eventually got it working. I now have created a fork of that library - dubbed 'libaltsvg' - under my altcanvas project.  </p>
+<p>What I have achieved so far is complete isolation of GUI from the application logic code. I have coded two samples apps - A music player and A virtual keyboard for handhelds - using this new GUI framework. As you can see in the following demo video, the GUI look-n-fill can be changed by merely changing the input SVG filename. In this framework the app logic gets simplified as well. The code for the two apps can be found in <a href="http://code.google.com/p/altcanvas/source/browse/trunk/libaltsvg/player.c?r=551">player.c</a> and <a href="http://code.google.com/p/altcanvas/source/browse/trunk/libaltsvg/keyboard.c?r=554">keyboard.c</a>.  </p>
+<p><a href="http://blip.tv/file/1299872">  
+high-res version on Blip.tv</a>  </p>
+<p>The complete source code can be found <a href="http://code.google.com/p/altcanvas/source/browse/trunk/libaltsvg/">here</a> in altcanvas repository.  </p>
+<p>The demo above is prepared on my desktop, however I have tested these on my n810 as well. Of course, the animation effects are too much for it to handle. But it works decent at minimum frame rates. I will post packages for n810 diablo in next couple of days.  </p>
+<p>To put this in perspective: this framework lets you do on your desktop/mobile, what Adobe flash lets you do on the web (and on mobiles too) - with an added benefit of coding in C (and python or other popular languages, once I get their bindings ready). There are some closed source projects for doing vector graphics based GUIs for mobile devices (<a href="http://www.ikivo.com/">ikivo</a>, <a href="http://www.bitflash.com/">bitflash</a>). But I haven't found any open source initiatives so far. Let me know for sure if you have.  </p>
+<p>If you are attending OSiM or Maemo summit next week in Berlin, then look for me. I will be happy to give a demo.  </p>
+<p>Update (Sep 12):<br />
+A package for trying the Inkface demo on Nokia n810 is available now. Download the <a href="http://altcanvas.googlecode.com/files/inkface_0.0.1_armel.deb">.deb file</a>.<br />
+[Note that the keyboard/music player are not fully functional apps. They are proof-of-concept apps for showing Inkface GUI framework benefits.]<br />
+I will be flying tommorrow afternoon for Germany. If any of you guys are in OSiM or Maemo summit, I will be glad to meet. After I come back from the trip, I will work on further improvements to this project. Till then… have fun!!!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Sep 8, 2008</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

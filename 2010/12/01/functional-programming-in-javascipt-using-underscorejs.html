@@ -1,0 +1,122 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Functional programming in Javascipt using Underscore.js">
+  <meta name="author" content="">
+
+  <title>Functional programming in Javascipt using Underscore.js</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Functional programming in Javascipt using Underscore.js</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>My interest in functional programming was re-kindled when I attended a talk on the topic at PyCon India this September. Subsequently I tried to look into how it can benefit my code - Javascript or python.  </p>
+<p>There are mainly two reasons for which one would choose Functional programming techniques - short and eloquent code, potential to write parallel applications that can leverage multiple cores. My interest is the former. I remember, few years back while writing some python code I suddenly realised how map, reduce and filter work. I rewrote the whole program, replacing every 4-5 lines of code by single line statements that used map/reduce/filter to handle lists. I admit that the resulting code is not intuitive to someone who knows nothing about how those functions work. But once she understands their usage, the code starts looking eloquent.  </p>
+<p>Pure functional programming is best done in languages like Lisp, Clojure; and I have almost nil experience of that sort. But functional programming languages have some list processing functions that prove to be very useful. They are built into python (map-reduce-filter). They can be written as library in javascript. Underscore.js is one of such libraries.  </p>
+<p>This is a step by step account of what hurdles I faced while try to use functional programming in my javascript code and how they got solved.  </p>
+<p>Back in september, before I had heard about Underscore.js, I looked into how people had tried it. My javascript code for 3DTin, involves lot of algorithms that have to manipulate lists (arrays). It seems very superfluous to write  </p>
+<pre><code>for(var i=0, il;arr.length; i++)="" pre="" {...}&lt;=""&gt;
+</code></pre>
+<p>every so often. A much cleaner way is to do  </p>
+<pre><code>arr.forEach(function (elem) { ... })
+</code></pre>
+<p>Similarly, map and filter functions come really handy in many situations.  </p>
+<p>But there is a major problem in this approach. Most of the times this for loop is in one of the member functions of an object and in that loop the members of the object are changed - using the "this" reference. (This is something that pure functional programming forbids you from doing. A function should not change the state of the system, i.e. should not have any side-effects. But we mortals raised on the OO diet will hardly ever learn that). That  poses a problem. Because accessing "this" from inside the handler will have totally differnt effect. Inside the  handler function body, "this" is a reference to the handler function. That limitation kept me away from this approach for a while.  </p>
+<p>But had I carefully investigated, I would have found that most of the forEach implementations take a context object as second argument. Mozilla's implementation and Underscore.js's API also support that. That discovery made me adopt functional programming in my code more widely.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Dec 1, 2010</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

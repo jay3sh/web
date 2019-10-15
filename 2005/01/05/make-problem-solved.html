@@ -1,0 +1,140 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Make problem solved">
+  <meta name="author" content="">
+
+  <title>Make problem solved</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Make problem solved</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>I was stupidly wondering why won't my <code>/usr/bin/make</code> won't work. Posted many emails in past 3-4 days and ultimately it took installation of make<em>3.80-9</em>hurd-i386.deb to make the 'make' utility work. The original make binary was just corrupt i guess. </p>
+<p>No luck with Xfree86 installation dependencies, no progress with setting up network access. </p>
+<p>One more useful thing I learnt yesterday. How to get your IP address, Gateway and Network mask. These three are needed to setup network with pfinet in HURD. </p>
+<p>In linux use,</p>
+<pre><code>[root@localhost jayesh]# netstat -rn 
+Kernel IP routing table 
+Destination Gateway Genmask Flags MSS Window irtt Iface 
+192.168.2.0 0.0.0.0 255.255.255.0 U 0 0 0 eth0 
+169.254.0.0 0.0.0.0 255.255.0.0 U 0 0 0 eth0 
+127.0.0.0 0.0.0.0 255.0.0.0 U 0 0 0 lo 
+0.0.0.0 192.168.2.1 0.0.0.0 UG 0 0 0 eth0 
+
+[root@localhost jayesh]# /sbin/ifconfig -a 
+eth0 Link encap:Ethernet HWaddr 00:0B:DB:DA:D6:42 
+inet addr:192.168.2.10 Bcast:192.168.2.255 Mask:255.255.255.0 
+UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1 
+RX packets:827 errors:0 dropped:0 overruns:0 frame:0 
+TX packets:863 errors:0 dropped:0 overruns:0 carrier:0 
+collisions:0 txqueuelen:100 
+RX bytes:428907 (418.8 Kb) TX bytes:124307 (121.3 Kb) 
+Interrupt:11 
+
+lo Link encap:Local Loopback 
+inet addr:127.0.0.1 Mask:255.0.0.0 
+UP LOOPBACK RUNNING MTU:16436 Metric:1 
+RX packets:5107 errors:0 dropped:0 overruns:0 frame:0 
+TX packets:5107 errors:0 dropped:0 overruns:0 carrier:0 
+collisions:0 txqueuelen:0 
+RX bytes:348486 (340.3 Kb) TX bytes:348486 (340.3 Kb) 
+</code></pre>
+<p>One irritating catch for less-informed like me is, <code>ifconfig</code> was found in <code>/sbin</code> and it wasn't in my <code>PATH</code>, so that command won't execute by default. So if you get 'No such file found' complaint from your shell when google says it should work, try looking in your <code>/sbin</code>, <code>/usr/sbin</code> directories, ones that are not in your PATH</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 5, 2005</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

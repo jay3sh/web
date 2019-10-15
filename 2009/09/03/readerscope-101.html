@@ -1,0 +1,125 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="ReaderScope 1.0.1">
+  <meta name="author" content="">
+
+  <title>ReaderScope 1.0.1</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>ReaderScope 1.0.1</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>**Update 2: **Just released 1.0.1a. Upgrading to 1.0.1a from any previous version should cause crash. If you have already done a clean install of 1.0.1, then you don't have to upgrade to 1.0.1a, it has no new features, just the fix.</p>
+<p>**<br />
+**</p>
+<p><strong>Update 1:</strong> Regarding the "Force-close" problem on upgrade from 1.0 to 1.0.1 - I see what the problem is, but don't understand why it is a problem, because I thought Android's package upgrade will handle it. It happens because of the changed layout of Action Panel. Apparently the upgrade process mixes the old and new layout files. Therefore a clean install of 1.0.1 solves the problem. </p>
+<p>I am a long time Linux user. So when it comes to naming anything - files/images/tags - I don't use any white spaces in the name. It is a good practice IMO, but it made me forget that people can name their Google Reader tags with a space in the name. Moreover, Google Reader uses it as-is to form the UID. So none of my accounts exercised this test case. ReaderScope - as in 1.0 - neglects such labels and the others coming after it. That's probably the reason for two problems reported to me so far. Thanks to the gentleman who reported a bug this morning and more importantly generously provided his OPML file for testing. Now this bug should be fixed in 1.0.1.</p>
+<p>If you were having any problems with missing feeds/labels, then you should upgrade to 1.0.1. </p>
+<p>For troubleshooting this kind of problem, I am also introducing a logging facility in 1.0.1. I managed to put together a logging scheme that is accessible from the UI (Just go to <em>Settings->Log</em>). This screen shows a report of latest download and below that it will show key error messages that might have been incurred in background threads. If you see any problems in the behavior of ReaderScope, take a look at this screen. If you want me to look at it, just hit the "Menu" button and press email. The logs will be put in an email using the email client you have on phone, just send it to readerscope AT altcanvas DOT com. Also describe the problem you are facing.  </p>
+<p><a href="http://4.bp.blogspot.com/_W6UcJjyXr24/SqAAERbQp-I/AAAAAAAADXk/ukZTIjxon14/s1600-h/1.0.1.log.png"><img src="http://4.bp.blogspot.com/_W6UcJjyXr24/SqAAERbQp-I/AAAAAAAADXk/ukZTIjxon14/s400/1.0.1.log.png" alt="" /></a>  </p>
+<p>Also 1.0.1 has some tiny but useful UI improvements. You can now favorite any feed from a short cut menu, while reading the feed.</p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/Sp_-rAXEWzI/AAAAAAAADXM/4I2MTggHEes/s1600-h/1.0.1.feedsettings.png">  
+<img src="http://2.bp.blogspot.com/_W6UcJjyXr24/Sp_-rAXEWzI/AAAAAAAADXM/4I2MTggHEes/s400/1.0.1.feedsettings.png" alt="" /></a></p>
+<p>_<br />
+_</p>
+<p>The last improvement is the overlayed position of Action panel. It makes it less intrusive and more pretty.</p>
+<p><a href="http://1.bp.blogspot.com/_W6UcJjyXr24/Sp__SXZWSLI/AAAAAAAADXc/FjNLlIb4Rn4/s1600-h/1.0.1.overlay.png"><img src="http://1.bp.blogspot.com/_W6UcJjyXr24/Sp__SXZWSLI/AAAAAAAADXc/FjNLlIb4Rn4/s400/1.0.1.overlay.png" alt="" /></a></p>
+<p>So get your updates from android market OR slideme.org OR andappstore.com.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Sep 3, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

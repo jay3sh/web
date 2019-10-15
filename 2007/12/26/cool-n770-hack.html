@@ -1,0 +1,120 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="cool n770 hack">
+  <meta name="author" content="">
+
+  <title>cool n770 hack</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>cool n770 hack</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>If you are a nokia tablet user like me (n770/n800/n810), you must have wished for this feature I am going to describe.  </p>
+<p>When I am browsing the net on my desktop I come across a webpage that I would like to open on my n770 right away - mostly it's some maemo package that I would like to download and install. The problem is rewriting the cryptic URLs in n770's address bar is time-consuming and error-prone. Going to the same URL through google search takes couple of page loads, which takes sizeable time.  </p>
+<p>One way to ease this process is to use some clipboard sharing software (synergy, vnc viewer), I am not sure if that works, but I bet someone has tried it. Besides, it will be too heavy as compared to the following method I suggest here.  </p>
+<p>If you have <a href="http://maemo.org/community/wiki/InstallSsh">ssh enabled</a> on your tablet then you can run this simple script on your desktop and command the tablet to open any URL in its browser.  </p>
+<p>It is only this single command:  </p>
+<p>ssh root@<ip of tablet\> "dbus-send --system --type=method_call --dest=\"com.nokia.osso_browser\" --print-reply /com/nokia/osso_browser/request com.nokia.osso_browser.load_url string:\"$1\""  </p>
+<p>Save this in a script nokia-browser.sh and the next time you want to open a URL, just execute:  </p>
+<p>nokia-browser.sh &lt;URL>  </p>
+<p>You will be prompted for password (unless you have setup the keys)  </p>
+<p>Check your tablet, it must be loading the URL by now. If a browser is not already open it will be opened automatically because by d-bus magic.  </p>
+<p>I learnt about this command from this <a href="http://osdir.com/ml/handhelds.maemo.devel/2006-01/msg00107.html">mailing list post</a>. I am just trying to use it remotely.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Dec 26, 2007</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

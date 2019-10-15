@@ -1,0 +1,136 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Android development with Vim + Eclim">
+  <meta name="author" content="">
+
+  <title>Android development with Vim + Eclim</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Android development with Vim + Eclim</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Let me repeat a millionth time that Vim is my favorite code editor. I however have been lured by Eclipse's glitter in the areas such as code completion, live debugging and graphic representation of various aspects of a project. But Eclipse code editor is only a bit better than Notepad, if compared to Vim. As a compromise I found the viPlugin. I used it for a while. It's not as rich as Vim, but good enough. (BTW, it is probably the first piece of software I ever paid for).  </p>
+<p>Due to Android, I did a comeback to Java couple months ago and again struggled while making the choice between Eclipse and Vim. I chose to do all the coding in Vim eventually.  </p>
+<p>Last week I learnt about <a href="http://eclim.sourceforge.net/index.html">Eclim</a>. The project looks so mature, I wonder why I didn't hear about it earlier. It gets the best of both worlds. It provides a script that runs eclipse in headless mode and it has Vim plugins that provide the functionality like code-completion (among others) inside the Vim editor. (There are two other scenarios as well, but I use this one, check their docs for more info).  </p>
+<p>Here is a small guide on how to set this up for doing Android coding.  </p>
+<p>My setup: Fedora 10 x86_64 linux, vim-enhanced-7.2.148, Eclipse SDK 3.4.2, Eclim 1.4.7, using Sun's JDK 1.6.0 (although gnu jre is installed, I avoid it by using custom JAVA_HOME).  </p>
+<p>Install Eclipse. I download the tarball and untar it somewhere (mostly /opt).  </p>
+<p>mkdir ~/.vim/eclim  </p>
+<p>Download eclim from <a href="http://sourceforge.net/project/showfiles.php?group_id=145869&amp;package_id=160492">here</a>.  </p>
+<p>One thing that annoyed me was lack of installation instructions. The project page has good overall documentation, but it doesn't mention that you need to compile and install it using ant. Thanks to this <a href="http://writequit.org/blog/?p=279">post</a>, I figured that out.  </p>
+<p>As the post says, you need ant 1.7.1. Fedora 10 has the right version. Check what you have. I tried this incantation:  </p>
+<p>JAVA_HOME=/usr/java/default ant -Declipse.home=/opt/eclipse -Dplugins=ant,jdt  </p>
+<p>It failed complaining that ant didn't find org.apache.tools.ant.util.regexp.Jdk14RegexpRegexp.  </p>
+<p>After some googling I <a href="http://www.jarfinder.com/index.php/java/info/org.apache.tools.ant.util.regexp.Jdk14RegexpRegexp">found</a> a list of jars that have this class. I downloaded the ant-nodeps-1.7.1.jar, then tried following command. It built and installed eclim successfully.  </p>
+<p>JAVA_HOME=/usr/java/default CLASSPATH=$CLASSPATH:./ant-nodeps-1.7.1.jar ant -Declipse.home=/opt/eclipse -Dplugins=ant,jdt  </p>
+<p>The installation deploys necessary vim scripts under ~/.vim and installs the plugins and some scripts to your eclipse installation.  </p>
+<p>Follow Android SDK directions on how to setup eclipse environment (installation of Android plugin, etc.) and how to create a sample project. If you have created a project using activitycreator (like me), then you can still create a new project in eclipse and choose the option of creating project from "existing source".  </p>
+<p>Now start the eclimd server (/opt/eclipse/eclimd for me). It starts listening on port 9091.  </p>
+<p>Navigate to your project directory (which has .project file) and start Vim. Execute ":ProjectSettings", if you don't get any error, but see a new buffer with folded lines, then you have a working setup.  </p>
+<p>To try code completion (probably the most important feature), write an incomplete pacakge name and hit "Ctrl x Ctrl u". You should see a drop-down list like this.  </p>
+<p><a href="http://2.bp.blogspot.com/_W6UcJjyXr24/Sh_JM6CRU5I/AAAAAAAAC28/oMAEGqUZpKA/s1600-h/eclim-demo.png"><img src="http://2.bp.blogspot.com/_W6UcJjyXr24/Sh_JM6CRU5I/AAAAAAAAC28/oMAEGqUZpKA/s400/eclim-demo.png" alt="" /></a>  </p>
+<p>If you prefer to use Tab for this purpose install the <a href="http://www.vim.org/scripts/script.php?script_id=1643">supertab</a> vim plugin and copy few lines to your .vimrc from the end of this <a href="http://writequit.org/blog/?p=279">post</a>.  </p>
+<p>These instructions should work more-or-less for other Linux installations too. For Mac OSX, see the post I have linked twice above.  </p>
+<p>It looks like Eclim has a lot of features, I have yet to try most of them. But this clearly feels like a great addition to my toolbox.  </p>
+<p><em>Ads:</em><br />
+* <a href="http://www.amazon.com/Eclipse-Plug-ins-3rd-Eric-Clayberg/dp/0321553462?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Eclipse Plug-ins (3rd Edition)</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0321553462" alt="" /><br />
+* <a href="http://www.amazon.com/Eclipse-IDE-Pocket-Guide-Burnette/dp/0596100655?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Eclipse IDE Pocket Guide</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=0596100655" alt="" /><br />
+* <a href="http://www.amazon.com/Hacking-Vim-personalizing-productivity-optimizations/dp/1847190936?ie=UTF8&amp;tag=myfreq-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969">Hacking Vim: A Cookbook to get the Most out of the Latest Vim Editor: From personalizing Vim to productivity optimizations: Recipes to make life easier for experienced Vim users</a><img src="http://www.assoc-amazon.com/e/ir?t=myfreq-20&l=btl&camp=213689&creative=392969&o=1&a=1847190936" alt="" /></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on May 29, 2009</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+

@@ -1,0 +1,118 @@
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="VI - A capable IDE">
+  <meta name="author" content="">
+
+  <title>VI - A capable IDE</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="../../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="../../../css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.bluemathsoftware.com">Blue Math</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/jyro">Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jay3sh">Github</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.linkedin.com/in/jayeshsalvi">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>VI - A capable IDE</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Among the tools software professionals use 'vi' can be considered most geeky (read cooooooooool) tool. People using *nix based systems for development settle for xemacs or more modern editors/IDEs. vi seems to be a preference of system administrators or people who do more of configuration stuff than only writing and compiling code. This is because vi is very handy and fast tool (no GUI launch like xemacs). One of the reasons for vi being less popular in many developers and more popular in geeks is its very compact and hence hard to learn keyboard commands.  </p>
+<p>I was an xemacs guy, but 3 years back at a job I had to learn vi, because everyone else used it. I learnt it with very difficulty. Later on I found the h-j-k-l key combo as an alternative to arrow keys and realized how one can browse a text without moving their palms from the center of the keyboard. That's when I started loving vi.  </p>
+<p>Lately I use ONLY vi for all kinds of editing. But I have also used eclipse, Visual studio in the past, so I know what great is in IDEs. IDE's give you different tools that you need for software development in one single application - multiple windows, build window, execution window, cross referencing, source code highlighting, integrated debugger and many other useful plugins. Over time I have found all these features in vi.  </p>
+<p>I learnt how to use multiple windows. Switching windows in vi is a tricky dance of fingers, but once you learn it you do it unknowingly. One very useful feature of modern IDEs is folding. They parse the source code and allow you to fold the source code at different nesting levels. In case of C, C++, Java, that would be done using braces. Considering vi is totally a text window tool, the way vi developers have achieved this folding effect is remarkable. You have to give a bunch of commands though before achieving this. But I now have defined macros for these commands and at a hit of a function key I can collapse a huge C/C++ source file in screenful of folds. This feature gives a comfort in browsing through the code, because it essentially summarizes the code. (One thought - If you fold the code of a C++ class implementation file, then what you see is more or less the interface of the class)  </p>
+<p>In past few days I got to try some of the advanced features of vi. Vi's latest version lets us import a cscope database file in vi. That way you can browse through a source tree using cscope from the comforts of Vi. An Explorer plugin of vi gives you one special window that you can use to navigate through your directory structure. One can also integrate vi with a debugger. I however haven't got time to look at that, mainly because it's of little use in my particular environment as my development machine and test machine are always different and have different platforms.  </p>
+<p>The most versatile feature that I find most interesting is a support for shell in a window. Unfortuanately I read that this is not integrated by vi development community as part of vi. So I had to download a private patch and build a patched vi of a little old version and use it. Regular vi lets you run shell commands, but while doing that your vi disappears from the screen - I don't like that. I always wanted to execute shell commands in a little window in a corner bottom, so that I can kick off my build process in that window and watch the compilation errors right besides the source code. This is a very versatile feature, because using it you can have a super customized window that you can use for compilation, execution or file browsing. A little inconvinience is that, the patched vi for vimshell is only a little old, but it is old enough not to have cscope support. And I did not find vimshell patch available for latest vim 6.4. But that's just a minor issue.  </p>
+<p>The following two links should let you do all these things that I have described above:<br />
+[1] <a href="http://vimdoc.sourceforge.net/htmldoc/help.html">Vim documentation help</a> - This is the bible of vim<br />
+[2] <a href="http://www.wana.at/vimshell/">The VIM-Shell</a></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted">Posted on Jan 19, 2006</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
