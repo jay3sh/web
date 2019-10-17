@@ -1,16 +1,19 @@
 
 Bicycle Pedals
 ===
-
 Here's an exercise in design thinking.
 
 Let's say we want to model following objects as a *Software* object called **Vehicle** - Car, Motorcycle, Bicycle.
 
-| | Input | Output |
-|-|-------|--------|
-|Car|Steering wheel, brake, accelerator|4 wheels|
-|Motorcycle|Steering handle, brake, accelerator, gearshift|2 wheels|
-|Bicycle|Steering handle,brake,pedals,gearshift|2 wheels|
+* Car
+    - Input : Steering wheel, brake, accelerator
+    - Output : 4 wheels
+* Motorcycle
+    - Input : Steering handle, brake, accelerator, gearshift
+    - Output : 2 wheels
+* Bicycle
+    - Input : Steering handle,brake,pedals,gearshift
+    - Output : 2 wheels
 
 
 What UI components will we use for input to create **Vehicle**.
