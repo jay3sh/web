@@ -1,6 +1,8 @@
 Stakeholder Capitalism
 ===
 
+These are my notes from the article on [Stakeholder Capitalism by Edward Freeman et. al.](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1410852)
+
 The society contains following actors for the purposes of economic discussion
 1. Government (State, democratically elected entity)
 2. Investors (Stock holders or owners of corporation)
@@ -27,5 +29,18 @@ These narratives have three assumptions:
 This view of capitalism leads to four problems:
 1. Competition is seen as the pre-requisite for capitalist society. The actors in such system tend to compete for survival rather than cooperate.
 2. Saying that morality has no place in business, perpetuates the myth deep into the managers.
-3. Each of the traditional narratives simplistically prioritizes only single group's interests at expense of others. They not only ignore other groups, but claim that serving one group automatically benefits others. This clearly doesn't work (otherwise such different narratives wouldn't exist)
-4. 
+3. Each of the traditional narratives simplistically prioritizes only single group's interests at expense of others. They not only ignore other groups, but claim that serving one group automatically benefits others. This clearly doesn't work (*otherwise such different narratives wouldn't exist*)
+4. If government is made to do abritration in case of business conflicts, or set rules for moral behavior, or redistribute wealth through laws; it can be manipulated by businesses for their gains. e.g. Lobbying.
+
+The solution
+---
+Creating voluntary agreements that protect interests of each group and make all groups agree on other group's interests. It has following six principles
+1. Cooperation - The goal of business activity should be value creation with cooperation of others
+2. Engagement - All stakeholder groups must be engaged in decision making
+3. Responsibility - If in the course of business any party is harmed, it should be compensated. It cannot be rationalized by claiming that morality has no place in business.
+4. Complexity - Humans are complex and cannot always be expected to do the thing that benefits everyone. This is acknowledged by assuming responsibility (as per 3)
+5. Continuous creation - Creation of value and working with others and for others should be considered more important than self-interests
+6. Emergent competition - Competition should exist to the extent of providing options to stakeholders. It should not be assumed a basic characteristic of capitalist system.
+
+*These notes are meant to be summary/interpretation of the article. They do not include my opinions, except the text in italics*
+
