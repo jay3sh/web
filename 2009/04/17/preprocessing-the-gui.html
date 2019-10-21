@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Apr 17, 2009</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>Couple of days ago while on a bus, an old idea resurfaced in my mind. I had briefly thought about it in the past and then shelved it in some corner. But now the idea seemed very relevant.  </p>
 <p>The way inkface works is, when the application starts it invokes inkface to load an SVG document. Inkface library will parse the XML and render individual elements and return them to the application. The GUI loaded like this has rich look, but the loading time is high (especially on handheld devices). This is because loading of elements involves parsing of XML and then rendering it. This is resource consuming as well as time consuming stage. What if this is done during the GUI design time and not at the runtime. (Similar to compiling the source code as opposed to interpreting it at runtime).  </p>
 <p>In past couple days, I implemented this idea in the form of an Inkscape plugin. With this plugin, the designer of the GUI has to save the SVG GUI in a file of different extension (.ink). Inkscape automatically triggers the plugin code upon this. The plugin then parses the SVG and renders its elements into raster images and saves them as PNG images. These PNG images are put into a ZIP archive along with some metadata and that ZIP archive is stored as the .ink file.  </p>
@@ -86,11 +92,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Apr 17, 2009</span>
-        </div>
-      </div>
     </div>
   </article>
 

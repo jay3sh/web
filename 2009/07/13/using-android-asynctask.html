@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Jul 13, 2009</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>While coding for <a href="http://www.altcanvas.com/android/cutewit">CuTewit</a>, I have refined the multi threading framework of the app couple of times. In this post I am documenting what I have learnt from the experiences. The intial part of the post, describes the old way of coding asynchronous tasks for Android, while the later part talks about how to make use of android.os.AsyncTask and my enhancements to it.  </p>
 <p>If you have been coding for mobile platforms you must know the importance of multi-threading. Network access is a very basic requirement of nearly all mobile apps. So when the app is fetching data over network (or doing any high latency task), the GUI's main loop can't be left unattended. That's why time consuming jobs have to be performed in a separate thread.  </p>
 <p>Android GUI is no different. If you want to see the basic approach taken to solve this problem, then read this <a href="http://google-ukdev.blogspot.com/2009/01/crimes-against-code-and-using-threads.html">post</a>. I used a similar approach in early releases of <a href="http://www.altcanvas.com/android/cutewit">CuTewit</a>. It was somewhat similar to the AsyncTwitter implementation that Twitter4J had. As you will find out after going through the article, that it's not the simplest way to code a multi-threaded app. The big problem I faced with that design was, the background task is not represented by a well defined entity. So whenever one has to add a new background task, one has to make code changes at many places.  </p>
@@ -158,11 +164,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Jul 13, 2009</span>
-        </div>
-      </div>
     </div>
   </article>
 

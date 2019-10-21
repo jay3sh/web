@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Sep 13, 2009</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>In the last post I forgot to mention the new feature added - crash reporter. But thanks to the users who used this feature to report the crashes, I found a subtle problem. Also a couple of suggestions from comments in last post were pretty easy to implement on a Sunday afternoon. So I just released v1.1.1 with the fix for the Login crash, two features (zoom functionality, filtering read items) and a little internal optimization.</p>
 <p>About the crash. I believe it was seen only by G1 users who have slide-out keyboards (not necessarily though). The G1 users have to slide out the keyboard to type in the credentials. This puts the app into landscape mode. After they press the login button, the query goes over network and a rotating progress dialog is shown. Depending upon the network, this may take some time. Before the login is complete and the progress dialog is gone, if the user slides in the keyboard (which is very natural), they force the app into portrait mode. By default the android platform restarts the activity during these orientation changes. This causes the original progress dialog to not belong to the current window. So when the login response returns and the app tries to cancel the progress dialog, it crashes. The solution I have put in v1.1.1 is to override the default behavior of android and make it not to restart the app. This will not make any visible change in the user interface, except that now the app won't crash even when you slide in the keyboard very quickly.</p>
 <p>Now about the features. You will now see a filter icon on top of the list of news items (the 2nd screen). If you tap it, all your read items will get hidden. If you tap it again, they will be visible again.</p>
@@ -88,11 +94,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Sep 13, 2009</span>
-        </div>
-      </div>
     </div>
   </article>
 

@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Oct 29, 2010</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>When I upgraded my Macbook (2,1) to Ubunut 10.10 last week, I realized after a while that it wouldn't play any audio through the audio jack. The built-in speakers were working well, but as soon as I plugged in the headphone the built-in speakers would go off (as expected) and the headphone would be quiet too.  </p>
 <p>Then I got little concerned when I saw the red glow coming out of the audio jack. This macbook is now 4 years old, so I assumed the red light means some malfunction. But after I searched around, I found it was a known issue. The red light wasn't any indicator, but optical audio output. Many mac forums had discussions on this topic. Most of them fixed it by sticking a pin or toothpick into the jack, juggling around a little or shorting some internal probes. They reported that this eventually turns the light off and audio out was switched back to traditional wired output. I tried the same, but no luck. In retrospect, those all posts were with Mac OSX installed. So in their case, the optical audio output was probably turned on in hardware and had no way to turn off in software. Whatever the case, their solution didn't work on my Ubuntu installation.  </p>
 <p>I figured that, the optical audio output was not turned on in hardware, because when I rebooted the laptop in Mac OSX the red light used to go off and headphones worked. So now it remained to find some software tweak to fix the problem. Eventually I found this <a href="http://ubuntuforums.org/showthread.php?t=898904">thread</a> on ubuntu forums. Following two commands fixed the problem.  </p>
@@ -92,11 +98,6 @@ amixer set Speaker,0 on
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Oct 29, 2010</span>
-        </div>
-      </div>
     </div>
   </article>
 

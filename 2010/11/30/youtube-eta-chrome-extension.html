@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Nov 30, 2010</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>If you have ever tried to watch a youtube video on a slow network connection, you will know the frustration I often face. Wondering when that red progress bar will reach its end. Thanks to a chrome extension like <a href="https://chrome.google.com/extensions/detail/lgdfnbpkmkkdhgidgcpdkgpdlfjcgnnh">Stop Autoplay</a>, I can let the youtube video open in background tab and let it buffer as I browse other webpages. But still I have to go back to the youtube video's tab to find out if the video is downloaded, can I start watching it?</p>
 <p>So I always wished someone had written an extension which will do something about this problem. After going through 3-4 pages of search results on chrome extension website with the query 'Youtube', I figured no such extension exists. This weekend, the itch became unbearable. So I peeked into the Stop Autoplay's short code and with some searching found out there exists a <a href="http://code.google.com/apis/youtube/js_api_reference.html">Javascript API</a> to control the youtube player's behavior. It provided the API calls that were sufficient for me to calculate the speed (in bytes-per-sec) at which youtube video is downloading. Combine that with total size and total duration of the video and I had the solution I was looking for.</p>
 <p>So I decided to write an extension out of it. You can get it from <a href="https://chrome.google.com/extensions/detail/dihdfccldmpeiacniemennlegenkkhnh">here</a>. </p>
@@ -89,11 +95,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Nov 30, 2010</span>
-        </div>
-      </div>
     </div>
   </article>
 

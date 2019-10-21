@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Oct 28, 2010</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>This is a very specific problem and not many would have it. But I had to implement it and came up with a solution that works for me. This is how I did it for <a href="http://www.3dtin.com/">3DTin</a>.  </p>
 <p>First why it's specific. In a typical case a web app wants to save user submitted images to Google app engine data store. This can be simply done by presenting user with a form and adding an 'input' tag with type 'file'. The submitted image can be extracted in GAE using request.get() and packaged into db.Blob to eventually store into BlobProperty. I am not going to explain this typical case, because it's covered nicely in the <a href="http://code.google.com/appengine/docs/python/images/usingimages.html">GAE's documentation</a>. However, the process is not as straightforward when the image you want to store is not an image file on user's computer, but a dump of HTML5 canvas element in the web app.  </p>
 <p>An HTML5 canvas element lets you export its content as jpeg or png image with the <a href="http://www.w3.org/TR/html5/the-canvas-element.html#dom-canvas-todataurl">toDataURL API</a>. This function returns a data URL that contains base64 encoded jpeg/png image. So how do we convert this image data into GAE's db.Blob object?  </p>
@@ -86,11 +92,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Oct 28, 2010</span>
-        </div>
-      </div>
     </div>
   </article>
 

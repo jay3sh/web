@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Dec 20, 2008</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>If you are wondering about the progress of inkface, it's coming soon. I was planning to release version 0.1.2 couple weeks ago with a cool app demonstrating the improvements in the library (A twitter client), but after I saw the abysmal memory performance of the app on my n810, I decided to wait. Past two weeks I spent understanding the memory leaks in the library. In this post I would like to share my experiences while debugging reference count leaks in my python bindings.  </p>
 <p>The <a href="http://www.python.org/doc/2.5.2/ext/refcounts.html">primary documentation</a> on the subject from python.org is the first stepping stone. Considering how daunting the task of memory debugging is - some inspiration always helps. Read this <a href="http://www.python.org/doc/essays/refcnt/">post</a> from Guido which explains how to approach the task.  </p>
 <p>In most of the cases we start debugging the memory leak after we have seen the program crawling or ever-increasing heap profile graph from valgrind <a href="http://valgrind.org/docs/manual/ms-manual.html">massif</a>. Whichever is the case, the theory of reference counts as explained in above docs, doesn't make sense in this scenario. In such case, the following steps may help you get started.  </p>
@@ -100,11 +106,6 @@ After the whole exercise, I concluded that debugging memory leaks by means of de
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Dec 20, 2008</span>
-        </div>
-      </div>
     </div>
   </article>
 

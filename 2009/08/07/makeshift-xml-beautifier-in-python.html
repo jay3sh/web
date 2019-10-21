@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Aug 7, 2009</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>Lately I had to deal with some XML dumps. It's a pain to analyse XML if it's not properly indented. Browsers do the best job of rendering XML. Those collapsable XML elements are very handy. But they work only if the XML file is downloaded with right MIME type. That's why XML dumped to a local file and opened using a browser doesn't get the same treatment.  </p>
 <p>I am sure there are other XML beautifiers, but I couldn't find one that will work for me. (I am sure in comments someone will post better solutions). Finally following simple python script did the trick. I found it <a href="http://mail.python.org/pipermail/python-list/1999-September/011087.html">here</a> and corrected a little to take care of &lt;/> tags. It worked perfectly on many XML dumps I worked with.  </p>
 <pre><code>#!/usr/bin/python  
@@ -101,11 +107,6 @@ level = 0
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Aug 7, 2009</span>
-        </div>
-      </div>
     </div>
   </article>
 

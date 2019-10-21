@@ -4,7 +4,8 @@
     "version": "5.0.8",
     "scripts": {
         "start": "node_modules/.bin/gulp watch",
-        "bake": "node _code/bake-post.js"
+        "bake": "node _code/bake-post.js",
+        "index" : "node _code/generate-blog-html.js"
     },
     "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
     "keywords": [

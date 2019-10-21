@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Nov 21, 2006</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>All of today I spent putting together all the tools to do an incremental backup to the <a href="http://www.amazon.com/S3-AWS-home-page-Money/b/ref=sc_fe_l_2/002-9228059-8329637?ie=UTF8&amp;node=16427261&amp;no=3435361&amp;me=A36L942TSJ2AJA">Amazon S3 storage service</a>.  </p>
 <p>Amazon is a good brand and providing storage as service is very good utility. But I was not very happy by the fact that Amazon has tried to reinvent storage with this web service. Web Services are a good interface for remote inter process communication. But why do storage operations like function calls. Anyway, cheap cost of the offered storage and good brand were enough for me to pursue it as my backup solution.  </p>
 <p>I spent whole evening setting up <a href="http://jeremy.zawodny.com/blog/archives/007641.html?">different tools</a> that provide front end for S3 service. The most useful tool would be a NAS server that provides NFS/CIFS mounts and does S3 transactions at the backend. However it was hard to find any such direct tool. As of today there are many under-development or beta scripts written in perl, python, ruby, java. I gave a shot to few of them, but they weren't very handy for solving my simple backup solution. <a href="http://www.jungledisk.com/">JungleDisk</a> is very good frontend tool for S3-service. It gives WebDAV frontend interface (again why WebDAV and not NSF?) and it's available for all platforms. It is good if your needs are manual access to this storage. It is difficult to treat WebDAV URL as a drive so that a backup utility can write to it just like any other local drive. I investigated <a href="http://www.webdav.org/projects/">lot of options</a>, NFS-to-WebDAV bridge, WebDAV CLI clients which can be called by backup scripts, but there isn't a great solution for all platforms. My current need is Windows desktop backup. Finally I got 'S3Drive'. It mounts the S3 storage as just another drive on your windows box. This was gr8 for my current needs. One thing to note - JungleDisk does not show the files stored by other front end tools to the same S3 bucket - it didn't show the files stored by <a href="http://www.suchwerk.net/sodcms_S3Drive_at_work.htm">S3Drive</a>. There are some other tools however which show objects stored by other tools as well, e.g. <a href="http://www.lumensystems.com/s3safe.aspx">S3Safe</a>.  </p>
@@ -92,11 +98,6 @@ os.system(command)
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Nov 21, 2006</span>
-        </div>
-      </div>
     </div>
   </article>
 

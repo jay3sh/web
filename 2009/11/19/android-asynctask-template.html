@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Nov 19, 2009</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>Any meaningful GUI application needs to employ multiple threads, otherwise it is very likely to lock while doing any I/O operations - leaving bad impression on the user. Same is true for Android apps. In fact, android framework prompts user to close the app if it doesn't respond in 10 seconds or so. So it's absolutely essential to perform any task - that has even a remote possibility of taking a bit longer - in a background thread.  </p>
 <p>Fortunately Android framework has some useful constructs built into the framework that make our job relatively easy while doing multithreaded GUI programming. <a href="http://developer.android.com/reference/android/os/AsyncTask.html">android.os.AsyncTask</a> is one of them.  </p>
 <p>The basic steps to make your app multithreaded using AsyncTask are as follows:<br />
@@ -254,11 +260,6 @@ When you call publishProgress(…), it results in a call to onProgressUpdate(…
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Nov 19, 2009</span>
-        </div>
-      </div>
     </div>
   </article>
 

@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Mar 13, 2010</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>I released 1.8.2 couple of days ago. The only change it had was the new login mechanism. Google reader team <a href="http://groups.google.com/group/fougrapi/browse_thread/thread/e331f37f7f126c00">announced</a> on fougrapi group (that stands for "Friends of the Unofficial Google Reader API") that Google Reader soon will be discontinuing the old SID-based login mechanism. Thanks to them for announcing this well before the actual change is supposed to happen (sometime in April). ReaderScope accordingly has been updated to follow the new rules.  </p>
 <p>This change is almost painless for username/password based logins. However the  AutoLogin is a little hairy issue. The <a href="http://github.com/android/platform_frameworks_opt_com.google.android/blob/master/framework.jar">library</a> used to get AutoLogin working is unsupported and undocumented. There is an official way to do AutoLogin kind of thing on Android 2.0 devices, but it requires access to actual device to test and still I hear it's not well documented. Besides the devices at versions &lt;2.0 are going to be there for  a long time. Therefore I got the undocumented and unsupported library to get working somehow with the new auth mechanism. However the changes I had to make were only little short of hocus-pocus. So I was very skeptical about how it was working. I released a <a href="http://groups.google.com/group/readerscope/browse_thread/thread/75267859c5edd897">preview</a> on ReaderScope mailing list. So far the feedback of the preview release and actual 1.8.2 has been positive. I haven't seen anyone reporting issues due to failed logins. I have strategic log statements to detect if things go wrong with authentication. So just mail me the logs if you see suspicious behavior. Settings > Logs. Menu > Email.  </p>
 <p>Today in 1.8.3, I also fixed a bug which would have caused auth problems if anyone was upgrading from pre-1.2.5 installation.  </p>
@@ -88,11 +94,6 @@ I remember someone had requested this feature once long time ago. I am sorry it 
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Mar 13, 2010</span>
-        </div>
-      </div>
     </div>
   </article>
 

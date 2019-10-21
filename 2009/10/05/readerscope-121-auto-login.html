@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Oct 5, 2009</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>Today I came across this excellent article <a href="http://www.androidguys.com/2009/10/04/5-nice-apps-i-refuse-to-use/">"5 Nice Apps I refuse to use"</a> by <a href="http://twitter.com/chuckfalzone">Chuck Falzone</a>. It talks about how all the Google Reader apps (or android app that needs access to Google services) ask for passwords to the user's Google account. As you know ReaderScope does it too. But I completely empathized with the author's point of view. For many like me, Google is the biggest closet in their wired home. Giving the key to this closet to any random app is scary for sure.</p>
 <p>However, of all the login mechanisms I found out, the only supported method for a desktop/mobile app is asking user to enter his/her username and password. Google supports OAuth, but only for web apps. I wish they implement version of OAuth for desktop/mobile apps, just like Twitter. Another way, is to get the login tokens from Android platform. Although, it should be available as platform API, it is not. I guess the reason is, it will be limited only to 'Google experience' phones, hence it cannot be part of the platform.</p>
 <p>But, thanks to the article I mentioned above, more info came out on this discussion. From the article I learnt, that a Google Reader widget accesses Google Account info available on phone. I went through the comments, and one of them gave a pointer to how this might be done. After following the <a href="http://groups.google.co.uk/group/android-developers/browse_thread/thread/7a6bf77910ca31e0/e353bb07f25b820d?hl=en&amp;ie=UTF-8&amp;q=GoogleLoginServiceHelper#e353bb07f25b820d">email thread</a>, I found a way to do this. The solution is not perfect/ideal. It uses a <a href="http://github.com/android/platform_frameworks_opt_com.google.android/blob/master/framework.jar">library</a> put together by a Google engineer (<a href="http://twitter.com/jbqueru">@jbqueru</a>), but it is not an official part of platform. With the help of ubikdroid's example code from the thread, I put together an "AutoLogin" feature for ReaderScope (as of v1.2.1)</p>
@@ -85,11 +91,6 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Oct 5, 2009</span>
-        </div>
-      </div>
     </div>
   </article>
 

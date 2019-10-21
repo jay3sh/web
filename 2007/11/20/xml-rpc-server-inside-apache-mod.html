@@ -74,6 +74,12 @@
 
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
+          <span class="caption text-muted text-right">Posted on Nov 20, 2007</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
           <p>Writing XML RPC server and client in python is extremely easy. There are many examples. <a href="http://docs.python.org/lib/module-xmlrpclib.html">xmlrpclib</a> is part of python, so writing client doesn't need anything extra. There are many examples of XMLRPC server as well. I used <a href="http://www.julien-oster.de/projects/xmlrpcserver/">Julien Oster's</a>.  </p>
 <p>The problem comes when you want to use XML RPC server in a production environment alongside your apache web server. If you are not a big shop then you very likely want to host both of them on same machine. Then two different servers can't listen for HTTP on same port. You might use an alternate port (second in popularity to port 80), but the users behind corporate firewall will suffer. If you understand the protocol stack, you would know it shouldn't be difficult to run the XMLRPC server inside an apache server. I realized that last weekend, and in couple of hours I hosted Julien Oster's XML RPC server inside my apache mod_python framework.  </p>
 <p><a href="http://www.julien-oster.de/projects/xmlrpcserver/">Download</a> the XML RPC server. You will find a single file xmlrpcserver.py.  </p>
@@ -142,11 +148,6 @@ name = remote.app.getName()
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <span class="caption text-muted">Posted on Nov 20, 2007</span>
-        </div>
-      </div>
     </div>
   </article>
 
