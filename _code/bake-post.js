@@ -71,7 +71,7 @@ function bakePost(mdFilepath, blogIndex) {
       if(line.trim().length > 0 && postTitle === null) {
         postTitle = line;
       }
-      if(line.trim() == "===") {
+      if(line.trim().startsWith("===")) {
         bodyStart = true;
       }
     }
