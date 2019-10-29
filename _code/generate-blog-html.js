@@ -20,15 +20,25 @@ years.sort((a,b)=>b-a);
 let postListHtml = "";
 for(let year of years) {
   postListHtml += '<div><h2>'+year+'</h2></div>';
-  for(let post of postEntriesByYear[''+year]) {
+  let sorted = [];
+  for(let i=12; i>0; i--){
+    for(let j=31;j>0;j--){
+      for(let post of postEntriesByYear[''+year]){
+        if(post.month == i && post.day == j){
+          sorted.push(post);
+        }
+      }
+    }
+  }
+  for(let post of sorted) {
     postListHtml += '<div><a href="'+post.path+'">'+post.title+'</a>'+
-      //'<span class="caption">'+months[post.month-1]+' '+post.day+'</span>'+
+      '&nbsp;<span class="badge badge-info">'+months[post.month-1]+' '+post.day+'</span>'+
       '</div>';
 
   }
 }
 
 let blogTemplate = fs.readFileSync("blog-template.html").toString();
-let htmlOutput = blogTemplate.replace("$POST_LIST",postListHtml);
+let htmlOutput = blogTemplate.replace("$POST_LIST$",postListHtml);
 
 fs.writeFileSync("blog.html",htmlOutput);
