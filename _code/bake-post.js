@@ -64,12 +64,20 @@ function bakePost(mdFilepath, blogIndex) {
   let postTitle = null;
   let mdBody = "";
   let bodyStart = false;
+  let categories = [];
+  let seotags = [];
   for(let line of mdInput.split(/\r?\n/)) {
     if(bodyStart) {
       mdBody += line+"\n";
     } else {
       if(line.trim().length > 0 && postTitle === null) {
         postTitle = line;
+      }
+      if(line.trim().startsWith("categories:")) {
+        categories = line.substring(line.indexOf(":")+1).split(",");
+      }
+      if(line.trim().startsWith("seotags:")) {
+        seotags = line.substring(line.indexOf(":")+1).split(",");
       }
       if(line.trim().startsWith("===")) {
         bodyStart = true;
@@ -113,7 +121,8 @@ function bakePost(mdFilepath, blogIndex) {
       month : month,
       year : parseInt(yearStr),
       day : parseInt(dayStr),
-      tags : []
+      seotags : seotags,
+      categoies : categories
     });
   }
   fs.writeFileSync(outpath, postHead+"\n"+postBody);
