@@ -65,22 +65,19 @@ function bakePost(mdFilepath, blogIndex) {
   let mdBody = "";
   let bodyStart = false;
   let categories = [];
-  let seotags = [];
+  let keywords = [];
   for(let line of mdInput.split(/\r?\n/)) {
     if(bodyStart) {
       mdBody += line+"\n";
     } else {
-      if(line.trim().length > 0 && postTitle === null) {
-        postTitle = line;
-      }
       if(line.trim().startsWith("categories:")) {
         categories = line.substring(line.indexOf(":")+1).split(",");
-      }
-      if(line.trim().startsWith("seotags:")) {
-        seotags = line.substring(line.indexOf(":")+1).split(",");
-      }
-      if(line.trim().startsWith("===")) {
+      } else if(line.trim().startsWith("keywords:")) {
+        keywords = line.substring(line.indexOf(":")+1).split(",");
+      } else if(line.trim().startsWith("===")) {
         bodyStart = true;
+      } else if(line.trim().length > 0 && postTitle === null) {
+        postTitle = line;
       }
     }
   }
@@ -93,6 +90,8 @@ function bakePost(mdFilepath, blogIndex) {
   let converter = new showdown.Converter();
 
   let postHead = postHeadTemplate.replace(/\$TITLE\$/g,postTitle);
+  postHead = postHead.replace('$DESCRIPTION$',mdBody.substr(0,150));
+  postHead = postHead.replace('$KEYWORDS$',keywords.join(','));
   let htmlOutput = converter.makeHtml(mdBody);
 
   let postBody = postBodyTemplate.replace('$ARTICLE$',htmlOutput);
@@ -121,7 +120,7 @@ function bakePost(mdFilepath, blogIndex) {
       month : month,
       year : parseInt(yearStr),
       day : parseInt(dayStr),
-      seotags : seotags,
+      keywords : keywords,
       categoies : categories
     });
   }

@@ -1,3 +1,5 @@
+categories:notes
+keywords:Capitalism,Business,Socialism,Ethics,Philosophy,Labor,Government
 Stakeholder Capitalism
 ===
 

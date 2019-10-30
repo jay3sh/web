@@ -1,3 +1,5 @@
+categories:gaming
+keywords:Gaming,ESports,Cricket,Soccer,League of Legends,Sports,Entertainment
 ESports are no different
 ===
 

@@ -6,7 +6,8 @@
       "month": 8,
       "year": 2004,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Make problem solved",
@@ -14,7 +15,8 @@
       "month": 1,
       "year": 2005,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Installed HURD console",
@@ -22,7 +24,8 @@
       "month": 1,
       "year": 2005,
       "day": 9,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Stumbled on HURD",
@@ -30,7 +33,8 @@
       "month": 1,
       "year": 2005,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "GRUBing",
@@ -38,7 +42,8 @@
       "month": 2,
       "year": 2005,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "L4Linux update",
@@ -46,7 +51,8 @@
       "month": 2,
       "year": 2005,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Not much on L4 front",
@@ -54,7 +60,8 @@
       "month": 3,
       "year": 2005,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Warning: const is a keyword in ANSI C",
@@ -62,7 +69,8 @@
       "month": 3,
       "year": 2005,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "DirectX Installation Problem",
@@ -70,7 +78,8 @@
       "month": 3,
       "year": 2005,
       "day": 31,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Halo fixed on ATI Mobility Radeon 9000",
@@ -78,7 +87,8 @@
       "month": 4,
       "year": 2005,
       "day": 16,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "repeat (ps | grep) = filtered top  ",
@@ -86,7 +96,8 @@
       "month": 5,
       "year": 2005,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "GCC 2.95 rpms",
@@ -94,7 +105,8 @@
       "month": 5,
       "year": 2005,
       "day": 9,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Quotes",
@@ -102,7 +114,8 @@
       "month": 5,
       "year": 2005,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Back to the L4",
@@ -110,7 +123,8 @@
       "month": 5,
       "year": 2005,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Safari Bookshelf",
@@ -118,7 +132,8 @@
       "month": 1,
       "year": 2006,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "New blog",
@@ -126,7 +141,8 @@
       "month": 1,
       "year": 2006,
       "day": 16,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "VI - A capable IDE",
@@ -134,7 +150,8 @@
       "month": 1,
       "year": 2006,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Henry Ford",
@@ -142,7 +159,8 @@
       "month": 3,
       "year": 2006,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Gentoo, XGL, HGG",
@@ -150,7 +168,8 @@
       "month": 4,
       "year": 2006,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "If Harry Potter were a computer hacker ...",
@@ -158,7 +177,8 @@
       "month": 4,
       "year": 2006,
       "day": 23,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Troy",
@@ -166,7 +186,8 @@
       "month": 5,
       "year": 2006,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why do we like fiction?",
@@ -174,7 +195,8 @@
       "month": 8,
       "year": 2006,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Programming & Painting",
@@ -182,7 +204,8 @@
       "month": 8,
       "year": 2006,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Hilarious nerd comment",
@@ -190,7 +213,8 @@
       "month": 8,
       "year": 2006,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Another nice quote",
@@ -198,7 +222,8 @@
       "month": 9,
       "year": 2006,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Gas prices... seems like big scam",
@@ -206,7 +231,8 @@
       "month": 11,
       "year": 2006,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Stranger than fiction",
@@ -214,7 +240,8 @@
       "month": 11,
       "year": 2006,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How do I backup to Amazon S3 storage service",
@@ -222,7 +249,8 @@
       "month": 11,
       "year": 2006,
       "day": 21,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "What I read...",
@@ -230,7 +258,8 @@
       "month": 12,
       "year": 2006,
       "day": 2,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "across two hours",
@@ -238,7 +267,8 @@
       "month": 12,
       "year": 2006,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Trip videos",
@@ -246,7 +276,8 @@
       "month": 3,
       "year": 2007,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Sea surfing under the Golden Gate",
@@ -254,7 +285,8 @@
       "month": 3,
       "year": 2007,
       "day": 23,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "\"from time import sleep\"",
@@ -262,7 +294,8 @@
       "month": 4,
       "year": 2007,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "quotes from George Carlin",
@@ -270,7 +303,8 @@
       "month": 5,
       "year": 2007,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Story of a random number",
@@ -278,7 +312,8 @@
       "month": 6,
       "year": 2007,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Once again... a quote from 'Troy'",
@@ -286,7 +321,8 @@
       "month": 6,
       "year": 2007,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Nice review article on virtualization technologies",
@@ -294,7 +330,8 @@
       "month": 6,
       "year": 2007,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The \"Screen\"",
@@ -302,7 +339,8 @@
       "month": 7,
       "year": 2007,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "next desktop jump",
@@ -310,7 +348,8 @@
       "month": 8,
       "year": 2007,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "formula of a horror movie",
@@ -318,7 +357,8 @@
       "month": 10,
       "year": 2007,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "coding Monalisa",
@@ -326,7 +366,8 @@
       "month": 10,
       "year": 2007,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "best effort technologies",
@@ -334,7 +375,8 @@
       "month": 10,
       "year": 2007,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "XML RPC server inside apache mod_python",
@@ -342,7 +384,8 @@
       "month": 11,
       "year": 2007,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Firefox 3 is brilliant!!!",
@@ -350,7 +393,8 @@
       "month": 11,
       "year": 2007,
       "day": 21,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Colbie Caillat",
@@ -358,7 +402,8 @@
       "month": 11,
       "year": 2007,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Picasso",
@@ -366,7 +411,8 @@
       "month": 12,
       "year": 2007,
       "day": 16,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "cool n770 hack",
@@ -374,7 +420,8 @@
       "month": 12,
       "year": 2007,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Blog from nokia tablets",
@@ -382,7 +429,8 @@
       "month": 1,
       "year": 2008,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "two great videos",
@@ -390,7 +438,8 @@
       "month": 1,
       "year": 2008,
       "day": 9,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "OpenMoko, Android and a great hacking post",
@@ -398,7 +447,8 @@
       "month": 1,
       "year": 2008,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "OSiM USA 2008, see you there",
@@ -406,7 +456,8 @@
       "month": 2,
       "year": 2008,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Gr8 commercial",
@@ -414,7 +465,8 @@
       "month": 2,
       "year": 2008,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Google code",
@@ -422,7 +474,8 @@
       "month": 2,
       "year": 2008,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "OSiM USA 2008 - Day 1",
@@ -430,7 +483,8 @@
       "month": 3,
       "year": 2008,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "OSiM USA 2008 - Day 2",
@@ -438,7 +492,8 @@
       "month": 3,
       "year": 2008,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Clutter Webkit",
@@ -446,7 +501,8 @@
       "month": 3,
       "year": 2008,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Accelerometer brainstorming",
@@ -454,7 +510,8 @@
       "month": 3,
       "year": 2008,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Cringely and Paul Graham",
@@ -462,7 +519,8 @@
       "month": 4,
       "year": 2008,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Flickr uploads from n810",
@@ -470,7 +528,8 @@
       "month": 4,
       "year": 2008,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Ubuntu reviewed",
@@ -478,7 +537,8 @@
       "month": 4,
       "year": 2008,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Lions for Lambs",
@@ -486,7 +546,8 @@
       "month": 5,
       "year": 2008,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Cost of Open Source",
@@ -494,7 +555,8 @@
       "month": 5,
       "year": 2008,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Today's slashdot and open source",
@@ -502,7 +564,8 @@
       "month": 5,
       "year": 2008,
       "day": 25,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "\"Wine\" tasting",
@@ -510,7 +573,8 @@
       "month": 5,
       "year": 2008,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Of games",
@@ -518,7 +582,8 @@
       "month": 6,
       "year": 2008,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "OSiM'08 Berlin, Germany",
@@ -526,7 +591,8 @@
       "month": 6,
       "year": 2008,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Python fun",
@@ -534,7 +600,8 @@
       "month": 6,
       "year": 2008,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "80-20 rule",
@@ -542,7 +609,8 @@
       "month": 6,
       "year": 2008,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "temperature",
@@ -550,7 +618,8 @@
       "month": 6,
       "year": 2008,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "George Carlin - favorite clip",
@@ -558,7 +627,8 @@
       "month": 6,
       "year": 2008,
       "day": 25,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "New connection with the past",
@@ -566,7 +636,8 @@
       "month": 7,
       "year": 2008,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "OpenMoko photo tour",
@@ -574,7 +645,8 @@
       "month": 8,
       "year": 2008,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Visualizing source code",
@@ -582,7 +654,8 @@
       "month": 8,
       "year": 2008,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Script fun",
@@ -590,7 +663,8 @@
       "month": 8,
       "year": 2008,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface - SVG based GUI design",
@@ -598,7 +672,8 @@
       "month": 9,
       "year": 2008,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "aus Berlin",
@@ -606,7 +681,8 @@
       "month": 9,
       "year": 2008,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Die Berlin-Affäre",
@@ -614,7 +690,8 @@
       "month": 9,
       "year": 2008,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Musical discovery of the week",
@@ -622,7 +699,8 @@
       "month": 9,
       "year": 2008,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface v0.1",
@@ -630,7 +708,8 @@
       "month": 10,
       "year": 2008,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Has it started?",
@@ -638,7 +717,8 @@
       "month": 10,
       "year": 2008,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Android opened - first looks inside",
@@ -646,7 +726,8 @@
       "month": 10,
       "year": 2008,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Migrating to Google App Engine",
@@ -654,7 +735,8 @@
       "month": 10,
       "year": 2008,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "(k)ubuntu 8.10 - not ready for my home yet",
@@ -662,7 +744,8 @@
       "month": 10,
       "year": 2008,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "more fun with notify-send",
@@ -670,7 +753,8 @@
       "month": 11,
       "year": 2008,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Digital SLR buyer's guide",
@@ -678,7 +762,8 @@
       "month": 11,
       "year": 2008,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Thanksgiving at Crater Lake",
@@ -686,7 +771,8 @@
       "month": 11,
       "year": 2008,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "A great essay",
@@ -694,7 +780,8 @@
       "month": 12,
       "year": 2008,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Fedora 10 on MacBook 2,1",
@@ -702,7 +789,8 @@
       "month": 12,
       "year": 2008,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Paul Graham nails it again!",
@@ -710,7 +798,8 @@
       "month": 12,
       "year": 2008,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Debugging python reference counts",
@@ -718,7 +807,8 @@
       "month": 12,
       "year": 2008,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface update",
@@ -726,7 +816,8 @@
       "month": 12,
       "year": 2008,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface v0.1.2, Twitter-inkface client",
@@ -734,7 +825,8 @@
       "month": 1,
       "year": 2009,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface + Clutter",
@@ -742,7 +834,8 @@
       "month": 1,
       "year": 2009,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Debian repository on Google App Engine",
@@ -750,7 +843,8 @@
       "month": 1,
       "year": 2009,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Planning Inkface v0.2",
@@ -758,7 +852,8 @@
       "month": 2,
       "year": 2009,
       "day": 1,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Turning a page",
@@ -766,7 +861,8 @@
       "month": 2,
       "year": 2009,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Clutter animation paths with Inkscape+Inkface (v0.1.3)",
@@ -774,7 +870,8 @@
       "month": 2,
       "year": 2009,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Testing Android (Koolu Beta 3) on Openmoko Freerunner",
@@ -782,7 +879,8 @@
       "month": 2,
       "year": 2009,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface v0.2 update and automated GUI testing",
@@ -790,7 +888,8 @@
       "month": 2,
       "year": 2009,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Smooth scrolling with Inkface+pygame",
@@ -798,7 +897,8 @@
       "month": 2,
       "year": 2009,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Inkface+pygame v0.2.0",
@@ -806,7 +906,8 @@
       "month": 2,
       "year": 2009,
       "day": 25,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Static IP configuration on Fedora 10",
@@ -814,7 +915,8 @@
       "month": 3,
       "year": 2009,
       "day": 1,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Frets on Fire on Maemo 5 (Fremantle)",
@@ -822,7 +924,8 @@
       "month": 3,
       "year": 2009,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Twitter client with inkface-pygame v0.2.2",
@@ -830,7 +933,8 @@
       "month": 3,
       "year": 2009,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "FoF update",
@@ -838,7 +942,8 @@
       "month": 3,
       "year": 2009,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "FoF - PyOpenGL = miniFoF (possibly for n810)",
@@ -846,7 +951,8 @@
       "month": 3,
       "year": 2009,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "easy source",
@@ -854,7 +960,8 @@
       "month": 4,
       "year": 2009,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Evas + Inkface in v0.2.5",
@@ -862,7 +969,8 @@
       "month": 4,
       "year": 2009,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Preprocessing the GUI",
@@ -870,7 +978,8 @@
       "month": 4,
       "year": 2009,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Einstein's Dreams",
@@ -878,7 +987,8 @@
       "month": 5,
       "year": 2009,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Cutewit (preview)",
@@ -886,7 +996,8 @@
       "month": 5,
       "year": 2009,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Android development with Vim + Eclim",
@@ -894,7 +1005,8 @@
       "month": 5,
       "year": 2009,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "using android AsyncTask",
@@ -902,7 +1014,8 @@
       "month": 7,
       "year": 2009,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "HTC Magic (Indian version) - expectations and facts",
@@ -910,7 +1023,8 @@
       "month": 7,
       "year": 2009,
       "day": 25,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Makeshift XML beautifier in python",
@@ -918,7 +1032,8 @@
       "month": 8,
       "year": 2009,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Intercepting Up/Down keys from bash script",
@@ -926,7 +1041,8 @@
       "month": 8,
       "year": 2009,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope beta1 is out",
@@ -934,7 +1050,8 @@
       "month": 8,
       "year": 2009,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope Beta2",
@@ -942,7 +1059,8 @@
       "month": 8,
       "year": 2009,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope beta3 - Tweet the news",
@@ -950,7 +1068,8 @@
       "month": 8,
       "year": 2009,
       "day": 23,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope beta4 - offline fun",
@@ -958,7 +1077,8 @@
       "month": 8,
       "year": 2009,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Detecting HTC magic on Fedora",
@@ -966,7 +1086,8 @@
       "month": 8,
       "year": 2009,
       "day": 31,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.0",
@@ -974,7 +1095,8 @@
       "month": 9,
       "year": 2009,
       "day": 1,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.0.1",
@@ -982,7 +1104,8 @@
       "month": 9,
       "year": 2009,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.0.2 - making deep cache simple",
@@ -990,7 +1113,8 @@
       "month": 9,
       "year": 2009,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.1 - Social Beacons",
@@ -998,7 +1122,8 @@
       "month": 9,
       "year": 2009,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.1.1 quick-n-easy features",
@@ -1006,7 +1131,8 @@
       "month": 9,
       "year": 2009,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.1.2",
@@ -1014,7 +1140,8 @@
       "month": 9,
       "year": 2009,
       "day": 16,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Wifi and Battery",
@@ -1022,7 +1149,8 @@
       "month": 9,
       "year": 2009,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Crash report for Android App",
@@ -1030,7 +1158,8 @@
       "month": 9,
       "year": 2009,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.1.3 - SDCard storage",
@@ -1038,7 +1167,8 @@
       "month": 9,
       "year": 2009,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope v1.2",
@@ -1046,7 +1176,8 @@
       "month": 10,
       "year": 2009,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.2.1 - Auto Login",
@@ -1054,7 +1185,8 @@
       "month": 10,
       "year": 2009,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.2.3 - Search",
@@ -1062,7 +1194,8 @@
       "month": 10,
       "year": 2009,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Sprint HTC Hero problems with ReaderScope",
@@ -1070,7 +1203,8 @@
       "month": 10,
       "year": 2009,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.2.7 - Podcasts, Expanded View",
@@ -1078,7 +1212,8 @@
       "month": 10,
       "year": 2009,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Frets on Fire for Maemo - Update",
@@ -1086,7 +1221,8 @@
       "month": 10,
       "year": 2009,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope v1.3 - Beyond Google Reader",
@@ -1094,7 +1230,8 @@
       "month": 10,
       "year": 2009,
       "day": 31,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope v1.3.2 - Social Channels",
@@ -1102,7 +1239,8 @@
       "month": 11,
       "year": 2009,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope v1.3.3 - offline podcasts",
@@ -1110,7 +1248,8 @@
       "month": 11,
       "year": 2009,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The AND-OR problem of laptop and mobile phone",
@@ -1118,7 +1257,8 @@
       "month": 11,
       "year": 2009,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Android AsyncTask template",
@@ -1126,7 +1266,8 @@
       "month": 11,
       "year": 2009,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Black on White",
@@ -1134,7 +1275,8 @@
       "month": 11,
       "year": 2009,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "On Chrome OS",
@@ -1142,7 +1284,8 @@
       "month": 11,
       "year": 2009,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.4 (with a Theme Pack)",
@@ -1150,7 +1293,8 @@
       "month": 12,
       "year": 2009,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "on Music: Battle Studies",
@@ -1158,7 +1302,8 @@
       "month": 12,
       "year": 2009,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Is definition of \"Evil\" changing?",
@@ -1166,7 +1311,8 @@
       "month": 12,
       "year": 2009,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Preview android.R.drawable.* images",
@@ -1174,7 +1320,8 @@
       "month": 12,
       "year": 2009,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.5 - quicker, better, prettier",
@@ -1182,7 +1329,8 @@
       "month": 12,
       "year": 2009,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Talking Twitter client",
@@ -1190,7 +1338,8 @@
       "month": 12,
       "year": 2009,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Reality of colors",
@@ -1198,7 +1347,8 @@
       "month": 12,
       "year": 2009,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Make Android speak your Twits with \"TwitSpeak\"",
@@ -1206,7 +1356,8 @@
       "month": 1,
       "year": 2010,
       "day": 2,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Bono's top ten list",
@@ -1214,7 +1365,8 @@
       "month": 1,
       "year": 2010,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Anti Asserts",
@@ -1222,7 +1374,8 @@
       "month": 1,
       "year": 2010,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How to do an online IDE for Android app development",
@@ -1230,7 +1383,8 @@
       "month": 1,
       "year": 2010,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "on Git: tips for SVN users and Git in Dropbox cloud",
@@ -1238,7 +1392,8 @@
       "month": 1,
       "year": 2010,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope v1.7 - Widget, new Icons and .... Ads",
@@ -1246,7 +1401,8 @@
       "month": 1,
       "year": 2010,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "iLikeIt",
@@ -1254,7 +1410,8 @@
       "month": 1,
       "year": 2010,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "on Dropbox",
@@ -1262,7 +1419,8 @@
       "month": 2,
       "year": 2010,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Android fragmentation : How big a deal is it?",
@@ -1270,7 +1428,8 @@
       "month": 2,
       "year": 2010,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.8 - Random",
@@ -1278,7 +1437,8 @@
       "month": 2,
       "year": 2010,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.8.1 - rethinking features",
@@ -1286,7 +1446,8 @@
       "month": 3,
       "year": 2010,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Portable apps for iPhone, Android, Pre, n900 - Can Processing.js help?",
@@ -1294,7 +1455,8 @@
       "month": 3,
       "year": 2010,
       "day": 9,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.8.{2,3} - new authentication and global share",
@@ -1302,7 +1464,8 @@
       "month": 3,
       "year": 2010,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "@font-face-lift",
@@ -1310,7 +1473,8 @@
       "month": 3,
       "year": 2010,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "New app \"Find Comments\"",
@@ -1318,7 +1482,8 @@
       "month": 3,
       "year": 2010,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 1.9 - OAuth",
@@ -1326,7 +1491,8 @@
       "month": 4,
       "year": 2010,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Are you the Matt Damon of your game?",
@@ -1334,7 +1500,8 @@
       "month": 4,
       "year": 2010,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Mutt, Gmail, gdata, notify-send: A Perfect Email solution",
@@ -1342,7 +1509,8 @@
       "month": 4,
       "year": 2010,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why \"Open\" is not the first concern of user?",
@@ -1350,7 +1518,8 @@
       "month": 5,
       "year": 2010,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Tuxmac",
@@ -1358,7 +1527,8 @@
       "month": 5,
       "year": 2010,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope upcoming changes",
@@ -1366,7 +1536,8 @@
       "month": 6,
       "year": 2010,
       "day": 2,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "predictably irrational",
@@ -1374,7 +1545,8 @@
       "month": 6,
       "year": 2010,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 2.0",
@@ -1382,7 +1554,8 @@
       "month": 6,
       "year": 2010,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "ReaderScope 2.0.6 - Find Comments",
@@ -1390,7 +1563,8 @@
       "month": 7,
       "year": 2010,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Music sharing",
@@ -1398,7 +1572,8 @@
       "month": 7,
       "year": 2010,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Indirect experiments",
@@ -1406,7 +1581,8 @@
       "month": 7,
       "year": 2010,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Reality distortion field around",
@@ -1414,7 +1590,8 @@
       "month": 8,
       "year": 2010,
       "day": 13,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Silicon Valley and Hi-tech",
@@ -1422,7 +1599,8 @@
       "month": 10,
       "year": 2010,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why don't they publish eBooks for free but with embedded ads?",
@@ -1430,7 +1608,8 @@
       "month": 10,
       "year": 2010,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How to save HTML5 canvas image to Google App Engine",
@@ -1438,7 +1617,8 @@
       "month": 10,
       "year": 2010,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Mac book red light audio jack problem on Linux",
@@ -1446,7 +1626,8 @@
       "month": 10,
       "year": 2010,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why secure airports when it's planes that fly?",
@@ -1454,7 +1635,8 @@
       "month": 11,
       "year": 2010,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Youtube ETA - Chrome extension",
@@ -1462,7 +1644,8 @@
       "month": 11,
       "year": 2010,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Functional programming in Javascipt using Underscore.js",
@@ -1470,7 +1653,8 @@
       "month": 12,
       "year": 2010,
       "day": 1,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Discovering LastPass",
@@ -1478,7 +1662,8 @@
       "month": 12,
       "year": 2010,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How Wikipedia and Flattr can together change the World",
@@ -1486,7 +1671,8 @@
       "month": 1,
       "year": 2011,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "HTML5 offline cache - use swapCache carefully",
@@ -1494,7 +1680,8 @@
       "month": 1,
       "year": 2011,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Lesser women in tech... So what?",
@@ -1502,7 +1689,8 @@
       "month": 1,
       "year": 2011,
       "day": 19,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Ever growing todo list is a good sign for creative projects",
@@ -1510,7 +1698,8 @@
       "month": 1,
       "year": 2011,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "JavaScript is the next C",
@@ -1518,7 +1707,8 @@
       "month": 2,
       "year": 2011,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Truce with exercise",
@@ -1526,7 +1716,8 @@
       "month": 2,
       "year": 2011,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why the hi-tech minds are writing Social apps?",
@@ -1534,7 +1725,8 @@
       "month": 2,
       "year": 2011,
       "day": 21,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Don't label yourself",
@@ -1542,7 +1734,8 @@
       "month": 2,
       "year": 2011,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Elon Musk quote",
@@ -1550,7 +1743,8 @@
       "month": 4,
       "year": 2011,
       "day": 29,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why can't I criticize Government if I don't vote? I sure can.",
@@ -1558,7 +1752,8 @@
       "month": 6,
       "year": 2011,
       "day": 12,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How to debug WebWorker threads?",
@@ -1566,7 +1761,8 @@
       "month": 8,
       "year": 2011,
       "day": 16,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "It's not fair to compare Android with Internet Explorer",
@@ -1574,7 +1770,8 @@
       "month": 8,
       "year": 2011,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How to print stack trace anywhere in Javascript",
@@ -1582,7 +1779,8 @@
       "month": 8,
       "year": 2011,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why OpenGL ES is so hard?",
@@ -1590,7 +1788,8 @@
       "month": 8,
       "year": 2011,
       "day": 26,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The Gods Themselves by Isaac Asimov",
@@ -1598,7 +1797,8 @@
       "month": 8,
       "year": 2011,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How to write interactive CLI utility in node.js",
@@ -1606,7 +1806,8 @@
       "month": 9,
       "year": 2011,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Master pieces from screen",
@@ -1614,7 +1815,8 @@
       "month": 11,
       "year": 2011,
       "day": 27,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why we need to explore Seasteading?",
@@ -1622,7 +1824,8 @@
       "month": 1,
       "year": 2012,
       "day": 2,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Good essay on user centric software design",
@@ -1630,7 +1833,8 @@
       "month": 3,
       "year": 2012,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "iTunes Download stopped (err =9006)",
@@ -1638,7 +1842,8 @@
       "month": 3,
       "year": 2012,
       "day": 31,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Google Lunar X Prize",
@@ -1646,7 +1851,8 @@
       "month": 4,
       "year": 2012,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Rolling back latest git commit",
@@ -1654,7 +1860,8 @@
       "month": 5,
       "year": 2012,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Prometheus",
@@ -1662,7 +1869,8 @@
       "month": 6,
       "year": 2012,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why sea steading is important to pursue?",
@@ -1670,7 +1878,8 @@
       "month": 6,
       "year": 2012,
       "day": 10,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why Patriotism doesn't make sense",
@@ -1678,7 +1887,8 @@
       "month": 6,
       "year": 2012,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Kelsey Grammer is spectacular",
@@ -1686,7 +1896,8 @@
       "month": 7,
       "year": 2012,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Online courses - New technology, Old rules",
@@ -1694,7 +1905,8 @@
       "month": 8,
       "year": 2012,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Something like Olivia - John Mayer",
@@ -1702,7 +1914,8 @@
       "month": 10,
       "year": 2012,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "When your git branch diverges from your remote",
@@ -1710,7 +1923,8 @@
       "month": 10,
       "year": 2012,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Time travel fiction",
@@ -1718,7 +1932,8 @@
       "month": 11,
       "year": 2012,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The single most reason that keeps me using Vim",
@@ -1726,7 +1941,8 @@
       "month": 11,
       "year": 2012,
       "day": 23,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Water from air",
@@ -1734,7 +1950,8 @@
       "month": 11,
       "year": 2012,
       "day": 23,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Coffeescript: To switch or not to switch",
@@ -1742,7 +1959,8 @@
       "month": 11,
       "year": 2012,
       "day": 24,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Something's missing",
@@ -1750,7 +1968,8 @@
       "month": 4,
       "year": 2013,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Software Engineering Code of Ethics and Professional Practice",
@@ -1758,7 +1977,8 @@
       "month": 12,
       "year": 2013,
       "day": 1,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "New rules for Formula 1",
@@ -1766,7 +1986,8 @@
       "month": 12,
       "year": 2013,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Uruguay's President",
@@ -1774,7 +1995,8 @@
       "month": 12,
       "year": 2013,
       "day": 14,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Conned?!",
@@ -1782,7 +2004,8 @@
       "month": 4,
       "year": 2014,
       "day": 6,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Quotable Quotes",
@@ -1790,7 +2013,8 @@
       "month": 11,
       "year": 2014,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Podcasts Français",
@@ -1798,7 +2022,8 @@
       "month": 2,
       "year": 2015,
       "day": 21,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "No Exams, Yes Video games",
@@ -1806,7 +2031,8 @@
       "month": 6,
       "year": 2015,
       "day": 17,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Before fixing performance issues",
@@ -1814,7 +2040,8 @@
       "month": 8,
       "year": 2015,
       "day": 25,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The \"Having done\" attitude",
@@ -1822,7 +2049,8 @@
       "month": 4,
       "year": 2016,
       "day": 23,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Road Trip of Atlantic Canada",
@@ -1830,7 +2058,8 @@
       "month": 6,
       "year": 2016,
       "day": 30,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The flying cars analogy",
@@ -1838,7 +2067,8 @@
       "month": 10,
       "year": 2016,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "The Entanglement Pattern",
@@ -1846,7 +2076,8 @@
       "month": 10,
       "year": 2016,
       "day": 9,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Don't Panic",
@@ -1854,7 +2085,8 @@
       "month": 11,
       "year": 2016,
       "day": 11,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Project Dialog",
@@ -1862,7 +2094,8 @@
       "month": 1,
       "year": 2017,
       "day": 20,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why Electron is the best development platform?",
@@ -1870,7 +2103,8 @@
       "month": 1,
       "year": 2017,
       "day": 31,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Review : Ghost In The Shell - The blinds scene",
@@ -1878,7 +2112,8 @@
       "month": 11,
       "year": 2017,
       "day": 28,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Game Design tip for Programmers - Less Automation",
@@ -1886,7 +2121,8 @@
       "month": 12,
       "year": 2017,
       "day": 15,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "How to consume media",
@@ -1894,7 +2130,8 @@
       "month": 12,
       "year": 2017,
       "day": 18,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Why gamers like pixelated games",
@@ -1902,7 +2139,8 @@
       "month": 1,
       "year": 2018,
       "day": 3,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Vipassana Meditation",
@@ -1910,7 +2148,8 @@
       "month": 5,
       "year": 2018,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Violet end of spectrum",
@@ -1918,7 +2157,8 @@
       "month": 5,
       "year": 2018,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Playing games, Doing Mathematics",
@@ -1926,7 +2166,8 @@
       "month": 11,
       "year": 2018,
       "day": 22,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Insanity and Software",
@@ -1934,7 +2175,8 @@
       "month": 12,
       "year": 2018,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Bicycle Pedals",
@@ -1942,7 +2184,8 @@
       "month": 12,
       "year": 2018,
       "day": 7,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Lessons for Game designers from \"Structure of Scientific Revolutions\"",
@@ -1950,7 +2193,8 @@
       "month": 12,
       "year": 2018,
       "day": 8,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Dimensions of Idea communication",
@@ -1958,7 +2202,8 @@
       "month": 1,
       "year": 2019,
       "day": 4,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Types of Art",
@@ -1966,7 +2211,8 @@
       "month": 1,
       "year": 2019,
       "day": 5,
-      "tags": []
+      "keywords": [],
+      "categoies": []
     },
     {
       "title": "Stakeholder Capitalism",
@@ -1974,7 +2220,18 @@
       "month": 10,
       "year": 2019,
       "day": 18,
-      "tags": []
+      "keywords": [
+        "Capitalism",
+        "Business",
+        "Socialism",
+        "Ethics",
+        "Philosophy",
+        "Labor",
+        "Government"
+      ],
+      "categoies": [
+        "notes"
+      ]
     },
     {
       "title": "Guided Imagination",
@@ -1982,7 +2239,17 @@
       "month": 10,
       "year": 2019,
       "day": 21,
-      "tags": []
+      "keywords": [
+        "Imagination",
+        "Meditation",
+        "Asimov",
+        "Writing",
+        "Creative Writing",
+        "Tips"
+      ],
+      "categoies": [
+        "essay"
+      ]
     },
     {
       "title": "ESports are no different",
@@ -1990,7 +2257,18 @@
       "month": 10,
       "year": 2019,
       "day": 25,
-      "tags": []
+      "keywords": [
+        "Gaming",
+        "ESports",
+        "Cricket",
+        "Soccer",
+        "League of Legends",
+        "Sports",
+        "Entertainment"
+      ],
+      "categoies": [
+        "gaming"
+      ]
     }
   ]
 }

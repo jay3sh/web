@@ -1,3 +1,5 @@
+categories:essay
+keywords:Imagination,Meditation,Asimov,Writing,Creative Writing,Tips
 Guided Imagination
 ===
 
