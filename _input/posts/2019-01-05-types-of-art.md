@@ -1,4 +1,5 @@
-
+categories:essay
+keywords:Art,Emotions,Philosophy
 Types of Art
 ===
 

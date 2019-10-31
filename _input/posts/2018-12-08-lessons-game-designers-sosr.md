@@ -1,10 +1,11 @@
-
+categories:essay
+keywords:Design,Game Dev, Gaming, History, History of Science, Scientific Revolutions, Creativity,Enterpreurism
 Lessons for Game designers from "Structure of Scientific Revolutions"
 ===
 
-Thomas Kuhn's "Structure of Scientific Revolutions" is a classic book in philosophy of Science. When I recently finished reading it, I learnt about the field of Scientific research in a very unexpected light. More importantly though, this model seemed relevant outside the field of Science. It could be applied to other creative endeavours like Game design projects. It helped me made sense of the difficulties I incurred in past few years while choosing the topics of my next project. 
+Thomas Kuhn's "Structure of Scientific Revolutions" is a classic book in philosophy of Science. When I recently finished reading it, I learnt about the field of Scientific research in a very unexpected light. More importantly though, this model seemed relevant outside the field of Science. It could be applied to other creative endeavours like Game design projects. It helped me made sense of the difficulties I incurred in past few years while choosing the topics of my next project.
 
-Here's a short summary of the ideas in this book that are relevant to this topic. SOSR categorizes all the scientific research into two types - Revolutions and Normal Science. 
+Here's a short summary of the ideas in this book that are relevant to this topic. SOSR categorizes all the scientific research into two types - Revolutions and Normal Science.
 
 **Revolutions** in scientific fields happen when a new **Paradigm** theory is introduced. For e.g. Newton's theory of Gravity, Einstein's theory of relativity, Darwin's theory of evolution, etc. These theories are revolutionary, because they provide a framework that their predecessors failed to provide and they are able to guide future research in those field better than other competing theories at the time.
 
@@ -13,7 +14,7 @@ Here's a short summary of the ideas in this book that are relevant to this topic
 Determining which game to make is a very difficult question, especially when it's also supposed to be your principal source of income. You want to make a game that satisfies many constraints.
 
 
-In my past 3 years as solo enterpreneur I've evaluated many different project ideas along various criteria before I started pursuing them single-mindedly. These criteria were not so clear in the beginning, but over time I've managed to outline the criteria more distinctly. 
+In my past 3 years as solo enterpreneur I've evaluated many different project ideas along various criteria before I started pursuing them single-mindedly. These criteria were not so clear in the beginning, but over time I've managed to outline the criteria more distinctly.
 
 A new game idea has to fulfill most of the following criteria to satisfactory extent.
 

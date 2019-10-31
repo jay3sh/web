@@ -121,7 +121,7 @@ function bakePost(mdFilepath, blogIndex) {
       year : parseInt(yearStr),
       day : parseInt(dayStr),
       keywords : keywords,
-      categoies : categories
+      categories : categories
     });
   }
   fs.writeFileSync(outpath, postHead+"\n"+postBody);

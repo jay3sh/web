@@ -30,8 +30,18 @@ for(let year of years) {
       }
     }
   }
+
   for(let post of sorted) {
+
+    let categoryBadges = '';
+    if(post.categories.length > 0) {
+      for(let category of post.categories) {
+        categoryBadges += '&nbsp;<span class="badge badge-dark">'+category+'</span>';
+      }
+    }
+
     postListHtml += '<div><a href="'+post.path+'">'+post.title+'</a>'+
+      categoryBadges+
       '&nbsp;<span class="badge badge-info">'+months[post.month-1]+' '+post.day+'</span>'+
       '</div>';
 

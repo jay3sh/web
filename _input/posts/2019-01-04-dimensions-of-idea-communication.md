@@ -1,4 +1,3 @@
-
 Dimensions of Idea communication
 ===
 

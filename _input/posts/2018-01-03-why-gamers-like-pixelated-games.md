@@ -1,4 +1,6 @@
 
+categories:essay,gaming
+keywords:Gaming, Pixel art, Abstract art, Graphics, Game design
 Why gamers like pixelated games
 ===
 
