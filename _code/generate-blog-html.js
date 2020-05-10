@@ -43,7 +43,7 @@ for(let year of years) {
     postListHtml += '<div><a href="'+post.path+'">'+post.title+'</a>'+
       categoryBadges+
       '&nbsp;<span class="badge badge-info">'+months[post.month-1]+' '+post.day+'</span>'+
-      '</div>';
+      '</div>\n';
 
   }
 }
