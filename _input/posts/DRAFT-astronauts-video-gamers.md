@@ -13,12 +13,15 @@ This point of view has bothered me for a while. It's something I've to reconcile
 
 * Can easy access to happiness make us less inclined to work on hard problems?
 
-* Do we need lot of people to work on hard problems or just few will do?
+* Do we need everyone to work on hard problems or just few will do?
 
-* Is the framing of this problem not right? Why is exploring the space more important than exploring our plane of conciousness?
+* Is the framing of this problem right? Why is exploring the space more important than exploring our plane of conciousness?
 
-* Should we all be working towards solving the big problems? 
 
-Video games give us a virtual environment which adjusts according to our abilities to give us small victories. Thus giving us taste of success by overcoming made-up challenges that are only sufficiently difficult to keep us engaged and not give up in frustration (i.e. achieve Flow). The real world problems though do not have difficulty that everyone can handle. That’s why they are hard problems. Only the ones who have talent and opportunites to acquire necessary skills can rise up to take on these challenges. Most of the rest are going to be bystanders. Even if we should be working towards building rocket ships as a civilization, not all of us are needed to work on these difficult problems. In fact the work of the few which leads to novel progress, can only happen in a stable society. A stable society can only be achieved in which the bystanders have something to do worthwhile. Have a sense of well being. The bystanders are the ones who will keep the economy going that will provide funding for ambitious projects. Video games do the job of bringing happiness to the bystanders.
+Video games give us a virtual environment which adjusts according to our abilities to give us small victories. Thus giving us taste of success by overcoming made-up challenges that are only sufficiently difficult to keep us engaged and not give up in frustration (i.e. achieve Flow). The real world problems though do not come with adjustable difficulty. That’s why they are hard problems. One needs skills and patience to tackle them. Only the ones who have talent and opportunites to acquire necessary skills can rise up to take on these challenges. Whether you get right education at right age matters. Whether you were born in specific country and in favorable social conditions plays a big role. Of course, concious efforts are also necessary to excel. But the motivation, persistence and patience required also varies from person-to-person and only some manage to be successful.
+
+Not everyone gets lucky on all fronts. Most are going to be bystanders, while few will walk the Moon. How should the society reconcile this seemingly unbalanced situation?
+
+Even if we should be working towards building rocket ships as a civilization, not all of us are needed to work on these difficult problems. In fact the work of the few which leads to novel progress, can only happen in a stable society. A stable society can only be achieved in which the bystanders have something to do worthwhile. Have a sense of well being. The bystanders are the ones who will keep the economy going that will provide funding for ambitious projects. Video games do the job of bringing happiness to the bystanders.
 
 No one’s life has any inherent meaning. So astronauts’ work is no more meaningful than a Minecraft player. Meaning is only found in our mind. Reality may also be a simulation like the video games created inside this reality. So the challenges incurred in reality are not that different from challenges incurred in a video game. The only difference is the degree of simulation.
