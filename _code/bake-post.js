@@ -103,15 +103,15 @@ function bakePost(mdFilepath, blogIndex) {
   if (!fs.existsSync(outpath)) {
     fs.mkdirSync(outpath);
   }
-  outpath += path.sep + monthStr;
+  outpath += "/" + monthStr;
   if (!fs.existsSync(outpath)) {
     fs.mkdirSync(outpath);
   }
-  outpath += path.sep + dayStr;
+  outpath += "/" + dayStr;
   if (!fs.existsSync(outpath)) {
     fs.mkdirSync(outpath);
   }
-  outpath += path.sep + dashedPostName + ".html";
+  outpath += "/" + dashedPostName + ".html";
 
   if (blogIndex != null) {
     blogIndex.posts.push({
