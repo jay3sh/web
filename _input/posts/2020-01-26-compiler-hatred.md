@@ -1,3 +1,5 @@
+categories:programming
+keywords:compilers,coding,programming
 Compiler Hatred
 ===
 
