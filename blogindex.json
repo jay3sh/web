@@ -2308,7 +2308,26 @@
       "month": 1,
       "year": 2020,
       "day": 26,
-      "keywords": [],
+      "keywords": [
+        "compilers",
+        "coding",
+        "programming"
+      ],
+      "categories": [
+        "programming"
+      ]
+    },
+    {
+      "title": "Astronauts or Video gamers",
+      "path": "2020/06/26/astronauts-video-gamers.html",
+      "month": 6,
+      "year": 2020,
+      "day": 26,
+      "keywords": [
+        "Gaming",
+        "Technology",
+        "Philosophy"
+      ],
       "categories": []
     }
   ]
