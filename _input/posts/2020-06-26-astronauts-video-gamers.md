@@ -1,4 +1,5 @@
 
+categories: gaming
 keywords:Gaming,Technology,Philosophy
 Astronauts or Video gamers
 ===
