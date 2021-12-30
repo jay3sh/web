@@ -1,3 +1,5 @@
+categories:essay
+keywords:art,communication
 On media as a One way communication
 ===
 In some cases, when a complicated or controversial topic is communicated through a one-way channel of communication like a book or a movie, it's better understood than in a face-to-face communication.

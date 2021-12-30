@@ -1,3 +1,5 @@
+categories:essay
+keywords:art,artist,perfection
 Thoughts on Perfection
 ===
 

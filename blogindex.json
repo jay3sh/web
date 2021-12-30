@@ -2384,8 +2384,13 @@
       "month": 12,
       "year": 2021,
       "day": 30,
-      "keywords": [],
-      "categories": []
+      "keywords": [
+        "art",
+        "communication"
+      ],
+      "categories": [
+        "essay"
+      ]
     },
     {
       "title": "Thoughts on Perfection",
@@ -2393,8 +2398,14 @@
       "month": 12,
       "year": 2021,
       "day": 30,
-      "keywords": [],
-      "categories": []
+      "keywords": [
+        "art",
+        "artist",
+        "perfection"
+      ],
+      "categories": [
+        "essay"
+      ]
     }
   ]
 }
