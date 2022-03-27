@@ -8,8 +8,10 @@ I watched the first episode from the first season of Star Trek - TNG yesterday. 
 Riker finds Data practicing to whistle like a human. They strike up a conversation which segways into Data explaining Riker how the Holodeck works.
 
     RIKER: I didn't believe these simulations could be this real.
-    DATA: Much of it is real, sir. If the transporters can convert our bodies to an energy beam, then back to the original pattern again
-    RIKER: Yes, of course. And these rocks and vegetation have much simpler patterns.
+    DATA: Much of it is real, sir. If the transporters can convert our bodies 
+    to an energy beam, then back to the original pattern again
+    RIKER: Yes, of course. And these rocks and vegetation have much simpler 
+    patterns.
 
 I can’t appreciate enough how masterfully expository these lines are. But more impressive is the actual explanation of the workings of the holodeck. It’s not a simulation at all. Not in a way, we are trying to create virtual environments in our world. The holodeck is not merely an illusion to fool the senses. It’s apparently created by replicating physical objects. It’s an Alternate Reality, not Virtual one.
 
