@@ -13,7 +13,7 @@ Riker finds Data practicing to whistle like a human. They strike up a conversati
     RIKER: Yes, of course. And these rocks and vegetation have much simpler 
     patterns.
 
-I can’t appreciate enough how masterfully expository these lines are. But more impressive is the actual explanation of the workings of the holodeck. It’s not a simulation at all. Not in a way, we are trying to create virtual environments in our world. The holodeck is not merely an illusion to fool the senses. It’s apparently created by replicating physical objects. It’s an Alternate Reality, not Virtual one.
+I can’t appreciate enough how masterfully expository these lines are. But more impressive is the actual explanation of the workings of the holodeck. It’s not a simulation at all. Not in a way, we are trying to create virtual environments in our world. The holodeck is not merely an illusion to fool the senses. It’s apparently created by replicating physical objects. It’s an Alternate Reality, not a Virtual one.
 
 TNG was indeed ahead of its time.
 
