@@ -1,4 +1,4 @@
-categories:scifi
+categories:essay
 keywords:scifi,star trek, the next generation, holodeck, VR, virtual reality,science fiction
 Star Trek TNG Holodeck
 ===
