@@ -1,6 +1,6 @@
 categories:essay
 keywords:space, technologies, Space, space elevator, software
-When can we build Space elevators?
+When can we build the Space elevators?
 ===
 
 The hurdles in building a Space elevator are not just limited to the availability and the cost of a novel material. It's well understood that we need a strong yet light weight material to create a cable that starts from the ground and reaches the geo-synchronous orbit. A likely candidate is available in the form of Carbon Nanotubes. However abundant and cheap manufacturing of this material is not the only challenge. Here's one thought.
